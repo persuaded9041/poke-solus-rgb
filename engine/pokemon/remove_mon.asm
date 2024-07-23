@@ -1,4 +1,6 @@
 _RemovePokemon::
+	call ClearTempFieldMove ;joenote - for field move slot
+
 	ld hl, wPartyCount
 	ld a, [wRemoveMonFromBox]
 	and a
@@ -15,6 +17,8 @@ _RemovePokemon::
 	ld e, l
 	ld d, h
 	inc de
+	;hl points to species of removing 'mon
+	;de points to species of next 'mon in line
 .shiftMonSpeciesLoop
 	ld a, [de]
 	inc de
@@ -93,3 +97,41 @@ _RemovePokemon::
 	ld bc, wBoxMonNicksEnd
 .copyUntilPartyMonNicksEnd
 	jp CopyDataUntil
+
+ClearTempFieldMove:	;joenote - for field move slot
+	ld a, [wRemoveMonFromBox]
+	and a
+	ret nz 
+
+	push hl
+	push bc
+	push de
+	
+	ld a, [wWhichPokemon]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	ld d, h
+	ld e, l
+	inc de
+	;hl points to slot of removing 'mon
+	;de points to slot of next 'mon in line
+.loop
+	xor a
+	ld [hl], a
+	
+	inc c
+	ld a, c
+	cp PARTY_LENGTH
+	jr nc, .done
+	
+	ld a, [de]
+	inc de
+	ld [hli], a
+	jr .loop
+.done
+	pop de
+	pop bc
+	pop hl
+	ret

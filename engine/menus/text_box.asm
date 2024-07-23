@@ -519,10 +519,12 @@ GetMonFieldMoves:
 	push hl
 .nextMove
 	dec c
-	jr z, .done
+	;jr z, .done
+	jr z, .tempfieldmove
 	ld a, [de] ; move ID
 	and a
-	jr z, .done
+	;jr z, .done
+	jr z, .tempfieldmove
 	ld b, a
 	inc de
 	ld hl, FieldMoveDisplayData
@@ -557,5 +559,34 @@ GetMonFieldMoves:
 .done
 	pop hl
 	ret
+.tempfieldmove	;joenote - for field move slot
+	ld a, d 
+	cp $FF
+	jr z, .done
+	
+	ld a, [wNumFieldMoves]
+	cp NUM_MOVES
+	jr nc, .done
+	
+	ld a, [wWhichPokemon]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	
+	
+	push hl
+	ld a, [hl]
+	ld [wMoveNum], a
+	farcall _CheckIfMoveIsKnown
+	pop hl
+	jr c, .done
+	
+	ld a, [hl]
+	ld b, a
+	ld c, 1
+	ld d, $FF
+	ld hl, FieldMoveDisplayData
+	jr .fieldMoveLoop
 
 INCLUDE "data/moves/field_moves.asm"

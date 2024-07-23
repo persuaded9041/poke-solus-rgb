@@ -309,6 +309,9 @@ StatusScreen2:
 	ld bc, NUM_MOVES
 	call CopyData
 	callfar FormatMovesString
+
+	call PlaceTempFieldMove	;joenote - for field move slot
+
 	hlcoord 9, 2
 	lb bc, 5, 10
 	call ClearScreenArea ; Clear under name
@@ -479,4 +482,30 @@ StatusScreen_PrintPP:
 	add hl, de
 	dec c
 	jr nz, StatusScreen_PrintPP
+	ret
+
+PlaceTempFieldMove:	;joenote - for field move slot
+	ld a, [wMonDataLocation]
+	cp PLAYER_PARTY_DATA
+	ret nz
+	
+	ld a, [wWhichPokemon]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	ld a, [hl]
+	and a
+	ret z
+	
+	ld [wd0b5], a
+	ld a, BANK(MoveNames)
+	ld [wPredefBank], a
+	ld a, MOVE_NAME
+	ld [wNameListType], a
+	call GetName
+	
+	coord hl, $09, $07
+	ld de, wcd6d
+	call PlaceString
 	ret

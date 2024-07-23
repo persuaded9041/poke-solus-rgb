@@ -2243,6 +2243,9 @@ ItemUseTMHM:
 	ld a, b
 	and a
 	ret z
+	xor a
+	cp c
+	ret c	;treat learning a field move from a TM the same as a HM
 	ld a, [wcf91]
 	call IsItemHM
 	ret c

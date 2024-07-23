@@ -1707,6 +1707,9 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
+wTempFieldMoveSLots:: db	;joenote - for field move slot
+	ds 6
+
 wNumBagItems:: db
 ; item, quantity
 wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
@@ -1992,6 +1995,7 @@ wRoute23CurScript:: db
 wSeafoamIslandsB4FCurScript:: db
 wRoute18Gate1FCurScript:: db
 	ds 78
+
 wGameProgressFlagsEnd::
 
 	ds 56

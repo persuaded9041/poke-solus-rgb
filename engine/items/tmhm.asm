@@ -1,5 +1,14 @@
 ; checks if the mon in [wWhichPokemon] already knows the move in [wMoveNum]
+;joenote - separated out the search from the text printing to make this more versatile
 CheckIfMoveIsKnown:
+	call _CheckIfMoveIsKnown
+	ret nc
+	ld hl, AlreadyKnowsText
+	call PrintText
+	scf
+	ret
+	
+_CheckIfMoveIsKnown:
 	ld a, [wWhichPokemon]
 	ld hl, wPartyMon1Moves
 	ld bc, wPartyMon2 - wPartyMon1
@@ -16,11 +25,9 @@ CheckIfMoveIsKnown:
 	and a
 	ret
 .alreadyKnown
-	ld hl, AlreadyKnowsText
-	call PrintText
 	scf
 	ret
 
 AlreadyKnowsText:
 	text_far _AlreadyKnowsText
-	text_end
+	db "@"

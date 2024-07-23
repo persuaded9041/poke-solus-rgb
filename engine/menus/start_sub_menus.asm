@@ -719,6 +719,9 @@ SwitchPartyMon_InitVarOrSwapData:
 .swappingDifferentMons
 	ld a, b
 	ld [wMenuItemToSwap], a
+
+	call SwapTempFieldMoves ;joenote - for field move slot
+
 	push hl
 	push de
 	ld hl, wPartySpecies
@@ -804,5 +807,36 @@ SwitchPartyMon_InitVarOrSwapData:
 	ld [wMenuItemToSwap], a
 	ld [wPartyMenuTypeOrMessageID], a
 	pop de
+	pop hl
+	ret
+
+SwapTempFieldMoves:	;joenote - for field move slot
+	push hl
+	push bc
+	push de
+	
+	ld a, [wCurrentMenuItem]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	ld d, h
+	ld e, l
+	
+	ld a, [wMenuItemToSwap]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	
+	ld a, [de]
+	ld b, a
+	ld a, [hl]
+	ld [de], a
+	ld a, b
+	ld [hl], a
+	
+	pop de
+	pop bc
 	pop hl
 	ret

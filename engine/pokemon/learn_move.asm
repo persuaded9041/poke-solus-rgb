@@ -13,6 +13,11 @@ DontAbandonLearning:
 	ld bc, wPartyMon2Moves - wPartyMon1Moves
 	ld a, [wWhichPokemon]
 	call AddNTimes
+		
+	;joenote - for field move slot
+	jp LearnToFieldSlot
+.back
+
 	ld d, h
 	ld e, l
 	ld b, NUM_MOVES
@@ -76,11 +81,7 @@ DontAbandonLearning:
 AbandonLearning:
 	ld hl, AbandonLearningText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
-	ld a, TWO_OPTION_MENU
-	ld [wTextBoxID], a
-	call DisplayTextBoxID ; yes/no menu
+	call LearnMoveYesNo
 	ld a, [wCurrentMenuItem]
 	and a
 	jp nz, DontAbandonLearning
@@ -94,16 +95,17 @@ PrintLearnedMove:
 	call PrintText
 	ld b, 1
 	ret
+PrintLearnedFieldMove:
+	ld hl, LearnedMove1Text
+	call PrintText
+	ld bc, $0101	;make c=1 to indicate the move was learned as a field move
+	ret
 
 TryingToLearn:
 	push hl
 	ld hl, TryingToLearnText
 	call PrintText
-	hlcoord 14, 7
-	lb bc, 8, 15
-	ld a, TWO_OPTION_MENU
-	ld [wTextBoxID], a
-	call DisplayTextBoxID ; yes/no menu
+	call LearnMoveYesNo
 	pop hl
 	ld a, [wCurrentMenuItem]
 	rra
@@ -224,3 +226,98 @@ ForgotAndText:
 HMCantDeleteText:
 	text_far _HMCantDeleteText
 	text_end
+
+;defining this which replaces 2 instances of the same instructions earlier in this file
+LearnMoveYesNo:
+	coord hl, 14, 7
+	lb bc, 8, 15
+	ld a, TWO_OPTION_MENU
+	ld [wTextBoxID], a
+	call DisplayTextBoxID ; yes/no menu
+	ret
+
+;joenote - for field move slot
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LearnToFieldSlot:
+;return z flag if not executed
+;return nz flag if field move slot was learned
+	push hl
+	
+	ld a, [wIsInBattle]
+	and a
+	jr nz, .return_fail	;do not allow the learning of a temporary field move in battle
+	
+	call SetCarryIfFieldMove
+	jr nc, .return_fail
+	
+	ld hl, LearnTempFieldMoveText
+	call PrintText
+	call LearnMoveYesNo
+	ld a, [wCurrentMenuItem]
+	rra
+	jr c, .return_fail	;exit if No is chosen
+	
+	;move to the correct field move slot
+	ld a, [wWhichPokemon]
+	ld c, a
+	ld b,0
+	ld hl, wTempFieldMoveSLots
+	add hl, bc
+	
+	;exit if a move is already in that slot
+	ld a, [hl]
+	and a
+	jr z, .next
+	ld hl, LearnTempFieldMoveTextDenied
+	call PrintText
+	jr .return_occupied
+.next
+	
+	;fill the slot with the move
+	ld a, [wMoveNum]
+	ld [hl], a
+	
+.return_success
+	xor a
+	add 1
+	pop hl
+	jp PrintLearnedFieldMove
+.return_fail
+	xor a
+	pop hl
+	jp DontAbandonLearning.back
+.return_occupied
+	xor a
+	pop hl
+	jp AbandonLearning
+
+LearnTempFieldMoveText:
+	text_far _LearnTempFieldMoveText
+	db "@"
+LearnTempFieldMoveTextDenied:
+	text_far _LearnTempFieldMoveTextDenied
+	db "@"
+
+SetCarryIfFieldMove:
+	ld a, [wMoveNum]
+	push hl
+	push de
+	push bc
+	ld hl, FieldMoveList
+	ld de, $0001
+	call IsInArray
+	pop bc
+	pop de
+	pop hl
+	;carry is set if this is a field move
+	ret
+FieldMoveList:
+	db	CUT
+	db	FLY
+	db	SURF
+	db	STRENGTH
+	db	FLASH
+	db	DIG
+	db	TELEPORT
+	db	SOFTBOILED
+	db	$FF 
