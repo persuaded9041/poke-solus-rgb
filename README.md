@@ -1,29 +1,56 @@
-# Pokémon Red and Blue [![Build Status][ci-badge]][ci]
+# Pokémon Solus Red and Blue
 
-This is a disassembly of Pokémon Red and Blue.
+This is a ROM hack of Pokémon Red and Blue for Game Boy, based on the [disassembly of Pokémon Red and Blue](https://github.com/pret/pokered) (original disassembly work by the Pokémon Reverse Engineering Team).
 
-It builds the following ROMs:
+## Table of Contents
+- [Description](#description)
+- [Installation and setup][installation]
+- [Resources](#resources)
 
-- Pokemon Red (UE) [S][!].gb `sha1: ea9bcae617fdf159b045185467ae58b2e4a48b9a`
-- Pokemon Blue (UE) [S][!].gb `sha1: d7037c83e1ae5b39bde3c30787637ba1d4c48ce2`
-- BLUEMONS.GB (debug build) `sha1: 5b1456177671b79b263c614ea0e7cc9ac542e9c4`
-- dmgapae0.e69.patch `sha1: 0fb5f743696adfe1dbb2e062111f08f9bc5a293a`
-- dmgapee0.e68.patch `sha1: ed4be94dc29c64271942c87f2157bca9ca1019c7`
+## Description
 
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
+Solus Red/Blue is a near-vanilla ROM hack of Gen 1. It changes only a couple of things, without overhauling so much that the game ceases to be Gen 1, and the whole things becomes a Ship of Theseus paradox.
+
+> "What things does this ROM hack change, and why?"
+
+### 1. All Pokémon obtainable in Red, Blue, or Yellow are obtainable through "normal means"
+
+"Normal means" are one of the following:
+- the Pokémon can be caught in the wild
+- the Pokémon can be evolved into
+    - in the case of trade evolutions, they should be evolvable in-game (via a "Tradeback NPC")
+- the Pokémon can be found in a Poké Ball in the overworld
+- the Pokémon can be gifted to the player 
+- the Pokémon can be restored from a fossil
+
+This allows for both a more "solo" experience of the game (not relying on trading to obtain certain Pokémon) and for a more diverse selection when building your party.
+
+### 2. HMs are teachable to party Pokémon without using up one of the Pokémon's move slots
+
+HMs (as well as TMs like Dig and Teleport) can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as a temporary Field Move.
+
+When a Pokémon with a temporary Field Move is deposited into the PC, the Field Move will be erased.
+
+This allows for more focus on a Pokémon's battle moveset.
+
+### 3. Some bugs are fixed
+
+A small subset of the _actual_ bugs from the vanilla games are fixed. These are:
+
+- Focus Energy now works as intended
 
 
-## See also
+## Resources
 
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- [**Symbols**][symbols]
+- [Original pokered disassembly wiki][wiki] which has many helpful tutorials on working with the assembly, some of which were used for this project
+- jojobear13's [shinpokered ROM hack][shinpokered] (thanks to him for the temporary Field Move implementation in his ROM hack)
+- My original [design document][designdoc] for this project
+- My [justifications][justifications] for the changes I've made to the vanilla game
 
-You can find us on [Discord (pret, #pokered)](https://discord.gg/d5dubZ3).
-
-For other pret projects, see [pret.github.io](https://pret.github.io/).
 
 [wiki]: https://github.com/pret/pokered/wiki
-[tutorials]: https://github.com/pret/pokered/wiki/Tutorials
-[symbols]: https://github.com/pret/pokered/tree/symbols
-[ci]: https://github.com/pret/pokered/actions
-[ci-badge]: https://github.com/pret/pokered/actions/workflows/main.yml/badge.svg
+[shinpokered]: https://github.com/jojobear13/shinpokered
+[designdoc]: DESIGN.md
+[justifications]: JUSTIFICATIONS.md
+[installation]: INSTALL.md
+
