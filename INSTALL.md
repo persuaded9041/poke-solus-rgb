@@ -1,23 +1,21 @@
-# Instructions
+# Installation Instructions
 
-These instructions explain how to set up the tools required to build **pokered**, including [**rgbds**](https://github.com/gbdev/rgbds), which assembles the source files into a ROM.
-
-If you run into trouble, ask for help on IRC or Discord (see [README.md](README.md)).
+These instructions explain how to set up the tools required to build **Pokémon Solus Red/Blue**, including [rgbds](https://github.com/gbdev/rgbds), which assembles the source files into a ROM.
 
 
 ## Windows 10
 
-Download and install [**Windows Subsystem for Linux**](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Then open the **WSL terminal**.
+Download and install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Then open the WSL terminal.
 
-Update WSL's software before continuing. If you chose Debian, Ubuntu, or another distribution that uses `apt-get`, then enter this command:
+Update WSL's software before continuing. Choose Debian, Ubuntu, or another distribution that uses `apt-get`, then enter this command:
 
 ```bash
 apt-get update && apt-get upgrade
 ```
 
-WSL has its own file system that's not accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to install pokered within Windows. You'll have to change the **current working directory** every time you open WSL.
+WSL has its own file system that's not accessible from Windows, but Windows files *are* accessible from WSL. So you're going to want to install pokered within Windows. You'll have to change the current working directory every time you open WSL.
 
-For example, if you want to store pokered in **C:\Users\\*\<user>*\Desktop**, enter this command:
+For example, if you want to store pokered in `C:\Users\\<user>\Desktop`, enter this command:
 
 ```bash
 cd /mnt/c/Users/<user>/Desktop

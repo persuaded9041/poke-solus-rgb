@@ -45,9 +45,10 @@ Some bugs could be fixed if they’re important enough, and if they are obvious 
 - Lone Red
 - Solus Red
 
-## Possible to do
+## Possible implementation ideas
 
 - merge the changes from Red/Blue so they are the same
 - add a Green version (color palette, title screen)
 - change sprites for Pokémon and gym leaders
 - check Shin Pokémon change log for ideas
+- Perhaps Mew could be obtainable? Cinnabar Mansion? Overworld sprite?
