@@ -153,6 +153,7 @@ PalletTown_TextPointers:
 	def_text_pointers
 	dw_const PalletTownOakText,              TEXT_PALLETTOWN_OAK
 	dw_const PalletTownGirlText,             TEXT_PALLETTOWN_GIRL
+	dw_const PalletTownTraderText,		 	 TEXT_PALLETTOWN_TRADER
 	dw_const PalletTownFisherText,           TEXT_PALLETTOWN_FISHER
 	dw_const PalletTownOaksLabSignText,      TEXT_PALLETTOWN_OAKSLAB_SIGN
 	dw_const PalletTownSignText,             TEXT_PALLETTOWN_SIGN
@@ -194,6 +195,13 @@ PalletTownOakText:
 PalletTownGirlText:
 	text_far _PalletTownGirlText
 	text_end
+
+PalletTownTraderText:
+	text_asm
+	ld a, TRADE_WITH_SELF
+	ld [wWhichTrade], a
+	predef DoInGameTradeDialogue
+	jp TextScriptEnd
 
 PalletTownFisherText:
 	text_far _PalletTownFisherText
