@@ -106,7 +106,8 @@ InternalMapEntries:
 	internal_map VERMILION_TRADE_HOUSE,         10,  9, VermilionCityName
 	internal_map DIGLETTS_CAVE,                  3,  4, DiglettsCaveName
 	internal_map VICTORY_ROAD_3F,                0,  4, VictoryRoadName
-	internal_map UNUSED_MAP_CE,                  7,  5, RocketHQName
+	;internal_map UNUSED_MAP_CE,                  7,  5, RocketHQName ;removed this entry in order to fit TRADER_HOUSE (below) in the table
+	internal_map TRADER_HOUSE,                   7,  5, CeladonCityName
 	internal_map SILPH_CO_8F,                   10,  5, SilphCoName
 	internal_map POKEMON_MANSION_B1F,            2, 15, PokemonMansionName
 	internal_map SAFARI_ZONE_NORTH_REST_HOUSE,   8, 12, SafariZoneName

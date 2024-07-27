@@ -202,12 +202,12 @@ _UsedCutText::
 _WannaTrade4Text::
 	text "I'm the TRADER!"
 	para "If you trade me a"
-	line "#MON, I'll"
+	line "#MON, I can"
 	cont "trade it right"
 	para "back to you!"
 	para "Certain #MON"
 	line "evolve this way."
-	para "Do you want to"
+	para "So, do you want to"
 	line "trade a #MON?"
 	done
 	
