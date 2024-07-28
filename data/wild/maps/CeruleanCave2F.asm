@@ -9,6 +9,8 @@ CeruleanCave2FWildMons:
 	db 56, CHANSEY
 	db 54, WIGGLYTUFF
 	db 55, DITTO
+	db 51, KADABRA
+	db 51, KADABRA
 	db 60, DITTO
 	end_grass_wildmons
 

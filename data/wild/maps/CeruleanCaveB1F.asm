@@ -6,16 +6,13 @@ CeruleanCaveB1FWildMons:
 	db 64, CHANSEY
 	db 64, PARASECT
 	db 64, RAICHU
-IF DEF(_RED)
-	db 57, ARBOK
-ENDC
-IF DEF(_BLUE)
 	db 57, SANDSLASH
-ENDC
+	db 57, ARBOK
 	db 65, DITTO
 	db 63, DITTO
 	db 67, DITTO
-	end_grass_wildmons
+	db 57, RHYDON
+	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate
 	end_water_wildmons

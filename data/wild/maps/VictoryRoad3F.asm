@@ -9,6 +9,8 @@ VictoryRoad3FWildMons:
 	db 43, GRAVELER
 	db 41, GOLBAT
 	db 42, MACHOKE
+	db 22, ZUBAT
+	db 22, ZUBAT
 	db 45, MACHOKE
 	end_grass_wildmons
 

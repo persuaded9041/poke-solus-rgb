@@ -9,6 +9,8 @@ Route3WildMons:
 	db  8, SPEAROW
 	db  3, JIGGLYPUFF
 	db  5, JIGGLYPUFF
+	db  7, PIDGEY
+	db  7, PIDGEY
 	db  7, JIGGLYPUFF
 	end_grass_wildmons
 

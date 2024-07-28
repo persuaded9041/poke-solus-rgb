@@ -9,6 +9,8 @@ Route16WildMons:
 	db 22, DODUO
 	db 22, RATTATA
 	db 23, RATICATE
+	db 18, RATTATA
+	db 18, RATTATA
 	db 25, RATICATE
 	end_grass_wildmons
 

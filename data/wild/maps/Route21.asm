@@ -9,6 +9,8 @@ Route21WildMons:
 	db 32, PIDGEOTTO
 	db 28, TANGELA
 	db 30, TANGELA
+	db 30, RATICATE
+	db 30, RATICATE
 	db 32, TANGELA
 	end_grass_wildmons
 
@@ -22,5 +24,7 @@ Route21WildMons:
 	db 20, TENTACOOL
 	db 30, TENTACOOL
 	db 35, TENTACOOL
+	db 15, TENTACOOL
+	db 15, TENTACOOL
 	db 40, TENTACOOL
 	end_water_wildmons
