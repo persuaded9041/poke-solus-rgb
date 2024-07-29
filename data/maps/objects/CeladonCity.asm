@@ -26,7 +26,7 @@ CeladonCity_Object:
 	warp_event 31, 27, CELADON_DINER, 1
 	warp_event 35, 27, CELADON_CHIEF_HOUSE, 1
 	warp_event 43, 27, CELADON_HOTEL, 1
-	warp_event 37,  9, TRADER_HOUSE, 1
+	warp_event  9,  3, TRADER_HOUSE, 1 ; dereknote: this is the 14th warp event in this list
 
 	def_bg_events
 	bg_event 27, 15, TEXT_CELADONCITY_TRAINER_TIPS1
@@ -38,6 +38,7 @@ CeladonCity_Object:
 	bg_event 39, 21, TEXT_CELADONCITY_TRAINER_TIPS2
 	bg_event 33, 21, TEXT_CELADONCITY_PRIZEEXCHANGE_SIGN
 	bg_event 27, 21, TEXT_CELADONCITY_GAMECORNER_SIGN
+	bg_event  7,  3, TEXT_CELADONCITY_TRADER_HOUSE_SIGN
 
 	def_object_events
 	object_event  8, 17, SPRITE_LITTLE_GIRL, WALK, ANY_DIR, TEXT_CELADONCITY_LITTLE_GIRL

@@ -152,3 +152,7 @@ _CeladonCityGameCornerSignText::
 	line "The playground"
 	cont "for grown-ups!"
 	done
+
+_CeladonCityTraderHouseSignText::
+	text "TRADER's HOUSE"
+	done
