@@ -16,5 +16,5 @@ TradeMons:
 	db RAICHU,     ELECTRODE, TRADE_DIALOGSET_EVOLUTION, "DORIS@@@@@@"
 	db VENONAT,    TANGELA,   TRADE_DIALOGSET_HAPPY,     "CRINKLES@@@"
 	db NIDORAN_M,  NIDORAN_F, TRADE_DIALOGSET_HAPPY,     "SPOT@@@@@@@"
-	db NO_MON,	   NO_MON,	  TRADE_DIALOGSET_SELF,      "Unseen@@@@@"
+	db NO_MON,	   NO_MON,	  TRADE_DIALOGSET_SELF,      "Unseen@@@@@" ; dereknote: for TRADER NPC
 	assert_table_length NUM_NPC_TRADES
