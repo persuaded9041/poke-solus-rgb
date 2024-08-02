@@ -8,9 +8,9 @@ SafariZoneWestWildMons:
 	db 24, EXEGGCUTE
 	db 33, NIDORINO
 	db 33, NIDORINA
-	db 26, EXEGGCUTE
 	db 31, VENOMOTH
 	db 26, TAUROS
+	db 28, LICKITUNG ; dereknote: previously unobtainable pokemon
 	db 28, KANGASKHAN
 	end_grass_wildmons ; dereknote: version exclusives merged
 

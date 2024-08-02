@@ -11,7 +11,7 @@ SeafoamIslandsB3FWildMons:
 	db 39, SEADRA
 	db 39, KINGLER
 	db 37, DEWGONG
-	db 32, SEEL
+	db 29, SQUIRTLE ; dereknote: previously unavailable pokemon
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

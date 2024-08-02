@@ -10,7 +10,7 @@ RockTunnel1FWildMons:
 	db 17, MACHOP
 	db 13, ONIX
 	db 17, GEODUDE
-	db 17, GEODUDE
+	db 15, CHARMANDER ; dereknote: previously unavailable pokemon
 	db 15, ONIX
 	end_grass_wildmons
 

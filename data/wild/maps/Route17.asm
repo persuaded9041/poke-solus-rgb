@@ -7,10 +7,10 @@ Route17WildMons:
 	db 27, RATICATE
 	db 26, DODUO
 	db 28, DODUO
-	db 29, RATICATE
+	db 25, EEVEE ; dereknote: previously unobtainable pokemon
 	db 25, FEAROW
 	db 25, RATICATE
-	db 25, RATICATE
+	db 29, RATICATE
 	db 27, FEAROW
 	end_grass_wildmons
 

@@ -7,7 +7,7 @@ Route13WildMons:
 	db 22, ODDISH
 	db 22, BELLSPROUT
 	db 27, PIDGEY
-	db 22, VENONAT
+	db 28, FARFETCHD ; dereknote: previously unobtainable pokemon 
 	db 25, DITTO
 	db 26, VENONAT
 	db 30, GLOOM

@@ -10,7 +10,7 @@ VictoryRoad3FWildMons:
 	db 41, GOLBAT
 	db 42, MACHOKE
 	db 22, ZUBAT
-	db 22, ZUBAT
+	db 39, HITMONLEE ; dereknote: previously unobtainable pokemon
 	db 45, MACHOKE
 	end_grass_wildmons
 

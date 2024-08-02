@@ -7,7 +7,7 @@ Route21WildMons:
 	db 21, PIDGEY
 	db 30, PIDGEOTTO
 	db 32, PIDGEOTTO
-	db 28, TANGELA
+	db 28, MR_MIME ; dereknote: previously unobtainable pokemon
 	db 30, TANGELA
 	db 30, RATICATE
 	db 30, RATICATE

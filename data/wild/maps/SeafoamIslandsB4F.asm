@@ -11,7 +11,7 @@ SeafoamIslandsB4FWildMons:
 	db 39, GOLDUCK
 	db 39, SLOWBRO
 	db 32, GOLBAT
-	db 31, SEEL
+	db 29, SQUIRTLE ; dereknote: previously unavailable pokemon
 	end_grass_wildmons ; dereknote: version exclusives merged
 
 	def_water_wildmons 0 ; encounter rate

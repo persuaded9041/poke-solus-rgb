@@ -10,7 +10,7 @@ VictoryRoad2FWildMons:
 	db 40, GOLBAT
 	db 40, MAROWAK
 	db 26, ZUBAT
-	db 26, ZUBAT
+	db 39, HITMONCHAN ; dereknote: previously unobtainable pokemon
 	db 43, GRAVELER
 	end_grass_wildmons
 
