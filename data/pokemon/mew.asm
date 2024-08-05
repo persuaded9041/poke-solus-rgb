@@ -9,7 +9,7 @@
 ; http://iwataasks.nintendo.com/interviews/#/ds/pokemon/0/0
 
 MewPicFront:: INCBIN "gfx/pokemon/front_rg/mew.pic"
-MewPicBack::  INCBIN "gfx/pokemon/back/mewb.pic"
+MewPicBack::  INCBIN "gfx/pokemon/back_sw/mewb.pic"
 
 MewBaseStats::
 INCLUDE "data/pokemon/base_stats/mew.asm"
