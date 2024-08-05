@@ -7,7 +7,7 @@
 	db 30 ; catch rate
 	db 255 ; base exp
 
-	INCBIN "gfx/pokemon/front/chansey.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front_rg/chansey.pic", 0, 1 ; sprite dimensions
 	dw ChanseyPicFront, ChanseyPicBack
 
 	db POUND, DOUBLESLAP, NO_MOVE, NO_MOVE ; level 1 learnset

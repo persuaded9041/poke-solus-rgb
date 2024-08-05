@@ -7,7 +7,7 @@
 	db 50 ; catch rate
 	db 186 ; base exp
 
-	INCBIN "gfx/pokemon/front/alakazam.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front_y/alakazam.pic", 0, 1 ; sprite dimensions
 	dw AlakazamPicFront, AlakazamPicBack
 
 	db TELEPORT, CONFUSION, DISABLE, NO_MOVE ; level 1 learnset

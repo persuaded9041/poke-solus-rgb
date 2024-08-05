@@ -7,7 +7,7 @@
 	db 60 ; catch rate
 	db 207 ; base exp
 
-	INCBIN "gfx/pokemon/front/starmie.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front_rg/starmie.pic", 0, 1 ; sprite dimensions
 	dw StarmiePicFront, StarmiePicBack
 
 	db TACKLE, WATER_GUN, HARDEN, NO_MOVE ; level 1 learnset

@@ -7,7 +7,7 @@
 	db 45 ; catch rate
 	db 218 ; base exp
 
-	INCBIN "gfx/pokemon/front/dragonite.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front_y/dragonite.pic", 0, 1 ; sprite dimensions
 	dw DragonitePicFront, DragonitePicBack
 
 	db WRAP, LEER, THUNDER_WAVE, AGILITY ; level 1 learnset

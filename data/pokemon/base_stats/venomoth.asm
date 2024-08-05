@@ -7,7 +7,7 @@
 	db 75 ; catch rate
 	db 138 ; base exp
 
-	INCBIN "gfx/pokemon/front/venomoth.pic", 0, 1 ; sprite dimensions
+	INCBIN "gfx/pokemon/front_rg/venomoth.pic", 0, 1 ; sprite dimensions
 	dw VenomothPicFront, VenomothPicBack
 
 	db TACKLE, DISABLE, POISONPOWDER, LEECH_LIFE ; level 1 learnset
