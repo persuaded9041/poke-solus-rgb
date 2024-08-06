@@ -14,7 +14,7 @@ DontAbandonLearning:
 	ld a, [wWhichPokemon]
 	call AddNTimes
 		
-	;joenote - for field move slot
+	;dereknote - for field move slot
 	jp LearnToFieldSlot
 .back
 
@@ -236,7 +236,7 @@ LearnMoveYesNo:
 	call DisplayTextBoxID ; yes/no menu
 	ret
 
-;joenote - for field move slot
+;dereknote - for field move slot
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 LearnToFieldSlot:
 ;return z flag if not executed

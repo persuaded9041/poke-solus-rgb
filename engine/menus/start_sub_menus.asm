@@ -720,7 +720,7 @@ SwitchPartyMon_InitVarOrSwapData:
 	ld a, b
 	ld [wMenuItemToSwap], a
 
-	call SwapTempFieldMoves ;joenote - for field move slot
+	call SwapTempFieldMoves ;dereknote - for field move slot
 
 	push hl
 	push de
@@ -810,7 +810,7 @@ SwitchPartyMon_InitVarOrSwapData:
 	pop hl
 	ret
 
-SwapTempFieldMoves:	;joenote - for field move slot
+SwapTempFieldMoves:	;dereknote - for field move slot
 	push hl
 	push bc
 	push de

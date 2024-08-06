@@ -559,7 +559,7 @@ GetMonFieldMoves:
 .done
 	pop hl
 	ret
-.tempfieldmove	;joenote - for field move slot
+.tempfieldmove	;dereknote - for field move slot
 	ld a, d 
 	cp $FF
 	jr z, .done

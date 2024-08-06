@@ -1,5 +1,5 @@
 ; checks if the mon in [wWhichPokemon] already knows the move in [wMoveNum]
-;joenote - separated out the search from the text printing to make this more versatile
+;dereknote - separated out the search from the text printing to make this more versatile
 CheckIfMoveIsKnown:
 	call _CheckIfMoveIsKnown
 	ret nc

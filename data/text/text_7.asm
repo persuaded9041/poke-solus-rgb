@@ -224,7 +224,7 @@ _Thanks4Text::
 	cont "help again."
 	done
 
-;joenote - for field move slot
+;dereknote - for field move slot
 _LearnTempFieldMoveText::
 	text "Learn this as a"
 	line "temporary FIELD"

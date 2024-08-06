@@ -1707,7 +1707,7 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-wTempFieldMoveSLots:: db	;joenote - for field move slot
+wTempFieldMoveSLots:: db	;dereknote - for field move slot
 	ds 6
 
 wNumBagItems:: db

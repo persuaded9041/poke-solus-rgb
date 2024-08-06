@@ -1,5 +1,5 @@
 _RemovePokemon::
-	call ClearTempFieldMove ;joenote - for field move slot
+	call ClearTempFieldMove ;dereknote - for field move slot
 
 	ld hl, wPartyCount
 	ld a, [wRemoveMonFromBox]
@@ -98,7 +98,7 @@ _RemovePokemon::
 .copyUntilPartyMonNicksEnd
 	jp CopyDataUntil
 
-ClearTempFieldMove:	;joenote - for field move slot
+ClearTempFieldMove:	;dereknote - for field move slot
 	ld a, [wRemoveMonFromBox]
 	and a
 	ret nz 

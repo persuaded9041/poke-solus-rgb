@@ -310,7 +310,7 @@ StatusScreen2:
 	call CopyData
 	callfar FormatMovesString
 
-	call PlaceTempFieldMove	;joenote - for field move slot
+	call PlaceTempFieldMove	;dereknote - for field move slot
 
 	hlcoord 9, 2
 	lb bc, 5, 10
@@ -484,7 +484,7 @@ StatusScreen_PrintPP:
 	jr nz, StatusScreen_PrintPP
 	ret
 
-PlaceTempFieldMove:	;joenote - for field move slot
+PlaceTempFieldMove:	;dereknote - for field move slot
 	ld a, [wMonDataLocation]
 	cp PLAYER_PARTY_DATA
 	ret nz
