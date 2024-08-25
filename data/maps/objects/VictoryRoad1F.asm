@@ -14,6 +14,7 @@ VictoryRoad1F_Object:
 	warp_event  8, 17, LAST_MAP, 3
 	warp_event  9, 17, LAST_MAP, 3
 	warp_event  1,  1, VICTORY_ROAD_2F, 1
+	warp_event 16,  0, FOSSIL_ROOM, 1
 
 	def_bg_events
 
