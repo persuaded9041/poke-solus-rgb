@@ -1707,8 +1707,9 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-wTempFieldMoveSLots:: db	;dereknote - for field move slot
-	ds 6
+;dereknote - 7 bytes of space for field move slots
+;not sure if I need 6 or 7, so defining 7 and removing a `ds 7` later in this Section
+wTempFieldMoveSLots:: ds 7
 
 wNumBagItems:: db
 ; item, quantity
@@ -1867,7 +1868,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	ds 7
+	;ds 7 ;dereknote - removing this unused space to accommodate the added `ds 7` for wTempFieldMoveSlots above
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
