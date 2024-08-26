@@ -1,19 +1,19 @@
 # Pokémon Solus Red and Blue
 
-This is a ROM hack of Pokémon Red/Blue for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue](https://github.com/pret/pokered).
+This is a ROM hack of **Pokémon Red/Blue** for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed summary of all the changes in this ROM hack, check the [changelog][changelog].
 
 ## Table of Contents
 - [Description](#description)
-- [Installation and setup](#installation)
+- [Building the ROM](#building-the-rom)
 - [Resources](#resources)
 
 ## Description
 
-Solus Red/Blue is a near-vanilla ROM hack of Gen 1. It changes **only a few things**, without overhauling so much that the game ceases to be Gen 1, and the whole things becomes a Ship of Theseus paradox.
+**Pokémon Solus Red/Blue** is a near-vanilla ROM hack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
 
-So what things does this ROM hack change, and why?
+So what does this ROM hack change, and why?
 
 ### 1. All Pokémon obtainable in Red, Blue, or Green versions are obtainable through normal means
 
@@ -27,7 +27,7 @@ So what things does this ROM hack change, and why?
 - the Pokémon can be purchased
 - the Pokémon can be restored from a fossil
 
-This change allows for both a more "solo" experience of the game (not relying on trading to obtain certain Pokémon) and for a more diverse (and arguably "natural", in a Kantonian sense) selection when party building.
+This change allows for both a more "solo" experience of the game (not relying on trading to obtain certain Pokémon) and for a more diverse (and arguably "natural", in a Kantonian sense) selection of Pokémon when party building.
 
 ### 2. HMs can be taught to party Pokémon without using up one of the Pokémon's move slots
 
@@ -41,25 +41,36 @@ This change allows for more emphasis on a Pokémon's battle moveset.
 
 A small subset of the _actual_ bugs from the vanilla games are fixed.
 
-## Installation
+## Building the ROM
 
-Learn how to install prerequisites and compile the ROM in the [install guide][installation].
+If you're new to the **pokered** disassembly, learn how to install prerequisites and compile the ROM in the [install guide][installation].
+
+Otherwise, if your environment for compiling the vanilla ROM is already set up, the procedure here is the same. Just clone this repository, `cd` into it, and run `make`.
 
 ## Resources
 
+- The original [pokered][pokered] disassembly which this ROM hack is based on
 - Detailed [changelog][changelog] containing all of the changes made to the vanilla games
-- My original [design document][designdoc] for this project
+- My original [design document][designdoc] for this project (FYI: some things have changed since I wrote this)
 - My [justifications][justifications] for the changes I've made to the vanilla game
-- The [pokered disassembly wiki][wiki] which has many helpful tutorials on working with the assembly code, some of which were used for this project
-- [jojobear13][jojobear13]'s [shinpokered ROM hack][shinpokered] (thanks to him for the temporary Field Move implementation in his ROM hack)
+- The [pokered disassembly wiki][wiki] which has many helpful tutorials on working with the code, some of which were used for this project
+- [Shin Pokémon Red, Blue, Green ROM hack][shinpokered] (temporary Field Move implementation was taken from here)
+
+### Special Thanks
+
+Thank you to these individuals who were very helpful throughout my work on this project:
+- [jojobear13][jojobear13]
+- [Vortyne][Vortyne]
 
 
 
+[pokered]: https://github.com/pret/pokered
 [wiki]: https://github.com/pret/pokered/wiki
 [shinpokered]: https://github.com/jojobear13/shinpokered
-[designdoc]: DESIGN.md
-[changelog]: CHANGELOG.md
-[justifications]: JUSTIFICATIONS.md
+[designdoc]: docs/DESIGN.md
+[changelog]: docs/CHANGELOG.md
+[justifications]: docs/JUSTIFICATIONS.md
 [installation]: INSTALL.md
 [jojobear13]: https://github.com/jojobear13
+[Vortyne]: https://github.com/Vortyne
 
