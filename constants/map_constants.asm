@@ -261,7 +261,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const TRADE_CENTER,                   5,  4 ; $EF
 	map_const COLOSSEUM,                      5,  4 ; $F0
 	map_const UNUSED_MAP_F1,                  0,  0 ; $F1
-	map_const UNUSED_MAP_F2,                  0,  0 ; $F2
+	map_const MEW_ROOM,                       3,  4 ; $F2
 	map_const FOSSIL_ROOM,                    4,  6 ; $F3
 	map_const TRADER_HOUSE,                   4,  4 ; $F4
 	map_const LORELEIS_ROOM,                  5,  6 ; $F5

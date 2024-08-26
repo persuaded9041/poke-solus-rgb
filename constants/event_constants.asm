@@ -187,7 +187,8 @@
 	const_skip 40
 	const EVENT_GOT_TM35
 	const EVENT_BOUGHT_PORYGON ;dereknote - new event for Porygon salesman
-	const_skip 7 ; dereknote - decremented by 1 to make room for Porygon salesman event
+	const EVENT_BEAT_MEW ;dereknote - new event for Mew static battle
+	const_skip 6 ; dereknote - decremented by 2 to make room for Porygon salesman event and Beat Mew event
 	const EVENT_GAVE_FOSSIL_TO_LAB
 	const EVENT_LAB_STILL_REVIVING_FOSSIL
 	const EVENT_LAB_HANDING_OVER_FOSSIL_MON

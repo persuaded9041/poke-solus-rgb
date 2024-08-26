@@ -1707,10 +1707,6 @@ wPokedexOwnedEnd::
 wPokedexSeen:: flag_array NUM_POKEMON
 wPokedexSeenEnd::
 
-;dereknote - 7 bytes of space for field move slots
-;not sure if I need 6 or 7, so defining 7 and removing a `ds 7` later in this Section
-wTempFieldMoveSLots:: ds 7
-
 wNumBagItems:: db
 ; item, quantity
 wBagItems:: ds BAG_ITEM_CAPACITY * 2 + 1
@@ -1868,7 +1864,10 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-	;ds 7 ;dereknote - removing this unused space to accommodate the added `ds 7` for wTempFieldMoveSlots above
+;dereknote - 6 bytes of space needed for field move slots
+wTempFieldMoveSLots:: ds 6
+
+	ds 1 ;dereknote - decrementing this unused space from `ds 7` to `ds 1` to accommodate the added `ds 6` for wTempFieldMoveSlots above
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -1950,7 +1949,8 @@ wRoute8GateCurScript:: db
 	ds 1
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-	ds 1
+wMewRoomCurScript:: db
+	;ds 1 ;dereknote - removing this unused byte to make room for wMewRoomCurScript (which needs 1 byte)
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db

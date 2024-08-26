@@ -195,8 +195,9 @@ DEF SHOW EQU $15
 	const HS_SILPH_CO_11F_1                ; B7
 	const HS_SILPH_CO_11F_2                ; B8
 	const HS_SILPH_CO_11F_3                ; B9
-	const HS_FOSSIL_ROOM_HELIX_FOSSIL	   ; matches item order in hide_show_data.asm
-	const HS_FOSSIL_ROOM_DOME_FOSSIL	   ; matches item order in hide_show_data.asm
+	const HS_MEWROOM_MEW                   ; matches item order in hide_show_data.asm
+	const HS_FOSSIL_ROOM_HELIX_FOSSIL      ; matches item order in hide_show_data.asm
+	const HS_FOSSIL_ROOM_DOME_FOSSIL       ; matches item order in hide_show_data.asm
 	const HS_UNUSED_MAP_F4_1               ; BA XXX sprite doesn't exist
 	const HS_POKEMON_MANSION_2F_ITEM       ; BB X
 	const HS_POKEMON_MANSION_3F_ITEM_1     ; BC X
