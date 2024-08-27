@@ -1784,7 +1784,12 @@ wWarpEntries:: ds 32 * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 
-	ds 128
+	;ds 128
+	ds 121
+; dereknote - adding new labels here, and decrementing the `ds 128` above (by 7 total)
+wTempFieldMoveSLots:: ds 6 ;dereknote - 6 bytes of space needed for field move slots
+wMewRoomCurScript:: db ;dereknote - needs 1 byte
+; dereknote - end of new labels
 
 ; number of signs in the current map (up to 16)
 wNumSigns:: db
@@ -1864,10 +1869,7 @@ wPlayerCoins:: dw ; BCD
 wMissableObjectFlags:: flag_array $100
 wMissableObjectFlagsEnd::
 
-;dereknote - 6 bytes of space needed for field move slots
-wTempFieldMoveSLots:: ds 6
-
-	ds 1 ;dereknote - decrementing this unused space from `ds 7` to `ds 1` to accommodate the added `ds 6` for wTempFieldMoveSlots above
+	ds 7
 
 ; saved copy of SPRITESTATEDATA1_IMAGEINDEX (used for sprite facing/anim)
 wSavedSpriteImageIndex:: db
@@ -1949,8 +1951,7 @@ wRoute8GateCurScript:: db
 	ds 1
 wCinnabarIslandCurScript:: db
 wPokemonMansion1FCurScript:: db
-wMewRoomCurScript:: db
-	;ds 1 ;dereknote - removing this unused byte to make room for wMewRoomCurScript (which needs 1 byte)
+	ds 1 
 wPokemonMansion2FCurScript:: db
 wPokemonMansion3FCurScript:: db
 wPokemonMansionB1FCurScript:: db
