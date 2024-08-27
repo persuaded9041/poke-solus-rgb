@@ -70,6 +70,18 @@ _PewterCityYoungsterYoureATrainerFollowMeText::
 	cont "Follow me!"
 	done
 
+_PewterCityTraderTipperText::
+	text "I hear there's a"
+	line "guy who lives in"
+	cont "CELADON CITY who"
+	cont "will trade your"
+	cont "own #MON back"
+	cont "to you."
+
+	para "I wonder why he"
+	line "would do that?"
+	done
+
 _PewterCityYoungsterGoTakeOnBrockText::
 	text "If you have the"
 	line "right stuff, go"

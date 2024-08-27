@@ -4,6 +4,7 @@
 	const_export PEWTERCITY_SUPER_NERD1
 	const_export PEWTERCITY_SUPER_NERD2
 	const_export PEWTERCITY_YOUNGSTER
+	const_export PEWTERCITY_TRADER_TIPPER
 
 PewterCity_Object:
 	db $a ; border block
@@ -32,5 +33,6 @@ PewterCity_Object:
 	object_event 27, 17, SPRITE_SUPER_NERD, STAY, NONE, TEXT_PEWTERCITY_SUPER_NERD1
 	object_event 26, 25, SPRITE_SUPER_NERD, WALK, LEFT_RIGHT, TEXT_PEWTERCITY_SUPER_NERD2
 	object_event 35, 16, SPRITE_YOUNGSTER, STAY, DOWN, TEXT_PEWTERCITY_YOUNGSTER
+	object_event 31,  3, SPRITE_YOUNGSTER, STAY, ANY_DIR, TEXT_PEWTERCITY_TRADER_TIPPER ; dereknote - Trader House tipper NPC
 
 	def_warps_to PEWTER_CITY
