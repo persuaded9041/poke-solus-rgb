@@ -14,20 +14,20 @@ PrizeMenuMon1Entries:
 
 PrizeMenuMon1Cost:
 	bcd2 120
-	bcd2 500
+	bcd2 750
 	bcd2 2800
 	db "@"
 
 PrizeMenuMon2Entries:
 	db MR_MIME
-	db PORYGON
 	db EEVEE
+	db PORYGON
 	db "@"
 
 PrizeMenuMon2Cost:
 	bcd2 3333
-	bcd2 6500
 	bcd2 6666
+	bcd2 9999
 	db "@"
 
 PrizeMenuTMsEntries:
