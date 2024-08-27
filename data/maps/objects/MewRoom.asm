@@ -5,7 +5,7 @@ MewRoom_Object:
 	db $7d ; border block
 
 	def_warp_events
-	warp_event  3,  5, LAST_MAP, 2
+	warp_event  3,  5, POKEMON_MANSION_B1F, 2
 
 	def_bg_events
 
