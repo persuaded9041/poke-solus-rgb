@@ -152,3 +152,14 @@ _Route8UndergroundSignText::
 	line "CELADON CITY -"
 	cont "LAVENDER TOWN"
 	done
+
+_Route8TraderSignText::
+	text "Visit the TRADER!"
+
+	para "All your trading"
+	line "needs fulfilled!"
+
+	para "Located behind"
+	line "CELADON DEPT."
+	cont "STORE."
+	done

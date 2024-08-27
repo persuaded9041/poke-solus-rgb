@@ -21,6 +21,7 @@ Route8_Object:
 
 	def_bg_events
 	bg_event 17,  3, TEXT_ROUTE8_UNDERGROUND_SIGN
+	bg_event 55,  7, TEXT_ROUTE8_TRADER_SIGN ; dereknote - TRADER advertisement sign
 
 	def_object_events
 	object_event  8,  5, SPRITE_SUPER_NERD, STAY, RIGHT, TEXT_ROUTE8_SUPER_NERD1, OPP_SUPER_NERD, 3
