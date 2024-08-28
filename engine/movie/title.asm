@@ -128,6 +128,9 @@ ENDC
 IF DEF(_BLUE)
 	ld a, STARTER2 ; which Pokemon to show first on the title screen
 ENDC
+IF DEF(_GREEN)
+	ld a, STARTER3 ; which Pokemon to show first on the title screen
+ENDC
 	ld [wTitleMonSpecies], a
 	call LoadTitleMonSprite
 
@@ -394,9 +397,13 @@ CopyrightTextString:
 
 INCLUDE "data/pokemon/title_mons.asm"
 
-; prints version text (red, blue)
+; prints version text (red, blue, green)
 PrintGameVersionOnTitleScreen:
-	hlcoord 7, 8
+	IF DEF(_GREEN)
+		hlcoord 6, 8 ; version text needs to be slightly moved to the left due to the larger length of "Green Version"
+	ELSE
+		hlcoord 7, 8
+	ENDC
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
@@ -407,6 +414,9 @@ IF DEF(_RED)
 ENDC
 IF DEF(_BLUE)
 	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
+ENDC
+IF DEF(_GREEN)
+	db $62,$63,$64,$7F,$65,$66,$67,$68,$69,"@" ; "Green Version"
 ENDC
 
 DebugNewGamePlayerName:
