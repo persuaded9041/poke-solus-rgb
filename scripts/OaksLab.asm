@@ -971,12 +971,62 @@ OaksLabOak1Text:
 	call CountSetBits
 	ld a, [wNumSetBits]
 	cp 2
-	jr c, .check_for_poke_balls
+	jp c, .check_for_poke_balls
 	CheckEvent EVENT_GOT_POKEDEX
-	jr z, .check_for_poke_balls
+	jp z, .check_for_poke_balls
 .already_got_poke_balls
 	ld hl, .HowIsYourPokedexComingText
 	call PrintText
+;;;;;;;;;;;;;;;;;;;;;;;;
+; dereknote - prof oak battle (taken from shinpokemon)
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL	;has elite 4 been beaten?
+	jr z, .dex_check	;if no then leave this section and do the pokedex check like normal
+	call YesNoChoice	;else call a yes/no choice box
+	ld a, [wCurrentMenuItem]	;load the player choice
+	and a	;check the player choice
+	jr z, .dex_check	;if yes, then check the pokedex like normal
+	ld hl, .OaksLabChallengeText	;else ask if you want to challenge prof oak
+	call PrintText	;print the challenge text
+	call YesNoChoice	;prompt a yes/no choice
+	ld a, [wCurrentMenuItem]	;load the player choice
+	and a	;check the player choice
+	jp nz, .come_see_me_sometimes	;if no, jump to generic text about coming to visit and end the conversation
+	;otherwise begin loading battle
+	ld hl, .OaksLabPrebattleText	;load oak's pre battle text
+	call PrintText	;print the pre battle text
+	ld hl, wCableClubDestinationMap ;set the bits for triggering battle
+	set 6, [hl]	;
+	set 7, [hl]	;
+	ld hl, .OaksLabVictoryText	;load text for when you win
+	ld de, .OaksLabVictoryText	;load text for when you lose
+	call SaveEndBattleTextPointers	;save the win/lose text
+	ld a, $8
+	ld [wGymLeaderNo], a	;set bgm to gym leader music
+	ld a, OPP_PROF_OAK	;load the trainer type
+	ld [wCurOpponent], a	;set as the current opponent
+	; select oak's team based on the starter chosen
+	ld a, [wRivalStarter]
+	cp STARTER2	;did rival choose squirtle?
+	jr nz, .NotStarter2
+	ld a, $2 	;then oak has venusaur
+	jr .team_selected
+.NotStarter2
+	cp STARTER3	;did rival choose bulbasaur?
+	jr nz, .NotStarter3 
+	ld a, $3 	;then oak has charizard
+	jr .team_selected
+.NotStarter3	;rival chose charmander
+	ld a, $1 	;then oak has blastoise	
+.team_selected
+	ld [wTrainerNo], a	;load oak's team
+	xor a
+	ld [hJoyHeld], a
+	ld a, $13
+	ld [wOaksLabCurScript], a
+	ld [wCurMapScript], a
+	jp TextScriptEnd
+.dex_check
+;;;;;;;;;;;;;;;;;;;;;;;;
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	predef DisplayDexRating
@@ -1068,6 +1118,20 @@ OaksLabOak1Text:
 .HowIsYourPokedexComingText:
 	text_far _OaksLabOak1HowIsYourPokedexComingText
 	text_end
+;;;;;;;;
+; dereknote - text for oak battle
+.OaksLabChallengeText:
+	text_far _OaksLabChallengeText
+	text_end
+
+.OaksLabPrebattleText:
+	text_far _OaksLabPrebattleText
+	text_end
+	
+.OaksLabVictoryText:
+	text_far _OaksLabVictoryText
+	text_end
+;;;;;;;;
 
 OaksLabPokedexText:
 	text_asm

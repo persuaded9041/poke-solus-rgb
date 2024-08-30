@@ -362,3 +362,59 @@ _OaksLabScientistText::
 	text "I study #MON as"
 	line "PROF.OAK's AIDE."
 	done
+
+;;;;;;;;
+; dereknote - text for oak battle
+_OaksLabChallengeText::
+	text "Oh! <PLAYER>!"
+	line "You've become the"
+	cont "#MON LEAGUE"
+	cont "champion?"
+
+	para "I am quite"
+	line "impressed!"
+	cont "I knew you were"
+	cont "a talented"
+	cont "#MON trainer!"
+
+	para "You know..."
+	line "In my youth, I"
+	cont "was quite the"
+	cont "#MON trainer"
+	cont "as well!"
+
+	para "How about facing"
+	line "me in a battle?"
+	done
+
+_OaksLabPrebattleText::
+	text "It's been a long"
+	line "time since I've"
+	cont "had a proper"
+	cont "battle."
+
+	para "This old man"
+	line "could use a"
+	cont "break from his"
+	cont "studies!"
+	
+	para "Now..."
+	line "Show me what"
+	cont "you've learned"
+	cont "since the day you"
+	cont "set out on your"
+	cont "journey!"
+	done
+	
+_OaksLabVictoryText::
+	text "Haha!"
+	line "Wonderful!"
+
+	para "Splendid battle,"
+	line "<PLAYER>!"
+	
+	para "I'd forgotten how"
+	line "exciting battling"
+	cont "can be!"
+	done
+;;;;;;;;
