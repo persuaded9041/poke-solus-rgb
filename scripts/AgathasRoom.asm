@@ -130,6 +130,10 @@ AgathasRoomTrainerHeader0:
 
 AgathasRoomAgathaText:
 	text_asm
+	;;;;;;;;;; dereknote: makes the battle music the gym leader theme instead of the normal battle theme
+	ld a, 11
+	ld [wGymLeaderNo], a
+	;;;;;;;;;;
 	ld hl, AgathasRoomTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd

@@ -127,6 +127,10 @@ BrunosRoomTrainerHeader0:
 
 BrunosRoomBrunoText:
 	text_asm
+	;;;;;;;;;; dereknote: makes the battle music the gym leader theme instead of the normal battle theme
+	ld a, 10
+	ld [wGymLeaderNo], a
+	;;;;;;;;;;
 	ld hl, BrunosRoomTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
