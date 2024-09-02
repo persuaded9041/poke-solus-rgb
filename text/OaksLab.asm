@@ -416,5 +416,9 @@ _OaksLabVictoryText::
 	para "I'd forgotten how"
 	line "exciting battling"
 	cont "can be!"
+
+	; dereknote - empty paragraph here prevents the previous line from being auto-advanced right before the prize money text shows up
+	; not sure why that happens but this seems to be a good workaround
+	para ""
 	done
 ;;;;;;;;
