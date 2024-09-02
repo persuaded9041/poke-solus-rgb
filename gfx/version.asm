@@ -1,8 +1,11 @@
 Version_GFX:
-IF (DEF(_RED) || DEF(_GREEN))
-	INCBIN "gfx/title/red_version.1bpp" ; 10 tiles
+IF DEF(_RED)
+	INCBIN "gfx/title/solus_red.1bpp" ; 5 tiles
+ENDC
+IF DEF(_GREEN)
+	INCBIN "gfx/title/solus_green.1bpp" ; 6 tiles
 ENDC
 IF DEF(_BLUE)
-	INCBIN "gfx/title/blue_version.1bpp" ; 8 tiles
+	INCBIN "gfx/title/solus_blue.1bpp" ; 6 tiles
 ENDC
 Version_GFXEnd:

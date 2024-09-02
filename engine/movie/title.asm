@@ -399,24 +399,20 @@ INCLUDE "data/pokemon/title_mons.asm"
 
 ; prints version text (red, blue, green)
 PrintGameVersionOnTitleScreen:
-	IF DEF(_GREEN)
-		hlcoord 6, 8 ; version text needs to be slightly moved to the left due to the larger length of "Green Version"
-	ELSE
-		hlcoord 7, 8
-	ENDC
+	hlcoord 7, 8
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:
 IF DEF(_RED)
-	db $60,$61,$7F,$65,$66,$67,$68,$69,"@" ; "Red Version"
+	db $60,$61,$62,$7F,$63,$64,"@" ; "Solus Red"
 ENDC
 IF DEF(_BLUE)
-	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
+	db $60,$61,$62,$7F,$63,$64,$65,"@" ; "Solus Blue"
 ENDC
 IF DEF(_GREEN)
-	db $62,$63,$64,$7F,$65,$66,$67,$68,$69,"@" ; "Green Version"
+	db $60,$61,$62,$7F,$63,$64,$65,"@" ; "Solus Green"
 ENDC
 
 DebugNewGamePlayerName:
