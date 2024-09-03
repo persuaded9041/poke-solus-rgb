@@ -1,8 +1,8 @@
-# Pokémon Solus Red, Solus Green, and Solus Blue
+# Pokémon Solus RGB
 
-SolusRGB a romhack of Pokémon Red/Blue for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
+A romhack of Pokémon Red/Blue for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
 
-For a detailed summary of all the changes in this romhack, check the [feature log][featurelog].
+For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
 
 ## Table of Contents
 - [Description](#description)
@@ -11,7 +11,7 @@ For a detailed summary of all the changes in this romhack, check the [feature lo
 
 ## Description
 
-**Pokémon Solus Red/Green/Blue** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
+**Pokémon Solus RGB** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
 
 ### Versions
 [Compiling this project](#building-the-roms) will yield three ROMs:
@@ -29,14 +29,14 @@ Solus Green is inspired by the original Japanese release of Green. The differenc
 "Normal means" are one of the following:
 - the Pokémon can be caught in the wild
 - the Pokémon can be evolved into
-    - in the case of trade evolutions, they are evolvable via a "Tradeback NPC" (i.e. no reliance on real-life Link Cable trading)
+    - in the case of trade evolutions, they are evolvable via a "trade-back NPC" (i.e. no reliance on real-life Link Cable trading)
 - the Pokémon can be found in a Poké Ball in the overworld
 - the Pokémon can be battled (and caught) via interacting with its sprite in the overworld
 - the Pokémon can be gifted to the player
 - the Pokémon can be purchased
 - the Pokémon can be restored from a fossil
 
-This change allows for both a more "solo" experience of the game (not relying on trading to obtain certain Pokémon) and for a more diverse (and arguably "natural", in a Kantonian sense) selection of Pokémon when party building.
+This change allows for both a more enhanced "solo" experience of the game (not needing to rely on trading to obtain certain Pokémon) and for a more diverse (and arguably "natural", in a Kantonian sense) selection of Pokémon when party building.
 
 #### 2. HMs can be taught to party Pokémon without using up one of their move slots
 
@@ -58,7 +58,7 @@ A small subset of the bugs/oversights from the vanilla games are fixed. Visit th
 
 ## Building the ROMs
 
-If you're new to the **pokered** disassembly, learn how to install prerequisites and compile the ROM in the [install guide][installation].
+If you're new to the `pokered` disassembly, learn how to install prerequisites and compile the ROM in the [install guide][installation].
 
 Otherwise, if your environment for compiling the vanilla ROMs is already set up, the procedure here is the same. Just clone this repository, `cd` into it, and run `make`.
 
@@ -86,7 +86,7 @@ Thank you to the entire [pret Discord server][pretdiscord] and these individuals
 [designdoc]: docs/DESIGN.md
 [featurelog]: docs/FEATURES.md
 [newcontent]: docs/FEATURES.md#new-content
-[installation]: INSTALL.md
+[installation]: docs/INSTALL.md
 [polishedmap]: https://github.com/Rangi42/polished-map
 [jojobear13]: https://github.com/jojobear13
 [Vortyne]: https://github.com/Vortyne

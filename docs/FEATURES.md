@@ -1,9 +1,9 @@
-# SolusRGB: Feature Log
-This file details all the changes the SolusRGB romhack makes to the vanilla Pokémon Red/Blue games.
+# Pokémon Solus RGB: Feature Log
+This file details all the changes the Pokémon Solus RGB romhack makes to the vanilla Pokémon Red/Blue games.
 
 _Disclaimer_: The decisions made were inspired by _my idea_ of what a "better" version of Gen 1 would look like. It's mostly logical changes, with a sprinkling of my personal preferences on top (such as changing some battle sprites to ones from other Gen 1 games). I also didn't want to go overboard fixing bugs. A lot of them can be seen as contributing to what makes Gen 1 special. All of this to say: you might not agree with some of my decisions!
 
-_Note_: While this romhack takes minimal "creative liberty" and doesn't add _too many_ new things, the entirety of this document can still be considered a spoiler. If you don't want to be spoiled to any of the changes, then don't read this document.
+_Note_: While this romhack takes minimal creative liberties and doesn't add _too many_ new things, the entirety of this document can still be considered a spoiler. If you don't want to be spoiled to any of the changes, then don't read this document.
 
 ## Table of Contents
 - [Justifications](#justifications)
@@ -11,13 +11,12 @@ _Note_: While this romhack takes minimal "creative liberty" and doesn't add _too
     - [Palette](#palette)
     - [Title screen](#title-screen)
     - [Battle sprites](#battle-sprites)
-    - [Encounter rates](#encounter-rates)
+    - [Wild encounters](#wild-encounters)
     - [Game Corner](#game-corner)
     - [Music](#music)
     - [Vanilla bugfixes](#vanilla-bugfixes)
 - [New content](#new-content)
     - [New features](#new-features-that-were-not-in-the-vanilla-games)
-    - [New NPCs and signs](#new-npcs-and-signs)
     - [Restored cut content](#cut-content-that-has-been-restored)
 
 ## Justifications
@@ -44,7 +43,7 @@ Charmander | added to both floors of Rock Tunnel @ 1% (similar to LGPE)
 Fossils (Dome/Helix) | added 2 additional fossils in Victory Road because it's late enough in the game that you wouldn't be able to use them for your main party
 Eevee | added to Route 17 @ 5% (similar to LGPE)
 Porygon | added a scientist who works for Pokémon Lab on Cinnabar Island who sells you one for 10,000p "illegally" (this is where Porygon was created originally); The price was determined because it's _around_ 10% (a bit less) of the Game Corner cost after doing coin conversion if you use the 6500c price (6,500 coins @ 1,000p per 50c = 130,000p x 10% = 13,000p).
-Mew | added a static encounter in a new room of Cinnabar Lab basement (technically B2F); The thematic reasoning is a bit ambiguous... it could be interpreted as Mew "coming back" to the building where its DNA was used to create Mewtwo, in order to find Mewtwo... or it could be seen as the "original" Mew that was used for experimentation (whether Mew was ever present in this building or if DNA was taken from the jungle is not clear in the lore) now hiding somewhere in this building. The new room's entrance is surrounded by rocks as if a hole was broken in the floor by Mew.
+Mew | added a static encounter in a new room of Cinnabar Lab basement (technically B2F); The thematic reasoning is a bit ambiguous... it could be interpreted as Mew "coming back" to the building where its DNA was used to create Mewtwo, in order to find Mewtwo... or it could be seen as the "original" Mew that was used for experimentation (whether Mew was ever present in this building or if DNA was taken from the jungle is not clear in the lore) now hiding somewhere in this building. The new room's entrance is surrounded by rocks as if a hole was broken in the floor by Mew. It's level 30 (like in Emerald).
 
 Why did you think it was OK to change the Game Corner prize window Pokémon?
 > Since all version-exclusive Pokémon appearances in the game were merged, I also removed the version-exclusives in the Game Corner. Their locations
@@ -55,7 +54,7 @@ Why did you think it was OK to change the Game Corner prize window Pokémon?
 > I also view obtaining Pokémon at the Game Corner as kind of an "extra" method (aside from Porygon in the original games). For that reason, I didn't think changing the layout of the prize windows was too detrimental to the Game Corner's role.
 
 Why did you change the battle sprites?
-> I think the "best" battle sprite for some of the original 151 Pokémon exist in the other Gen 1 releases. For this reason, I looked at each sprite (from Red/Blue, Yellow, or JPN Red/Green) and chose my favorite sprite for each Pokémon. Those picks are the ones I decided to use for SolusRGB. So yes, this was subjective. If you disagree with some of the choices, feel free to clone the repo and change them for yourself. :)
+> I think the "best" battle sprite for some of the original 151 Pokémon exist in the other Gen 1 releases. For this reason, I looked at each sprite (from Red/Blue, Yellow, or JPN Red/Green) and chose my favorite sprite for each Pokémon. Those picks are the ones I decided to use for Solus RGB. So yes, this was subjective. If you disagree with some of the choices, feel free to clone the repo and change them for yourself. :)
 
 ## Changes and fixes
 ### Palette
@@ -157,9 +156,11 @@ Venonat, Venomoth | Red/Green (JPN)
 Vulpix, Ninetales | Yellow
 Porygon | Red/Green (JPN)
 
-### Encounter rates
-- 10 to 12
-- merge version diffs
+### Wild encounters
+- Maps which had version-exclusive Pokémon have been "merged", i.e., adjusted so that both (or all, if a map had multiple) version-exclusive Pokémon are available in that map. In these cases, occassionally, liberties needed to be taken to ensure a Pokémon could fit into the maps maximum encounter slots. I chose to prioritize keeping all of the Pokémon in that map rather than maintaining the encounter rates for certain Pokémon, so sometimes a Pokémon's encounter rate has been adjusted slightly.
+- The number of wild encounters slots per route has been changed from 10 to 12, in order to make room for those maps which needed an extra slot to accommodate the opposite version's exclusive Pokémon. For the maps which didn't need any adjusting for version exclusives, I simply took the 3rd slot (previously 15%, but dropped by 5% to 10%) and copied that Pokémon into the new 2nd-to-last and 3rd-to-last slots
+(4% and 1% respectively). This means the distributions are almost identical to the originals, +/- a fraction of a %.
+
 
 ### Game Corner
 The Game Corner prize windows have been changed. The tables below reflect these changes.
@@ -196,15 +197,38 @@ Porygon | 20 | 9999
 
 ## New content
 ### New features that were not in the vanilla games
-- TODO: explain field move slots
-- TODO: trader house
-- porygon salesman
-- mew room
-### New NPCs and signs
-- Pewter boy who hints at trader
-- Trader sign ad
+1. **Field move slots**
+    - HMs, as well as TMs 28 (Dig) and 30 (Teleport), can be taught to a party Pokémon in a separate "Field Move" slot.
+    - Those two TMs which act as Field Moves will not be consumed when used (but all other TMs will be).
+    - When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known per Pokémon).
+    - When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased.
+
+2. **The Trader**
+    - A new NPC who lives in a new house behind Celadon Dept. Store.
+    - He will trade you back any of your Pokémon, for the purpose of evolving any of the four trade evolutions.
+    - Only a single trade animation will play (not two one after the other).
+    - Another new NPC, a boy in Pewter City, will hint at the Trader's location.
+    - A new sign on Route 8, just outside of Lavender Town, will further advertise the Trader's services and location.
+
+3. **Porygon salesman**
+    - A scientist in the lobby of Pokémon Lab on Cinnabar Island will offer to sell you a Porygon for 10,000p. He shouldn't be selling it to you, so he does it in secrecy (even though he's being quite conspicuous in the lobby). 
+
+4. **Victory road fossil room**
+    - A new basement room of Victory Road (B1F) holds two more fossils: a Helix Fossil and a Dome Fossil.
+    - This allows you to get both fossils in the late game, so you can complete the Pokédex but you're still restricted to using only one of the two fossil Pokémon in your main party.
+
+5. **Mew battle**
+    - Mew is battleable as a static sprite in a new basement room of Cinnabar Mansion (B2F).
+    - It's level 30.
+    - The entrance to its room is surrounded by rocks, as if Mew broke a hole in the floor.
+
 ### Cut content that has been restored
-- oak
+1. **Prof. Oak battle**
+    - Prof. Oak acts as a very strong end game opponent (akin to Red in Mt. Silver at the end of Gold/Silver).
+    - His trainer data exists in the game's code, but goes unused in the vanilla games. Based on the player's starter Pokémon pick, Oak's party will vary (his party features the final, unpicked starter).
+    - Battle dialogue for Oak is not present in the code; it was written by me.
+    - After beating the Pokémon League, talk to Oak in his lab and decline his Pokédex evaluation offer. He will then offer to battle you.
+    - You can battle him as many times as you'd like.
 
 
 
