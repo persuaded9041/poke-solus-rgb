@@ -2246,9 +2246,11 @@ ItemUseTMHM:
 	ld a, b
 	and a
 	ret z
-	xor a
-	cp c
-	ret c	;treat learning a field move from a TM the same as a HM
+	;;;;;;;;;; dereknote - these three lines would treat learning a field move from a TM the same as a HM, meaning TMs wouldn't get depleted
+	;xor a
+	;cp c
+	;ret c
+	;;;;;;;;;;
 	ld a, [wcf91]
 	call IsItemHM
 	ret c

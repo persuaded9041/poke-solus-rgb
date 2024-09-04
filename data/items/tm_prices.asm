@@ -28,9 +28,9 @@ TechnicalMachinePrices:
 	nybble 5 ; TM25
 	nybble 4 ; TM26
 	nybble 5 ; TM27
-	nybble 2 ; TM28
+	nybble 2 ; TM28 dereknote - DIG
 	nybble 4 ; TM29
-	nybble 1 ; TM30
+	nybble 1 ; TM30 dereknote - TELEPORT
 	nybble 2 ; TM31
 	nybble 1 ; TM32
 	nybble 1 ; TM33
