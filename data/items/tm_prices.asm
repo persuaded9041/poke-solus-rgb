@@ -41,7 +41,7 @@ TechnicalMachinePrices:
 	nybble 5 ; TM38
 	nybble 2 ; TM39
 	nybble 4 ; TM40
-	nybble 2 ; TM41
+	nybble 2 ; TM41 dereknote - SOFTBOILED
 	nybble 2 ; TM42
 	nybble 5 ; TM43
 	nybble 2 ; TM44
