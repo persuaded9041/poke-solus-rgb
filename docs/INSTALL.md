@@ -1,6 +1,6 @@
-# Pokémon Solus RGB: Installation Instructions
+# Pokémon Solus RGB: Installation Guide
 
-These instructions explain how to set up the tools required to build **Pokémon Solus RGB**, including [rgbds](https://github.com/gbdev/rgbds), which assembles the source files into three ROMs:
+This guide explains how to set up the tools required to build **Pokémon Solus RGB**, including [rgbds](https://github.com/gbdev/rgbds), which assembles the source files into three ROMs:
 
 - `pokered.gbc`
 - `pokegreen.gbc`

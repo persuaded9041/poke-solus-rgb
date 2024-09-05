@@ -1,26 +1,36 @@
 # Pokémon Solus RGB
 
+<p align="center">
+<img src="screenshots/solusred.bmp">
+<img src="screenshots/solusgreen.bmp">
+<img src="screenshots/solusblue.bmp">
+</p>
+
 A romhack of Pokémon Red/Blue for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
 
 ## Table of Contents
+- [Versions](#versions)
 - [Description](#description)
 - [Building the ROMs](#building-the-roms)
 - [Resources](#resources)
 
-## Description
+## Versions
 
-**Pokémon Solus RGB** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
+There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus Blue_. The differences between versions are solely cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability. For a complete list of version differences, check the ["Version differences" section of the feature log][versiondifferences].
 
-### Versions
-[Compiling this project](#building-the-roms) will yield three ROMs:
+[Assembling the source code](#building-the-roms) will yield three ROMs:
 
 - Solus Red (`pokered.gbc`)
 - Solus Green (`pokegreen.gbc`)
 - Solus Blue (`pokeblue.gbc`)
 
-Solus Green is inspired by the original Japanese release of Green. The differences between versions are only cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability.
+_A note about hardware palettes_: Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was specifically intended for the Japanese release of Pokémon Green Version. (The same goes for Red and Blue: you will see their mostly-red or mostly-blue Game Boy Color palettes.) If played on Super Game Boy, the palette used for title screen, SGB border, and Game Corner slots will all be version-specific corresponding to Red, Green, or Blue versions.
+
+## Description
+
+**Pokémon Solus RGB** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
 
 ### What does this romhack change, and why?
 
@@ -29,7 +39,7 @@ Solus Green is inspired by the original Japanese release of Green. The differenc
 "Normal means" are one of the following:
 - the Pokémon can be caught in the wild
 - the Pokémon can be evolved into
-    - in the case of trade evolutions, they are evolvable via a "trade-back NPC" (i.e. no reliance on real-life Link Cable trading)
+    - in the case of a trade evolution, the Pokémon is evolvable via a "trade-back NPC" (i.e. no reliance on real-life Link Cable trading)
 - the Pokémon can be found in a Poké Ball in the overworld
 - the Pokémon can be battled (and caught) via interacting with its sprite in the overworld
 - the Pokémon can be gifted to the player
@@ -40,11 +50,11 @@ This change allows for both a more enhanced "solo" experience of the game (not n
 
 #### 2. HMs can be taught to party Pokémon without using up one of their move slots
 
-HMs, as well as TMs 28 (Dig) and 30 (Teleport), can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known per Pokémon). On a related note, those two TMs which act as Field Moves will not be consumed when used (but all other TMs will be).
+HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known at a time per Pokémon). Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
 
-When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased.
+When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased. Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
 
-This change allows for more emphasis on a Pokémon's battle moveset.
+Field Moves allow for more emphasis on a Pokémon's battle moveset.
 
 #### 3. Some new content is added, and some visual content is changed
 
@@ -58,7 +68,7 @@ A small subset of the bugs/oversights from the vanilla games are fixed. Visit th
 
 ## Building the ROMs
 
-If you're new to the `pokered` disassembly, learn how to install prerequisites and compile the ROM in the [install guide][installation].
+If you're new to the [`pokered`][pokered] disassembly, learn how to install prerequisites and assemble the ROMs in the [install guide][installation].
 
 Otherwise, if your environment for compiling the vanilla ROMs is already set up, the procedure here is the same. Just clone this repository, `cd` into it, and run `make`.
 
@@ -86,6 +96,7 @@ Thank you to the entire [pret Discord server][pretdiscord] and these individuals
 [designdoc]: docs/DESIGN.md
 [featurelog]: docs/FEATURES.md
 [newcontent]: docs/FEATURES.md#new-content
+[versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
 [polishedmap]: https://github.com/Rangi42/polished-map
 [jojobear13]: https://github.com/jojobear13
