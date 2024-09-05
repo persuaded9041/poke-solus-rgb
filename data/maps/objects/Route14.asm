@@ -17,6 +17,7 @@ Route14_Object:
 
 	def_bg_events
 	bg_event 17, 13, TEXT_ROUTE14_SIGN
+	bg_event 11, 45, TEXT_ROUTE14_TM_SIGN ; dereknote - TM28, TM30, TM41 now sold at CELADON DEPT. STORE ad
 
 	def_object_events
 	object_event  4,  4, SPRITE_COOLTRAINER_M, STAY, DOWN, TEXT_ROUTE14_COOLTRAINER_M1, OPP_BIRD_KEEPER, 14

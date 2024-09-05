@@ -26,6 +26,7 @@ Route14_TextPointers:
 	dw_const Route14Biker3Text,        TEXT_ROUTE14_BIKER3
 	dw_const Route14Biker4Text,        TEXT_ROUTE14_BIKER4
 	dw_const Route14SignText,          TEXT_ROUTE14_SIGN
+	dw_const Route14TmSignText,        TEXT_ROUTE14_TM_SIGN ; dereknote - TM28, TM30, TM41 now sold at CELADON DEPT. STORE ad ; dereknote - TRADER advertisement sign
 
 Route14TrainerHeaders:
 	def_trainers
@@ -233,4 +234,8 @@ Route14Biker4AfterBattleText:
 
 Route14SignText:
 	text_far _Route14SignText
+	text_end
+
+Route14TmSignText:
+	text_far _Route14TmSignText
 	text_end

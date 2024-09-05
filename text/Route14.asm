@@ -171,3 +171,13 @@ _Route14SignText::
 	line "West to FUCHSIA"
 	cont "CITY"
 	done
+
+_Route14TmSignText::
+	text "TM28, TM30, and"
+	line "TM41 are now"
+	cont "available at"
+	cont "CELADON DEPT."
+	cont "STORE!"
+
+	para "Get yours today!"
+	done
