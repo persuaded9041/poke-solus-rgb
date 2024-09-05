@@ -54,7 +54,7 @@ HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taugh
 
 When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased. Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
 
-Field Moves allow for more emphasis on a Pokémon's battle moveset.
+Field Moves allow for more emphasis on a Pokémon's battle moveset, and mitigate the need for HM Slaves.
 
 #### 3. Some new content is added, and some visual content is changed
 
@@ -79,7 +79,8 @@ Otherwise, if your environment for compiling the vanilla ROMs is already set up,
 - My original [design document][designdoc] for this project (FYI: some things have changed since I wrote this)
 - The [pokered wiki][wiki] which has many helpful tutorials on working with the source code, some of which were used for this project
 - The [pret Discord server][pretdiscord]
-- [Shin Pokémon romhack][shinpokered] (temporary Field Move implementation was taken from here)
+- [Shin Pokémon romhack][shinpokered] (Field Move slot implementation was taken from here)
+- [pokeworld][pokeworld]: a very helpful tool for visualizing the entire Kanto map
 - [Polished Map map/tileset editor][polishedmap]
 
 ## Credits
@@ -98,6 +99,7 @@ Thank you to the entire [pret Discord server][pretdiscord] and these individuals
 [newcontent]: docs/FEATURES.md#new-content
 [versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
+[pokeworld]: https://www.extratricky.com/pokeworld/rb/1
 [polishedmap]: https://github.com/Rangi42/polished-map
 [jojobear13]: https://github.com/jojobear13
 [Vortyne]: https://github.com/Vortyne

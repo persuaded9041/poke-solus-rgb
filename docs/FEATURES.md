@@ -43,7 +43,7 @@ Hitmon[chan/lee] | added Hitmonchan to Victory Road 2F and Hitmonlee to Victory 
 Bulbasaur | added to Viridian Forest @ 1% (similar to LGPE)
 Squirtle | added to Seafoam Islands B3F and B4F @ 1% (similar to LGPE) because those 2 maps are the ones with water
 Charmander | added to both floors of Rock Tunnel @ 1% (similar to LGPE)
-Fossils (Dome/Helix) | added 2 additional fossils in Victory Road because it's late enough in the game that you wouldn't be able to use them for your main party
+Omanyte/Kabuto | added 2 additional fossils (1 Helix and 1 Dome) in Victory Road because it's late enough in the game that it would prevent you from using them in your main party
 Eevee | added to Route 17 @ 5% (similar to LGPE)
 Porygon | added a scientist who works for Pokémon Lab on Cinnabar Island who sells you one for 10000p "illegally" (this is where Porygon was created originally); The price was determined because it's _around_ 10% (a bit less) of the Game Corner cost after doing coin conversion if you use the 6500c price (6500 coins @ 1000p per 50c = 130000p x 10% = 13000p).
 Mew | added a static encounter in a new room of Cinnabar Lab basement (technically B2F); The thematic reasoning is a bit ambiguous... it could be interpreted as Mew "coming back" to the building where its DNA was used to create Mewtwo, in order to find Mewtwo... or it could be seen as the "original" Mew that was used for experimentation (whether Mew was ever present in this building or if DNA was taken from the jungle is not clear in the lore) now hiding somewhere in this building. The new room's entrance is surrounded by rocks as if a hole was broken in the floor by Mew. It's level 30 (like in Emerald).
@@ -227,6 +227,7 @@ Porygon | 20 | 9999
         - TM28 (Dig): 2000p
         - TM30 (Teleport): 1000p
         - TM41 (Softboiled): 2000p
+    - A new sign on Route 14, east of Fuchsia City, advertises these three TMs for sale at Celadon Dept. Store. Notably, there was already a trainer on this route who mentions TMs being on sale in Celadon.
     
 
 2. **The Trader**
@@ -235,7 +236,7 @@ Porygon | 20 | 9999
     - He will trade you back any of your Pokémon, for the purpose of evolving any of the four trade evolutions.
     - Only a single trade animation will play (not two one after the other).
     - Another new NPC, a boy in Pewter City, will hint at the Trader's location.
-    - A new sign on Route 8, just outside of Lavender Town, will further advertise the Trader's services and location.
+    - A new sign on Route 8, just outside of Lavender Town, further advertises the Trader's services and location.
 
 3. **Porygon salesman**
 
@@ -260,7 +261,14 @@ Porygon | 20 | 9999
     - Battle dialogue for Oak is not present in the code; it was written by me.
     - After beating the Pokémon League, talk to Oak in his lab and decline his Pokédex evaluation offer. He will then offer to battle you.
     - You can battle him as many times as you'd like.
+    <p align="center">
+    <img src="../screenshots/oak_battle.png">
+    </p>
 
+2. **Rival victory speeches**
+    - The Rival's unused battle victory speeches, which are present in the game's code, have been implemented.
+    - When losing to the Rival, he now has dedicated text which prints at the end of the battle, before the whiteout.
+    - He isn't very nice.
 
 
 [titlecarousels]: https://bulbapedia.bulbagarden.net/wiki/Game_intro#Pok%C3%A9mon_Red,_Green,_and_Blue
