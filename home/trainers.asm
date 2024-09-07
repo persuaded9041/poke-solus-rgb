@@ -72,12 +72,10 @@ ReadTrainerHeaderInfo::
 	jr z, .readPointer ; read end battle text
 	cp $a
 	jr nz, .done
-	pop de ;BUGFIX: we pushed de onto the stack at the top, so we have to pop it off the stack to keep things symmetrical.
 	ld a, [hli]        ; read end battle text (2) but override the result afterwards (XXX why, bug?)
 	ld d, [hl]
 	ld e, a
-	ret ;BUGFIX: de contains the lose quote loaded from the trainer header. We are done here.
-	;jr .done ;BUGFIX: this would replace de (the value we just loaded) with the value on the top of the stack. That's not the behavior we want.
+	jr .done
 .readPointer
 	ld a, [hli]
 	ld h, [hl]

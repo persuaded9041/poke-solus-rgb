@@ -1133,21 +1133,17 @@ HandlePlayerBlackOut:
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jr z, .notRival1Battle
-	;ld a, [wCurOpponent]
-	;cp OPP_RIVAL1
-	;jr nz, .notRival1Battle
-	ld a, [wIsInBattle] ; are we in a battle?
-	dec a ; is the battle a wild battle (without a trainer?)?
-	jr z, .notRival1Battle ;if yes, don't print our message.
+	ld a, [wCurOpponent]
+	cp OPP_RIVAL1
+	jr nz, .notRival1Battle
 	hlcoord 0, 0  ; rival 1 battle
 	lb bc, 8, 21
 	call ClearScreenArea
 	call ScrollTrainerPicAfterBattle
 	ld c, 40
 	call DelayFrames
-	;ld hl, Rival1WinText
-	;call PrintText
-	call PrintEndBattleText
+	ld hl, Rival1WinText
+	call PrintText
 	ld a, [wCurMap]
 	cp OAKS_LAB
 	ret z            ; starter battle in oak's lab: don't black out
