@@ -65,7 +65,7 @@ The differences between the three versions of this romhack (_Solus Red_, _Solus 
 2. Title screen Pokémon carousels (matches the original releases' carousels)
 3. Game Boy Color "duochrome" palettes (matches the original releases' GBC palettes)
 4. Super Game Boy palettes (which affect only title screen, SGB border graphics, and Game Corner slots)
-5. End credits text: "RED/GREEN/BLUE VERSION STAFF"
+5. End credits text: "RED/GREEN/BLUE VERSION STAFF" (depending on version)
 
 ## Changes and fixes
 ### Palette
@@ -264,11 +264,7 @@ Porygon | 20 | 9999
     <p align="center">
     <img src="../screenshots/oak_battle.png">
     </p>
-
-2. **Rival victory speeches**
-    - The Rival's unused battle victory speeches, which are present in the game's code, have been implemented.
-    - When losing to the Rival, he now has dedicated text which prints at the end of the battle, before the whiteout.
-    - He isn't very nice.
+    
 
 
 [titlecarousels]: https://bulbapedia.bulbagarden.net/wiki/Game_intro#Pok%C3%A9mon_Red,_Green,_and_Blue

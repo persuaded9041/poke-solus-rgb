@@ -2,9 +2,9 @@
 
 This guide explains how to set up the tools required to build **Pokémon Solus RGB**, including [rgbds](https://github.com/gbdev/rgbds), which assembles the source files into three ROMs:
 
-- `pokered.gbc`
-- `pokegreen.gbc`
-- `pokeblue.gbc`
+- `pokesolusred.gbc`
+- `pokesolusgreen.gbc`
+- `pokesolusblue.gbc`
 
 ### Jump to instructions for
 - [Windows 10](#windows-10)
@@ -154,7 +154,7 @@ git clone https://github.com/Dechrissen/poke-solus-rgb
 cd poke-solus-rgb
 ```
 
-To build `pokered.gbc`, `pokegreen.gbc` and `pokeblue.gbc`:
+To build `pokesolusred.gbc`, `pokesolusgreen.gbc` and `pokesolusblue.gbc`:
 
 ```bash
 make

@@ -22,11 +22,12 @@ There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus
 
 [Assembling the source code](#building-the-roms) will yield three ROMs:
 
-- Solus Red (`pokered.gbc`)
-- Solus Green (`pokegreen.gbc`)
-- Solus Blue (`pokeblue.gbc`)
+- Solus Red (`pokesolusred.gbc`)
+- Solus Green (`pokesolusgreen.gbc`)
+- Solus Blue (`pokesolusblue.gbc`)
 
-_A note about hardware palettes_: Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was specifically intended for the Japanese release of Pokémon Green Version. (The same goes for Red and Blue: you will see their mostly-red or mostly-blue Game Boy Color palettes.) If played on Super Game Boy, the palette used for title screen, SGB border, and Game Corner slots will all be version-specific corresponding to Red, Green, or Blue versions.
+_A note about hardware palettes_:  
+Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was specifically intended for the Japanese release of Pokémon Green Version. (The same goes for Red and Blue: you will see their mostly-red or mostly-blue Game Boy Color palettes.) If played on Super Game Boy, the palette used for title screen, SGB border, and Game Corner slots will all be version-specific corresponding to Red, Green, or Blue versions.
 
 ## Description
 
@@ -80,17 +81,19 @@ Otherwise, if your environment for compiling the vanilla ROMs is already set up,
 - The [pokered wiki][wiki] which has many helpful tutorials on working with the source code, some of which were used for this project
 - The [pret Discord server][pretdiscord]
 - [Shin Pokémon romhack][shinpokered] (Field Move slot implementation was taken from here)
-- [pokeworld][pokeworld]: a very helpful tool for visualizing the entire Kanto map
+- [pokeworld][pokeworld] (a very helpful tool for visualizing the entire Kanto map)
 - [Polished Map map/tileset editor][polishedmap]
 
 ## Credits
-Thank you to the entire [pret Discord server][pretdiscord] and these individuals who were very helpful throughout my work on this project:
-- [jojobear13][jojobear13]
-- [Vortyne][Vortyne]
+Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] team, and these individuals who were very helpful throughout my work on this project:
+- [jojobear13][jojobear13], for help with the Field Move slot implementation
+- [Vortyne][Vortyne], for a lot of general pokered-related help
+- [Tiptup_Tooie][tiptup], for playtesting
 
 
 
 [pokered]: https://github.com/pret/pokered
+[pret]: https://github.com/pret
 [wiki]: https://github.com/pret/pokered/wiki
 [pretdiscord]: https://discord.gg/d5dubZ3
 [shinpokered]: https://github.com/jojobear13/shinpokered
@@ -103,4 +106,5 @@ Thank you to the entire [pret Discord server][pretdiscord] and these individuals
 [polishedmap]: https://github.com/Rangi42/polished-map
 [jojobear13]: https://github.com/jojobear13
 [Vortyne]: https://github.com/Vortyne
+[tiptup]: https://www.twitch.tv/tiptup_tooie
 
