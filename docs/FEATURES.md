@@ -14,6 +14,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [Game Corner](#game-corner)
     - [Music](#music)
     - [Text](#text)
+    - [Default player names](#names)
     - [Vanilla bugfixes](#vanilla-bugfixes)
 - [New content](#new-content)
     - [New features](#new-features-that-were-not-in-the-vanilla-games)
@@ -32,14 +33,14 @@ Q: Why is it called Solus?
 > protagonist of Red/Blue is a young boy.
 
 Q: How did you decide where to put previously unobtainable Pokémon?
-> If a Pokémon was version-exclusive, then its appearance was simply merged with the opposite game's counterpart Pokémon (Oddish vs. Bellsprout, for example -- now both appear in the same locations where you'd previously only find one). For the cases where it wasn't this simple, you can find the justification for each decision in the table below. Some Pokémon were added to the wild if their previous acquisition method was only in the Game Corner, or only via trade, or if only one existed and multiple are needed for Dex completion (like Eevee).
+> If a Pokémon was version-exclusive, then its appearance was simply merged with the opposite game's counterpart Pokémon (Oddish vs. Bellsprout, for example — now both appear in the same locations where you'd previously only find one). For the cases where it wasn't this simple, you can find the justification for each decision in the table below. Some Pokémon were added to the wild if their previous acquisition method was only in the Game Corner, or only via trade, or if only one existed and multiple are needed for Dex completion (like Eevee).
 
 Pokémon | Justification for location decision
 --- | ---
 Farfetch'd | added to Routes 12 and 13 @ 5% (like in Yellow)
 Lickitung | added to Safari Zone (West) @ 1% (like JPN Blue)
 Mr. Mime | added Route 21 @ 5% (like in Gen 2)
-Hitmon[chan/lee] | added Hitmonchan to Victory Road 2F and Hitmonlee to Victory Road 3F (similar to LGPE) 
+Hitmonchan/Hitmonlee | added Hitmonchan to Victory Road 2F and Hitmonlee to Victory Road 3F (similar to LGPE) 
 Bulbasaur | added to Viridian Forest @ 1% (similar to LGPE)
 Squirtle | added to Seafoam Islands B3F and B4F @ 1% (similar to LGPE) because those 2 maps are the ones with water
 Charmander | added to both floors of Rock Tunnel @ 1% (similar to LGPE)
@@ -199,6 +200,17 @@ Porygon | 20 | 9999
 
 ### Text
 - There is a game-related poster on 3F of Celadon Dept. Store which now reads "Red, Green, and Blue! All are Pokémon!" instead of "Red and Blue! Both are Pokémon!" to be consistent with the triad of versions.
+
+### Names
+The default set of names for the player and the rival have been changed. These are based on some of the original names used in the Japanese Red & Green versions, mixed with the English names Ash and Gary. (If you're curious to read more about the default names, check [this Bulbapedia article](https://bulbapedia.bulbagarden.net/wiki/Red_(game)#Optional_names).)
+
+Player name | Justification for name | Rival name | Justification for name
+--- | --- | --- | ---
+RED | Player character's canonical name | GREEN | Rival's canonical name
+SATOSHI | Pokémon creator Satoshi Tajiri's name | SHIGERU | Based on Satoshi Tajiri's friend and fellow developer Shigeru Miyamoto
+ASH | Based on the anime character Satoshi | GARY | Based on the anime character Shigeru
+
+
 
 ### Vanilla bugfixes
 #### Battle engine bugfixes
