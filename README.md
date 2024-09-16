@@ -92,16 +92,17 @@ Otherwise, if your environment for building the vanilla ROMs is already set up, 
 - [pokeworld][pokeworld] (a very helpful tool for visualizing the entire Kanto map)
 - [Polished Map][polishedmap] map/tileset editor
 - My original [design document][designdoc] for this project (FYI: some things have changed since I drafted this)
+- [RomhackPlaza page][romhackplaza] for Solus RGB
 - A [blog post][blogpost] I wrote about this project
 - My [Ko-fi page][kofi] (if you'd like to support my work)
 
 ## Credits
 Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] team, and these individuals who were very helpful throughout my work on this project:
 - [jojobear13][jojobear13], for help with the Field Move slot implementation
-- [Vortyne][Vortyne], for a lot of general `pokered`-related help
+- [Vortiene][Vortyne], for a lot of general `pokered`-related help
 - [Tiptup_Tooie][tiptup], for playtesting
 
-## Support me
+## Support the Developer
 If you want to show your support, you could give this repository a :star: or simply share it with someone who might be interested.
 
 Or if you want to make a small donation, my Ko-fi page is [here][kofi].
@@ -129,4 +130,5 @@ I'd greatly appreciate any form of support!
 [tiptup]: https://www.twitch.tv/tiptup_tooie
 [blogpost]: https://derekandersen.net/blog/pokemon-solus-rgb
 [kofi]: https://ko-fi.com/dechrissen
+[romhackplaza]: https://romhackplaza.org/romhacks/pokemon-solus-rgb-game-boy/
 
