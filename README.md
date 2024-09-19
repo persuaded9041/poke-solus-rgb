@@ -6,7 +6,7 @@
 <img src="screenshots/solusblue.bmp">
 </p>
 
-A romhack of Pokémon Red/Blue for Game Boy, based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
+A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
 
@@ -20,9 +20,9 @@ Just want the patch? Go [here][releases].
 
 ## Versions
 
-There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus Blue_. The differences between versions are solely cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability. For a complete list of version differences, check the ["Version differences" section of the feature log][versiondifferences].
+There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus Blue_. The differences between versions are solely cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability. For a complete list of version differences, check the ['Version differences' section of the feature log][versiondifferences].
 
-[Building from source](#installation) will yield three ROMs:
+[Building from source](#building-all-three-roms-from-source) will yield three ROMs:
 
 - Solus Red (`pokesolusred.gbc`)
 - Solus Green (`pokesolusgreen.gbc`)
@@ -48,14 +48,11 @@ Solus Green is inspired by the original Japanese release of Green Version. If pl
 > - the Pokémon can be purchased
 > - the Pokémon can be restored from a fossil
 
-
-
 #### 2. HMs can be taught to party Pokémon without using up one of their move slots
 
 > HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known at a time per Pokémon). Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
 
 > When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased. Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
-
 
 #### 3. Some new content is added, and some visual content is changed
 
@@ -65,7 +62,7 @@ Solus Green is inspired by the original Japanese release of Green Version. If pl
 
 #### 4. Some bugs/oversights are fixed
 
-> A small subset of the bugs/oversights from the vanilla games are fixed. Visit the [feature log][featurelog] for details.
+> A small subset of the bugs/oversights from the vanilla games are fixed. Check the [feature log][featurelog] for details.
 
 ## Installation
 
@@ -82,10 +79,14 @@ If you're new to the [`pokered`][pokered] disassembly, learn how to install prer
 
 Otherwise, if your environment for building the vanilla ROMs is already set up, the procedure here is the same. Just clone this repository, `cd` into it, and run `make`.
 
+#### Modifying this romhack
+If you want to make some tweaks to this romhack before building the ROMs, or if you want to use this romhack as a starting point for your own, read [this document][howtomod] that I've written.
+
 ## Links
 
-- The original [pokered][pokered] disassembly which this romhack is based on
 - Detailed [feature log][featurelog] containing all of the changes this romhack makes to the vanilla game
+- [Changelog][changelog] for an overview of the changes introduced in each Solus RGB release
+- The original [pokered][pokered] disassembly which this romhack is based on
 - The [pokered wiki][wiki] which has many helpful tutorials on working with the source code, some of which were used for this project
 - The [pret Discord server][pretdiscord]
 - [Shin Pokémon romhack][shinpokered] (Field Move slot implementation was taken from here)
@@ -121,7 +122,9 @@ I'd greatly appreciate any form of support!
 [newcontent]: docs/FEATURES.md#new-content
 [versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
+[howtomod]: docs/HOW-TO-MOD.md
 [patches]: /patches
+[changelog]: docs/CHANGELOG.md
 [releases]: https://github.com/Dechrissen/poke-solus-rgb/releases
 [pokeworld]: https://www.extratricky.com/pokeworld/rb/1
 [polishedmap]: https://github.com/Rangi42/polished-map
@@ -131,4 +134,3 @@ I'd greatly appreciate any form of support!
 [blogpost]: https://derekandersen.net/blog/pokemon-solus-rgb
 [kofi]: https://ko-fi.com/dechrissen
 [romhackplaza]: https://romhackplaza.org/romhacks/pokemon-solus-rgb-game-boy/
-

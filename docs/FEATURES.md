@@ -1,9 +1,10 @@
 # Pokémon Solus RGB: Feature Log
-This file details all the changes the Pokémon Solus RGB romhack makes to the vanilla Pokémon Red/Blue games.
+This file details all the changes the Pokémon Solus RGB romhack makes to the vanilla Pokémon Red/Blue games. To compare previous releases, check the [changelog](CHANGELOG.md).
 
 **SPOILER WARNING**: While this romhack takes minimal creative liberties and doesn't add _too many_ new things, the entirety of this document could be considered a spoiler. If you don't want to be spoiled to any of the changes, then don't read this document.
 
 ## Table of Contents
+- [Motivation](#motivation)
 - [Justifications](#justifications)
 - [Version differences](#version-differences)
 - [Changes and fixes](#changes-and-fixes)
@@ -11,6 +12,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [Title screen](#title-screen)
     - [Battle sprites](#battle-sprites)
     - [Wild encounters](#wild-encounters)
+    - [Learnsets](#learnsets)
     - [Game Corner](#game-corner)
     - [Music](#music)
     - [Text](#text)
@@ -20,9 +22,23 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [New features](#new-features-that-were-not-in-the-vanilla-games)
     - [Restored cut content](#cut-content-that-has-been-restored)
 
+## Motivation
+
+This romhack is very much a "my version" of Gen 1. You could also consider it a "purist's version". The decisions made were inspired by _my idea_ of what an "enhanced" version of Gen 1 would look like. I wanted to make this romhack so that I could actually use it for my own personal routine playthroughs of Gen 1 every few months.
+
+The modifications mostly consist of logical changes to address some problems which most people would agree _are_ problems, with a sprinkling of my personal preferences on top (such as changing some battle sprites to ones from other Gen 1 games). I also didn't want to go overboard fixing bugs. A lot of the vanilla bugs can be seen as contributing to what makes Gen 1 special. All of this to say: you might not agree with some of my decisions!
+
+Q: What is this romhack trying to solve?
+
+> This romhack hopes to solve the following general "issue" categories in vanilla Gen 1:
+> 1. All 151 Pokémon are not obtainable in one game
+> 2. Pokémon with the "trade" evolution method cannot be evolved except with a friend's help, or by using two cartridges
+> 3. HMs compromise a Pokémon's potential by occupying its battle move slots
+> 4. Some bugs exist which arguably detract from the developers' original vision for the games (those bugs in the codebase which change some gameplay element from what is very likely the intended behavior) 
+
 ## Justifications
 
-This romhack is very much a "my version" of Gen 1. The decisions made were inspired by _my idea_ of what an "enhanced" version of Gen 1 would look like. It's mostly logical changes, with a sprinkling of my personal preferences on top (such as changing some battle sprites to ones from other Gen 1 games). I also didn't want to go overboard fixing bugs. A lot of the vanilla bugs can be seen as contributing to what makes Gen 1 special. All of this to say: you might not agree with some of my decisions!
+Here are some questions which might be asked about the decisions made for this romhack.
 
 Q: Why is it called Solus?
 > The definition of 'solus' is something like: 'By oneself; alone. Used as a stage direction to a male character.'
@@ -179,6 +195,20 @@ Porygon | Red/Green (JPN)
 - The number of wild encounters slots per route has been increased from 10 to 12, in order to make room for those maps which needed an extra slot to accommodate the opposite version's exclusive Pokémon. For the maps which didn't need any adjusting for version exclusives, I simply took the 3rd slot (previously 15%, but dropped by 5% to 10%) and copied that Pokémon into the new 2nd-to-last and 3rd-to-last slots
 (4% and 1% respectively). This means the distributions are almost identical to the originals, +/- a fraction of a %.
 
+### Learnsets
+Learnsets (level-up moves and teachable TMs/HMs) and catch rates for all Pokémon have been updated to match those used in Yellow version. For a look at the full diff for this change, check [this commit](https://github.com/Dechrissen/poke-solus-rgb/commit/99459edfa1d797d72a273c8a412545fe85f08594).
+
+The updated learnsets are not _too_ signifiant. Some changes are nice, however. Notable updates are:
+- Charizard can learn HM Fly
+- Diglett and Dugtrio can learn HM Cut
+- Kabutops can learn HM Cut
+- Venonat, Venomoth, and Butterfree can learn HM Flash
+- Nidoran learns Double Kick at Level 12 instead of 43 (Nidorino/Nidorina as well)
+- Mankey learns Low Kick at Level 9
+- Venonat learns Confusion at Level 19
+- Pikachu has an expanded learnset including Thunderbolt at Level 26
+- The Eevee-lutions learn their damaging STAB moves at earlier levels
+
 ### Game Corner
 The Game Corner prize windows have been changed. The tables below reflect these changes.
 #### Prize window 1
@@ -196,10 +226,10 @@ Eevee | 15 | 6666
 Porygon | 20 | 9999
 
 ### Music
-- The Elite Four now all use the Gym Leader battle theme instead of using the default battle theme for the first three members (Lorelei, Bruno, Agatha).
+The Elite Four now all use the Gym Leader battle theme instead of using the default battle theme for the first three members (Lorelei, Bruno, Agatha).
 
 ### Text
-- There is a game-related poster on 3F of Celadon Dept. Store which now reads "Red, Green, and Blue! All are Pokémon!" instead of "Red and Blue! Both are Pokémon!" to be consistent with the triad of versions.
+There is a game-related poster on 3F of Celadon Dept. Store which now reads "Red, Green, and Blue! All are Pokémon!" instead of "Red and Blue! Both are Pokémon!" to be consistent with the triad of versions.
 
 ### Names
 The default set of names for the player and the rival have been changed. These are based on some of the original names used in the Japanese Red & Green versions, mixed with the English names Ash and Gary. (If you're curious to read more about the default names, check [this Bulbapedia article](https://bulbapedia.bulbagarden.net/wiki/Red_(game)#Optional_names).)
