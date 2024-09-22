@@ -6,7 +6,7 @@
 <img src="screenshots/solusblue.bmp">
 </p>
 
-A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the Pokémon Reverse Engineering Team's [disassembly of Pokémon Red and Blue][pokered].
+A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on [pret][pret]'s [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
 

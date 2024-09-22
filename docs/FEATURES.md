@@ -21,6 +21,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
 - [New content](#new-content)
     - [New features](#new-features-that-were-not-in-the-vanilla-games)
     - [Restored cut content](#cut-content-that-has-been-restored)
+- [FAQ](#faq)
 
 ## Motivation
 
@@ -306,8 +307,13 @@ ASH | Based on the anime character Satoshi | GARY | Based on the anime character
     <p align="center">
     <img src="../screenshots/oak_battle.png">
     </p>
-    
 
+## FAQ
+Q: Can this romhack trade/battle with vanilla ROMs/cartridges?
+> A: Yes.
+
+Q: Does this romhack work on real hardware (i.e. flash cartridges on a real Game Boy)?
+> A: Yes, it's been tested on Game Boy Color and Game Boy Advance using an insideGadgets flash cartridge.
 
 [titlecarousels]: https://bulbapedia.bulbagarden.net/wiki/Game_intro#Pok%C3%A9mon_Red,_Green,_and_Blue
 [spaceworld]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Spaceworld_%2797_demo
