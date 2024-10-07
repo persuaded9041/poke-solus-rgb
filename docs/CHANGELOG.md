@@ -2,6 +2,9 @@
 
 This document provides an overview of the changes made in each release.
 
+## v1.2
+- Fixed a bug where the post-game Professor Oak battle wouldn't trigger even after becoming the Champion
+
 ## v1.1
 - Pokémon learnsets, catch rates, and Level 1 moves have been updated to match those in Yellow Version
 
