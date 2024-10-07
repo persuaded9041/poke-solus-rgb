@@ -13,6 +13,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [Battle sprites](#battle-sprites)
     - [Wild encounters](#wild-encounters)
     - [Learnsets](#learnsets)
+    - [Catch rates](#catch-rates)
     - [Game Corner](#game-corner)
     - [Music](#music)
     - [Text](#text)
@@ -22,6 +23,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [New features](#new-features-that-were-not-in-the-vanilla-games)
     - [Restored cut content](#cut-content-that-has-been-restored)
 - [FAQ](#faq)
+    - [Things I didn't change](#things-i-didnt-change)
 
 ## Motivation
 
@@ -55,7 +57,7 @@ Q: How did you decide where to put previously unobtainable Pokémon?
 Pokémon | Justification for location decision
 --- | ---
 Farfetch'd | added to Routes 12 and 13 @ 5% (like in Yellow)
-Lickitung | added to Safari Zone (West) @ 1% (like JPN Blue)
+Lickitung | added to Safari Zone (West) @ 1% (like in JPN Blue)
 Mr. Mime | added Route 21 @ 5% (like in Gen 2)
 Hitmonchan/Hitmonlee | added Hitmonchan to Victory Road 2F and Hitmonlee to Victory Road 3F (similar to LGPE) 
 Bulbasaur | added to Viridian Forest @ 1% (similar to LGPE)
@@ -197,7 +199,7 @@ Porygon | Red/Green (JPN)
 (4% and 1% respectively). This means the distributions are almost identical to the originals, +/- a fraction of a %.
 
 ### Learnsets
-Learnsets (level-up moves and teachable TMs/HMs) and catch rates for all Pokémon have been updated to match those used in Yellow version. For a look at the full diff for this change, check [this commit](https://github.com/Dechrissen/poke-solus-rgb/commit/99459edfa1d797d72a273c8a412545fe85f08594).
+Learnsets (level-up moves and teachable TMs/HMs) for all Pokémon have been updated to match those used in Yellow version. For a look at the full diff for this change, check [this commit](https://github.com/Dechrissen/poke-solus-rgb/commit/99459edfa1d797d72a273c8a412545fe85f08594).
 
 The updated learnsets are not _too_ signifiant. Some changes are nice, however. Notable updates are:
 - Charizard can learn HM Fly
@@ -209,6 +211,9 @@ The updated learnsets are not _too_ signifiant. Some changes are nice, however. 
 - Venonat learns Confusion at Level 19
 - Pikachu has an expanded learnset including Thunderbolt at Level 26
 - The Eevee-lutions learn their damaging STAB moves at earlier levels
+
+### Catch rates
+Catch rates for all Pokémon have been updated to match those used in Yellow version.
 
 ### Game Corner
 The Game Corner prize windows have been changed. The tables below reflect these changes.
@@ -277,7 +282,7 @@ ASH | Based on the anime character Satoshi | GARY | Based on the anime character
 
     - A new NPC who lives in a new house behind Celadon Dept. Store.
     - He will trade you back any of your Pokémon, for the purpose of evolving any of the four trade evolutions.
-    - Only a single trade animation will play (not two one after the other).
+    - Only a single trade animation will play (not two back-to-back).
     - Another new NPC, a boy in Pewter City, will hint at the Trader's location.
     - A new sign on Route 8, just outside of Lavender Town, further advertises the Trader's services and location.
 
@@ -313,7 +318,16 @@ Q: Can this romhack trade/battle with vanilla ROMs/cartridges?
 > A: Yes.
 
 Q: Does this romhack work on real hardware (i.e. flash cartridges on a real Game Boy)?
-> A: Yes, it's been tested on Game Boy Color and Game Boy Advance using an insideGadgets flash cartridge.
+> A: Yes. It's been tested on Game Boy Color and Game Boy Advance using an insideGadgets flash cartridge.
+
+Q: Do GameShark/Game Genie codes work with this romhack?
+> A: Evidently Game Shark codes work fine, but Game Genie codes do not. Your mileage may vary. Only one person reported that Game Shark codes worked, and that Game Genie codes did not. But I have not tested this myself.
+
+### Things I didn't change
+There are some things I've been asked to implement which I don't think align with the philosophy for Solus RGB. They are listed here.
+- _Updating Pokémon learnsets to something completely new._ I don't think Pokémon learnsets should be changed if they can't be justified as somehow "canonical" (like those which have been updated in Yellow Version). Stone evolutions for example, such as Nidoking, are an example of learnsets which some people think should be upgraded, since after evolving via stone they become quite sparse learnset-wise. But if you look even as late as Gen 2 or 3, Nidoking's learnset is basically the same as in Gen 1. Nothing suggests that its original learnset was a "mistake," which tells me it shouldn't be changed. I think what was intended was needing to wait for the pre-evolution (Nidorino in this case) to learn its moves at certain levels before deciding to use a Moon Stone and evolve it. You have to be intentional, and upgrading Nidoking's learnset removes that element of intentionality.
+- _Adding running shoes._ Having the ability to run via holding B changes the feel of the game. Gen 1 is kinda slow, and I think that's part of its charm.
+
 
 [titlecarousels]: https://bulbapedia.bulbagarden.net/wiki/Game_intro#Pok%C3%A9mon_Red,_Green,_and_Blue
 [spaceworld]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Spaceworld_%2797_demo

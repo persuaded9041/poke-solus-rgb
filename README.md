@@ -6,7 +6,7 @@
 <img src="screenshots/solusblue.bmp">
 </p>
 
-A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on [pret][pret]'s [disassembly of Pokémon Red and Blue][pokered].
+A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the [pret][pret] group's [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
 
@@ -62,7 +62,7 @@ Solus Green is inspired by the original Japanese release of Green Version. If pl
 
 #### 4. Some bugs/oversights are fixed
 
-> A small subset of the bugs/oversights from the vanilla games are fixed. Check the [feature log][featurelog] for details.
+> A small subset of the bugs/oversights from the vanilla games are fixed. Check the [bug fix list][bugfixes] for details.
 
 ## Installation
 
@@ -98,7 +98,7 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 - My [Ko-fi page][kofi] (if you'd like to support my work)
 
 ## Credits
-Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] team, and these individuals who were very helpful throughout my work on this project:
+Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] group, and these individuals who were very helpful throughout my work on this project:
 - [jojobear13][jojobear13], for help with the Field Move slot implementation
 - [Vortiene][Vortyne], for a lot of general `pokered`-related help
 - [Tiptup_Tooie][tiptup], for playtesting
@@ -120,6 +120,7 @@ I'd greatly appreciate any form of support!
 [designdoc]: docs/DESIGN.md
 [featurelog]: docs/FEATURES.md
 [newcontent]: docs/FEATURES.md#new-content
+[bugfixes]: docs/FEATURES.md#vanilla-bugfixes
 [versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
 [howtomod]: docs/HOW-TO-MOD.md
