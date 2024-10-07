@@ -737,9 +737,11 @@ DEF INDIGO_PLATEAU_EVENTS_START EQU const_value
 	const EVENT_LANCES_ROOM_LOCK_DOOR
 	const_skip
 	const EVENT_BEAT_CHAMPION_RIVAL
-	const_skip 5
+	const_skip 4 ; dereknote: decremented by 1 for new event EVENT_BECAME_CHAMPION
 	const_skip
 DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
+;dereknote: new event for becoming champion to activate Oak battle
+	const EVENT_BECAME_CHAMPION
 
 ; Victory Road 1F events
 	const_next $910

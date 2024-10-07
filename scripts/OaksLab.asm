@@ -979,7 +979,7 @@ OaksLabOak1Text:
 	call PrintText
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ; dereknote - prof oak battle (taken from shinpokemon)
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL	;has elite 4 been beaten?
+	CheckEvent EVENT_BECAME_CHAMPION	;has player become the league champion?
 	jr z, .dex_check	;if no then leave this section and do the pokedex check like normal
 	call YesNoChoice	;else call a yes/no choice box
 	ld a, [wCurrentMenuItem]	;load the player choice
