@@ -226,14 +226,14 @@ _Thanks4Text::
 
 ;dereknote - for field move slot
 _LearnTempFieldMoveText::
-	text "Learn this as a"
+	text "Teach this as a"
 	line "temporary FIELD"
 	cont "MOVE?"
 	done
 _LearnTempFieldMoveTextDenied::
 	text "A temporary FIELD"
 	line "MOVE is already"
-	cont "known!"
+	cont "learned!"
 	
 	para "Put this #MON"
 	line "in a PC BOX to"
