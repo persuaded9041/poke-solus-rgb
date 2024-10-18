@@ -5,6 +5,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
 
 ## Table of Contents
 - [Motivation](#motivation)
+- [Overview](#overview)
 - [Justifications](#justifications)
 - [Version differences](#version-differences)
 - [Changes and fixes](#changes-and-fixes)
@@ -29,7 +30,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
 
 This romhack is very much a "my version" of Gen 1. You could also consider it a "purist's version". The decisions made were inspired by _my idea_ of what an "enhanced" version of Gen 1 would look like. I wanted to make this romhack so that I could actually use it for my own personal routine playthroughs of Gen 1 every few months.
 
-The modifications mostly consist of logical changes to address some problems which most people would agree _are_ problems, with a sprinkling of my personal preferences on top (such as changing some battle sprites to ones from other Gen 1 games). I also didn't want to go overboard fixing bugs. A lot of the vanilla bugs can be seen as contributing to what makes Gen 1 special. All of this to say: you might not agree with some of my decisions!
+The modifications mostly consist of logical changes to address some problems which most people would agree _are_ problems, with a sprinkling of my personal preferences on top (such as changing some battle sprites to ones from other Gen 1 games). I also didn't want to go overboard fixing bugs. A lot of the vanilla bugs can be seen as contributing to what makes Gen 1 special. All of this is to say: you might not agree with some of my decisions!
 
 Q: What is this romhack trying to solve?
 
@@ -38,6 +39,35 @@ Q: What is this romhack trying to solve?
 > 2. Pokémon with the "trade" evolution method cannot be evolved except with a friend's help, or by using two cartridges
 > 3. HMs compromise a Pokémon's potential by occupying its battle move slots
 > 4. Some bugs exist which arguably detract from the developers' original vision for the games (those bugs in the codebase which change some gameplay element from what is very likely the intended behavior) 
+
+## Overview
+
+### All 151 Pokémon are obtainable through normal means
+
+"Normal means" are one of the following:
+ - the Pokémon can be caught in the wild
+ - the Pokémon can be evolved into via an in-game method
+ - the Pokémon can be found in a Poké Ball in the overworld
+ - the Pokémon can be battled (and caught) via interacting with its sprite in the overworld
+ - the Pokémon can be gifted to the player
+ - the Pokémon can be purchased
+ - the Pokémon can be restored from a fossil
+
+### HMs can be taught to party Pokémon without using up one of their move slots
+
+HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known at a time per Pokémon). Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
+
+When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased. Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
+
+### Some new content is added, and some visual content is changed
+
+A _very small amount_ of new battles/signs/houses/NPCs were added. They are either added to restore cut content, or to support a newly implemented feature. To see them all, check the [new content](#new-content) section.
+
+Additionally, _some_ visuals of the original games are changed, and sometimes in accordance with my own personal preferences (sprites, backsprites).
+
+### Some bugs/oversights are fixed
+
+A small subset of the bugs/oversights from the vanilla games are fixed. Check the [bug fix list](#vanilla-bugfixes) for details.
 
 ## Justifications
 
@@ -97,16 +127,22 @@ The differences between the three versions of this romhack (_Solus Red_, _Solus 
 - The "Red Version"/"Green Version"/"Blue Version" text on the title screens has been changed to reflect the name of the romhack. The "Version" text has been removed from each, and "Solus" has been added to the beginning. They now read "Solus Red"/"Solus Green"/"Solus Blue". 
 - The title screen Pokémon carousel for Solus Red, Solus Green, and Solus Blue have all been changed so that the Pokémon that are cycled through match those of the original Japanese releases for Red/Green/Blue (carousel variants [here][titlecarousels] for reference).
 
+<p align="center" style="margin-bottom: 0">
+<img src="../screenshots/solus-red-gbc-title.png">
+<img src="../screenshots/solus-green-gbc-title.png">
+<img src="../screenshots/solus-blue-gbc-title.png">
+</p>
+
 <p align="center">
-<img src="../screenshots/solusred.bmp">
-<img src="../screenshots/solusgreen.bmp">
-<img src="../screenshots/solusblue.bmp">
+<img src="../screenshots/solus-red-sgb-title.bmp">
+<img src="../screenshots/solus-green-sgb-title.bmp">
+<img src="../screenshots/solus-blue-sgb-title.bmp">
 </p>
 
 ### Battle sprites
-- The in-battle back sprites (including the player and the Old Man) have been updated to display at a higher resolution of 48x48. Since this meant that new back sprites needed to be supplied for every Pokémon, they all use the back sprites featured in the [Spaceworld 1997 Gold/Silver beta][spaceworld].
+- The in-battle back sprites (including the player and the Old Man) have been updated to display at a higher resolution of 48x48. Since this meant that new back sprites needed to be supplied for every Pokémon, they all now use the back sprites featured in the [Spaceworld 1997 Gold/Silver beta][spaceworld97].
 
-- If a Pokémon is present in the below table, it means its original battle front sprite (from Red/Blue) was changed to either the one from Red/Green (JPN) or the one from Yellow. If it's not present in this table, it means it still uses its original Red/Blue sprite. These were changed according to my own personal preference (whichever ones I thought were the best).
+- If a Pokémon is present in the below table, it means its original in-battle front sprite (from Red/Blue) was changed to either the one from Red/Green (JPN) or the one from Yellow. If it's not present in this table, it means it still uses its original Red/Blue sprite. These were changed according to my own personal preference (whichever ones I thought were the best).
 
 Pokémon | Source for new sprite
 --- | ---
@@ -201,7 +237,7 @@ Porygon | Red/Green (JPN)
 ### Learnsets
 Learnsets (level-up moves and teachable TMs/HMs) for all Pokémon have been updated to match those used in Yellow version. For a look at the full diff for this change, check [this commit](https://github.com/Dechrissen/poke-solus-rgb/commit/99459edfa1d797d72a273c8a412545fe85f08594).
 
-The updated learnsets are not _too_ signifiant. Some changes are nice, however. Notable updates are:
+The updated learnsets are not _too_ significant. Some changes are nice, however. Notable updates are:
 - Charizard can learn HM Fly
 - Diglett and Dugtrio can learn HM Cut
 - Kabutops can learn HM Cut
@@ -317,6 +353,9 @@ ASH | Based on the anime character Satoshi | GARY | Based on the anime character
 Q: Can this romhack trade/battle with vanilla ROMs/cartridges?
 > A: Yes.
 
+Q: Is this romhack compatible with trading via Time Capsule in Gen 2?
+> A: Yes. If a Pokémon knowing a temporary Field Move is traded to Gen 2, it will lose its Field Move (this also means that if it's traded back to Solus R/G/B from Gen 2, it will no longer know the Field Move; you will have to re-teach it). 
+
 Q: Does this romhack work on real hardware (i.e. flash cartridges on a real Game Boy)?
 > A: Yes. It's been tested on Game Boy Color and Game Boy Advance using an insideGadgets flash cartridge.
 
@@ -325,9 +364,9 @@ Q: Do GameShark/Game Genie codes work with this romhack?
 
 ### Things I didn't change
 There are some things I've been asked to implement which I don't think align with the philosophy for Solus RGB. They are listed here.
-- _Updating Pokémon learnsets to something completely new._ I don't think Pokémon learnsets should be changed if they can't be justified as somehow "canonical" (like those which have been updated in Yellow Version). Stone evolutions for example, such as Nidoking, are an example of learnsets which some people think should be upgraded, since after evolving via stone they become quite sparse learnset-wise. But if you look even as late as Gen 2 or 3, Nidoking's learnset is basically the same as in Gen 1. Nothing suggests that its original learnset was a "mistake," which tells me it shouldn't be changed. I think what was intended was needing to wait for the pre-evolution (Nidorino in this case) to learn its moves at certain levels before deciding to use a Moon Stone and evolve it. You have to be intentional, and upgrading Nidoking's learnset removes that element of intentionality.
+- _Updating Pokémon learnsets to something completely new._ I don't think Pokémon learnsets should be changed if they can't be justified as somehow "canonical" (like those which have been updated in Yellow Version). Stone evolutions for example, such as Nidoking, are an example of learnsets which some people think should be upgraded, since after evolving via stone their learnsets become quite sparse. But if you look even as late as Gen 2 or 3, Nidoking's learnset is basically the same as in Gen 1. Nothing suggests that its original learnset was a "mistake," which tells me it shouldn't be changed. I believe what was intended was needing to wait for the pre-evolution (Nidorino in this case) to learn its moves at certain levels before deciding to use a Moon Stone and evolve it. You have to be intentional, and upgrading Nidoking's learnset removes that element of intentionality.
 - _Adding running shoes._ Having the ability to run via holding B changes the feel of the game. Gen 1 is kinda slow, and I think that's part of its charm.
 
 
 [titlecarousels]: https://bulbapedia.bulbagarden.net/wiki/Game_intro#Pok%C3%A9mon_Red,_Green,_and_Blue
-[spaceworld]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Spaceworld_%2797_demo
+[spaceworld97]: https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Gold_and_Silver_Spaceworld_%2797_demo

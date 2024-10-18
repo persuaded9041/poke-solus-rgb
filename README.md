@@ -1,22 +1,36 @@
 # Pokémon Solus RGB
 
+
 <p align="center">
-<img src="screenshots/solusred.bmp">
-<img src="screenshots/solusgreen.bmp">
-<img src="screenshots/solusblue.bmp">
+<img src="screenshots/solus-red-gbc-title.png">
+<img src="screenshots/solus-green-gbc-title.png">
+<img src="screenshots/solus-blue-gbc-title.png">
 </p>
 
-A near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the [pret][pret] group's [disassembly of Pokémon Red and Blue][pokered].
+Pokémon Solus RGB is a near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the [disassembly of Pokémon Red and Blue][pokered].
 
-For a detailed summary of all the changes in this romhack, check out the [feature log][featurelog].
+For a detailed look at all the changes in this romhack, check out the [feature log][featurelog].
 
 Just want the patch? Go [here][releases].
 
 ## Table of Contents
+- [Elevator pitch](#elevator-pitch)
 - [Versions](#versions)
-- [Description](#description)
 - [Installation](#installation)
 - [Links](#links)
+- [Credits](#credits)
+
+## Elevator pitch
+
+**Pokémon Solus RGB** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
+
+Quick overview of changes:
+1. All 151 Pokémon are obtainable through normal means
+2. HMs can be taught to party Pokémon without using up one of their move slots
+3. Some new content is added, and some visual content is changed
+4. Some bugs/oversights are fixed
+
+For a detailed look at all the changes, check out the [feature log][featurelog].
 
 ## Versions
 
@@ -28,41 +42,7 @@ There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus
 - Solus Green (`pokesolusgreen.gbc`)
 - Solus Blue (`pokesolusblue.gbc`)
 
-_A note on palettes_:  
-Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was specifically intended for the Japanese release of Pokémon Green Version. (The same goes for Red and Blue: you will see their mostly-red or mostly-blue Game Boy Color palettes.) If played on Super Game Boy, the palette used for title screen, SGB border, and Game Corner slots will all be version-specific corresponding to Red, Green, or Blue versions.
-
-## Description
-
-**Pokémon Solus RGB** is a near-vanilla romhack of Gen 1. It changes _only a few things_ from the original games, without overhauling so much that it ceases to be Gen 1, and the whole thing becomes a [Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) paradox.
-
-### What does this romhack change?
-
-#### 1. All 151 Pokémon are obtainable through normal means
-
-> "Normal means" are one of the following:
-> - the Pokémon can be caught in the wild
-> - the Pokémon can be evolved into via an in-game method
-> - the Pokémon can be found in a Poké Ball in the overworld
-> - the Pokémon can be battled (and caught) via interacting with its sprite in the overworld
-> - the Pokémon can be gifted to the player
-> - the Pokémon can be purchased
-> - the Pokémon can be restored from a fossil
-
-#### 2. HMs can be taught to party Pokémon without using up one of their move slots
-
-> HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot. When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move (only one can be known at a time per Pokémon). Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
-
-> When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased. Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
-
-#### 3. Some new content is added, and some visual content is changed
-
-> A _very small amount_ of new battles/signs/houses/NPCs were added. They are either added to restore cut content, or to support a newly implemented feature. To see them all, please check the ['New content' section of the feature log][newcontent].  
-
-> Additionally, _some_ visuals of the original games are changed, and sometimes in accordance with my own personal preferences. To read more about this, check the [feature log][featurelog].
-
-#### 4. Some bugs/oversights are fixed
-
-> A small subset of the bugs/oversights from the vanilla games are fixed. Check the [bug fix list][bugfixes] for details.
+_Note_: Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was used for the Japanese release of Pokémon Green Version.
 
 ## Installation
 
@@ -71,7 +51,6 @@ Solus Green is inspired by the original Japanese release of Green Version. If pl
 To patch a vanilla Pokémon Red/Blue Version ROM, download a `.bps` patch file from the [patches directory][patches], and then apply it to your ROM using [this online patcher](https://www.marcrobledo.com/RomPatcher.js/) or your patcher of choice.
 - For Solus Red / Solus Green, patch a vanilla Red Version ROM
 - For Solus Blue, patch a vanilla Blue Version ROM
-
 
 ### Building all three ROMs from source
 
@@ -84,31 +63,33 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 
 ## Links
 
-- Detailed [feature log][featurelog] containing all of the changes this romhack makes to the vanilla game
+- Comprehensive [feature log][featurelog] containing all of the changes this romhack makes
 - [Changelog][changelog] for an overview of the changes introduced in each Solus RGB release
-- The original [pokered][pokered] disassembly which this romhack is based on
+- The [pokered][pokered] disassembly which this romhack is based on
 - The [pokered wiki][wiki] which has many helpful tutorials on working with the source code, some of which were used for this project
 - The [pret Discord server][pretdiscord]
 - [Shin Pokémon romhack][shinpokered] (Field Move slot implementation was taken from here)
-- [pokeworld][pokeworld] (a very helpful tool for visualizing the entire Kanto map)
+- [pokeworld][pokeworld] (a very helpful tool for visualizing the Kanto overworld)
 - [Polished Map][polishedmap] map/tileset editor
 - My original [design document][designdoc] for this project (FYI: some things have changed since I drafted this)
 - [RomhackPlaza page][romhackplaza] for Solus RGB
+- [Testimonials][testimonials] this romhack has received
 - A [blog post][blogpost] I wrote about this project
-- My [Ko-fi page][kofi] (if you'd like to support my work)
+- A [video essay][videoessay] I made about this project
+- My [Ko-fi page][kofi] (if you'd like to support this project and the rest of my work)
 
 ## Credits
 Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] group, and these individuals who were very helpful throughout my work on this project:
 - [jojobear13][jojobear13], for help with the Field Move slot implementation
 - [Vortiene][Vortyne], for a lot of general `pokered`-related help
-- [Tiptup_Tooie][tiptup], for playtesting
+- [Quadrixis][quadrixis], for theorycrafting help
 
-## Support the Developer
+## Support the Solus RGB Developer
 If you want to show your support, you could give this repository a :star: or simply share it with someone who might be interested.
 
-Or if you want to make a small donation, my Ko-fi page is [here][kofi].
+Or if you would like to make a small donation, my Ko-fi page is [here][kofi].
 
-I'd greatly appreciate any form of support!
+Any form of support is greatly appreciated!
 
 
 
@@ -119,8 +100,6 @@ I'd greatly appreciate any form of support!
 [shinpokered]: https://github.com/jojobear13/shinpokered
 [designdoc]: docs/DESIGN.md
 [featurelog]: docs/FEATURES.md
-[newcontent]: docs/FEATURES.md#new-content
-[bugfixes]: docs/FEATURES.md#vanilla-bugfixes
 [versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
 [howtomod]: docs/HOW-TO-MOD.md
@@ -129,9 +108,12 @@ I'd greatly appreciate any form of support!
 [releases]: https://github.com/Dechrissen/poke-solus-rgb/releases
 [pokeworld]: https://www.extratricky.com/pokeworld/rb/1
 [polishedmap]: https://github.com/Rangi42/polished-map
-[jojobear13]: https://github.com/jojobear13
-[Vortyne]: https://github.com/Vortyne
-[tiptup]: https://www.twitch.tv/tiptup_tooie
 [blogpost]: https://derekandersen.net/blog/pokemon-solus-rgb
 [kofi]: https://ko-fi.com/dechrissen
 [romhackplaza]: https://romhackplaza.org/romhacks/pokemon-solus-rgb-game-boy/
+[videoessay]: https://www.youtube.com/watch?v=ANRiLuondLE
+[testimonials]: docs/TESTIMONIALS.md
+
+[jojobear13]: https://github.com/jojobear13
+[Vortyne]: https://github.com/Vortyne
+[quadrixis]: https://github.com/Quadrixis
