@@ -1551,7 +1551,7 @@ wCalculateWhoseStats::
 wTypeEffectiveness::
 wMoveType::
 wNumSetBits::
-; used as a Pokemon and Item storage value. Also used as an output value for CountSetBits
+; used as a Pokemon and Item storage value. Also used as an output value for CountSetBits (dereknote - also using for caught pokemon indicator)
 wd11e::
 	db
 

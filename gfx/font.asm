@@ -4,7 +4,7 @@ FontGraphicsEnd::
 
 ABTiles: INCBIN "gfx/font/AB.2bpp"
 
-HpBarAndStatusGraphics:: INCBIN "gfx/font/font_battle_extra.2bpp"
+HpBarAndStatusGraphics:: INCBIN "gfx/font/font_battle_extra_with_pokeball.2bpp" ;dereknote - for in-battle caught pokemon indicator (uses icon from Gen 2)
 HpBarAndStatusGraphicsEnd::
 
 BattleHudTiles1: INCBIN "gfx/battle/battle_hud_1.1bpp"
