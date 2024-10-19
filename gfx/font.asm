@@ -10,7 +10,7 @@ HpBarAndStatusGraphicsEnd::
 BattleHudTiles1: INCBIN "gfx/battle/battle_hud_1.1bpp"
 BattleHudTiles1End:
 BattleHudTiles2: INCBIN "gfx/battle/battle_hud_2.1bpp"
-BattleHudTiles3: INCBIN "gfx/battle/battle_hud_3.1bpp"
+BattleHudTiles3: INCBIN "gfx/battle/battle_hud_3_thicker.1bpp" ;dereknote - for EXP bar to look better
 BattleHudTiles3End:
 
 NintendoCopyrightLogoGraphics: INCBIN "gfx/splash/copyright.2bpp"
@@ -29,3 +29,6 @@ WorldMapTileGraphicsEnd:
 
 PlayerCharacterTitleGraphics: INCBIN "gfx/title/player.2bpp"
 PlayerCharacterTitleGraphicsEnd:
+
+EXPBarGraphics::  INCBIN "gfx/battle/exp_bar.2bpp" ;dereknote - for in-battle EXP bar
+EXPBarGraphicsEnd::
