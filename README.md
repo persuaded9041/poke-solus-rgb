@@ -26,9 +26,12 @@ Just want the patch? Go [here][releases].
 
 Quick overview of changes:
 1. All 151 Pokémon are obtainable through normal means
-2. HMs can be taught to party Pokémon without using up one of their move slots
-3. Some new content is added, and some visual content is changed
-4. Some bugs/oversights are fixed
+2. Some new gameplay features have been added
+    - HMs can be taught to party Pokémon without using up one of their move slots
+    - Trades can be performed in-game via the Trader NPC
+    - There is an in-battle EXP bar
+3. Some visual content is changed (sprites)
+4. Some bugs/oversights from vanilla are fixed
 
 For a detailed look at all the changes, check out the [feature log][featurelog].
 
@@ -42,13 +45,13 @@ There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus
 - Solus Green (`pokesolusgreen.gbc`)
 - Solus Blue (`pokesolusblue.gbc`)
 
-_Note_: Solus Green is inspired by the original Japanese release of Green Version. If played on Game Boy Color, you will see the GBC's mostly-green palette which was used for the Japanese release of Pokémon Green Version.
+_Note_: Solus Green, if played on Game Boy Color, uses the GBC's built-in mostly-green palette. This is the same one which was used by the Japanese release of Pokémon Green Version.
 
 ## Installation
 
 ### Patching a vanilla ROM
 
-To patch a vanilla Pokémon Red/Blue Version ROM, download a `.bps` patch file from the [patches directory][patches], and then apply it to your ROM using [this online patcher](https://www.marcrobledo.com/RomPatcher.js/) or your patcher of choice.
+To patch a vanilla Pokémon Red/Blue Version ROM, download a `.bps` patch file from the [releases page][releases], and then apply it to your ROM using [this online patcher](https://www.marcrobledo.com/RomPatcher.js/) or your patcher of choice.
 - For Solus Red / Solus Green, patch a vanilla Red Version ROM
 - For Solus Blue, patch a vanilla Blue Version ROM
 
@@ -63,26 +66,26 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 
 ## Links
 
-- Comprehensive [feature log][featurelog] containing all of the changes this romhack makes
-- [Changelog][changelog] for an overview of the changes introduced in each Solus RGB release
-- The [pokered][pokered] disassembly which this romhack is based on
-- The [pokered wiki][wiki] which has many helpful tutorials on working with the source code, some of which were used for this project
+- Comprehensive [feature log][featurelog] detailing all the changes in this romhack
+- [Changelog][changelog] (an overview of the changes introduced in each Solus RGB release)
+- The [pokered disassembly][pokered] which this romhack is based on
+- The [pokered wiki][wiki] which has many helpful tutorials
 - The [pret Discord server][pretdiscord]
-- [Shin Pokémon romhack][shinpokered] (Field Move slot implementation was taken from here)
+- [Shin Pokémon romhack][shinpokered] (credit to this romhack for the Field Move slot implementation)
 - [pokeworld][pokeworld] (a very helpful tool for visualizing the Kanto overworld)
 - [Polished Map][polishedmap] map/tileset editor
-- My original [design document][designdoc] for this project (FYI: some things have changed since I drafted this)
+- My original (crude) [design document][designdoc] for this project
 - [RomhackPlaza page][romhackplaza] for Solus RGB
-- [Testimonials][testimonials] this romhack has received
+- [Testimonials][testimonials] Solus RGB has received
 - A [blog post][blogpost] I wrote about this project
 - A [video essay][videoessay] I made about this project
 - My [Ko-fi page][kofi] (if you'd like to support this project and the rest of my work)
 
 ## Credits
-Thank you to the entire [pret Discord server][pretdiscord], the [pret][pret] group, and these individuals who were very helpful throughout my work on this project:
-- [jojobear13][jojobear13], for help with the Field Move slot implementation
-- [Vortiene][Vortyne], for a lot of general `pokered`-related help
-- [Quadrixis][quadrixis], for theorycrafting help
+Thank you to [pret][pret], the entire [pret Discord server][pretdiscord], and these individuals who were very helpful throughout my work on this project:
+- [jojobear13][jojobear13], for the Field Move slot implementation
+- [Vortiene][Vortyne], for assistance with assembly and `pokered`
+- [Quadrixis][quadrixis], for collaboration on theorycrafting and general support
 
 ## Support the Solus RGB Developer
 If you want to show your support, you could give this repository a :star: or simply share it with someone who might be interested.
@@ -103,7 +106,6 @@ Any form of support is greatly appreciated!
 [versiondifferences]: docs/FEATURES.md#version-differences
 [installation]: docs/INSTALL.md
 [howtomod]: docs/HOW-TO-MOD.md
-[patches]: /patches
 [changelog]: docs/CHANGELOG.md
 [releases]: https://github.com/Dechrissen/poke-solus-rgb/releases
 [pokeworld]: https://www.extratricky.com/pokeworld/rb/1

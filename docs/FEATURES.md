@@ -112,15 +112,15 @@ Q: Why did you change the battle sprites?
 ## Version differences
 The differences between the three versions of this romhack (_Solus Red_, _Solus Green_, _Solus Blue_) are solely cosmetic. Specifically, these things differ:
 1. Title screen version text
-2. Title screen Pokémon carousels (matches the original releases' carousels)
+2. Title screen Pokémon carousels (matches the [original releases' carousels][titlecarousels])
 3. Game Boy Color "duochrome" palettes (matches the original releases' GBC palettes)
-4. Super Game Boy palettes (which affect only title screen, SGB border graphics, and Game Corner slots)
+4. Super Game Boy palettes (the version-specific differences affect the title screen, SGB border graphics, and Game Corner slots)
 5. End credits text: "RED/GREEN/BLUE VERSION STAFF" (depending on version)
 
 ## Changes and fixes
 ### Palette
-- Solus Green's palette on Game Boy Color hardware (or an emulator running in GBC mode) matches that of the original Japanese release for Green Version (green overworld, red sprites).
-- Green Version-specific border and palette were restored for Super Game Boy for Solus Green, to match those of the original Japanese release for Green.
+- Solus Green's palette on Game Boy Color hardware (or an emulator running in GBC mode) matches that of the original Japanese release for Pokémon Green Version (green overworld, red sprites, blue accents).
+- Green Version-specific border and palette were restored for Super Game Boy for Solus Green, to match those of the original Japanese release for Pokémon Green Version.
 - Green Version-specific Super Game Boy palette for the Game Corner slots were restored for Solus Green.
 
 ### Title screen
@@ -140,7 +140,7 @@ The differences between the three versions of this romhack (_Solus Red_, _Solus 
 </p>
 
 ### Battle sprites
-- The in-battle back sprites (including the player and the Old Man) have been updated to display at a higher resolution of 48x48. Since this meant that new back sprites needed to be supplied for every Pokémon, they all now use the back sprites featured in the [Spaceworld 1997 Gold/Silver beta][spaceworld97].
+- The in-battle back sprites (including the player and the catching tutorial old man) have been updated to display at a higher resolution of 48x48. Since this meant that new back sprites needed to be supplied for every Pokémon, they all now use the back sprites featured in the [Spaceworld 1997 Gold/Silver beta][spaceworld97].
 
 - If a Pokémon is present in the below table, it means its original in-battle front sprite (from Red/Blue) was changed to either the one from Red/Green (JPN) or the one from Yellow. If it's not present in this table, it means it still uses its original Red/Blue sprite. These were changed according to my own personal preference (whichever ones I thought were the best).
 
