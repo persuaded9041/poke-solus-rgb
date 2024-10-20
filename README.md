@@ -29,7 +29,8 @@ Quick overview of changes:
 2. Some new gameplay features have been added
     - HMs can be taught to party Pokémon without using up one of their move slots
     - Trades can be performed in-game via the Trader NPC
-    - There is an in-battle EXP bar
+    - In-battle EXP bar has been added to the battle HUD
+    - "Already caught" indicator has been added to the battle HUD
 3. Some visual content is changed (sprites)
 4. Some bugs/oversights from vanilla are fixed
 
