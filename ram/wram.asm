@@ -1500,7 +1500,7 @@ wMonHFrontSprite:: dw
 wMonHBackSprite:: dw
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
-wMonHLearnset:: flag_array NUM_TMS + NUM_HMS
+wMonHLearnset:: flag_array NUM_TMS + NUM_HMS ; dereknote - increased the number of TMs to 51, so this now uses the final unused bit
 wMonHPicBank:: db
 wMonHeaderEnd::
 

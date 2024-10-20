@@ -116,7 +116,7 @@ DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 50
+DEF NUM_TMS EQU 51 ; dereknote - increasing to 51 for TM51 FLAMETHROWER
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -127,8 +127,8 @@ ENDM
 
 MACRO add_hm
 ; Defines three constants:
-; - HM_\1: the item id, starting at $C4
-; - \1_TMNUM: the learnable TM/HM flag, starting at 51
+; - HM_\1: the item id, starting at $C4 ; dereknote - note sure, maybe this is different now that there are 51 TMs?
+; - \1_TMNUM: the learnable TM/HM flag, starting at 52 ; dereknote - edited, was 51
 ; - HM##_MOVE: alias for the move id, equal to the value of \1
 	const HM_\1
 	DEF HM_VALUE = __tmhm_value__ - NUM_TMS
@@ -136,7 +136,7 @@ MACRO add_hm
 	add_tmnum \1
 ENDM
 
-DEF HM01 EQU const_value
+DEF HM01 EQU const_value ; dereknote - the numbers below are now wrong (note from ExtremeYellow). not sure if this is actually the case
 	add_hm CUT          ; $C4
 	add_hm FLY          ; $C5
 	add_hm SURF         ; $C6
@@ -207,12 +207,15 @@ DEF TM01 EQU const_value
 	add_tm ROCK_SLIDE   ; $F8
 	add_tm TRI_ATTACK   ; $F9
 	add_tm SUBSTITUTE   ; $FA
+	; dereknote - new TMs below
+	add_tm FLAMETHROWER ; $FB (TM51)
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 50 TMs + 5 HMs = 55 learnable TM/HM flags per Pokémon.
-; These fit in 7 bytes, with one unused bit left over.
+; 51 (dereknote - was 50) TMs + 5 HMs = 56 (dereknote - was 55) learnable TM/HM flags per Pokémon.
+; These fit in 7 bytes, with zero (dereknote - was one) unused bits left over.
+; dereknote - now the final unused bit is used, from the additional TM51
 DEF __tmhm_value__ = NUM_TM_HM + 1
 DEF UNUSED_TMNUM EQU __tmhm_value__
 
