@@ -65,6 +65,12 @@ CreditsTextPointers:
 	dw CredFukui
 	dw CredClub
 	dw CredPAAD
+	; Solus credits
+	dw CredDisassembly
+	dw CredPret
+	dw CredSolusDeveloper
+	dw CredDechrissen
+	; end Solus credits
 	assert_table_length NUM_CRED_STRINGS
 
 CredVersion:
@@ -203,3 +209,14 @@ CredClub:
 	db -9, "NCL SUPER MARIO CLUB@"
 CredPAAD:
 	db -5, "PAAD TESTING@"
+; Solus credits
+CredDisassembly:
+	db -7, "GAME DISASSEMBLY@"
+CredPret:
+	db -2, "PRET@"
+CredSolusDeveloper:
+	db -6, "SOLUS DEVELOPER@"
+CredDechrissen:
+	db -4, "DECHRISSEN@"
+
+

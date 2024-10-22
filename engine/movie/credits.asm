@@ -216,20 +216,20 @@ Credits:
 	jr .nextCreditsCommand
 .fadeInTextAndShowMon
 	call FadeInCreditsText
-	ld c, 90
+	ld c, 84 ;dereknote - was 90 (sped up by 6 for new credits)
 	jr .next1
 .showTextAndShowMon
-	ld c, 110
+	ld c, 104 ;dereknote - was 110 (sped up by 6 for new credits)
 .next1
 	call DelayFrames
 	call DisplayCreditsMon
 	jr .nextCreditsScreen
 .fadeInText
 	call FadeInCreditsText
-	ld c, 120
+	ld c, 114 ;dereknote - was 120 (sped up by 6 for new credits)
 	jr .next2
 .showText
-	ld c, 140
+	ld c, 134 ;dereknote - was 140 (sped up by 6 for new credits)
 .next2
 	call DelayFrames
 	jr .nextCreditsScreen

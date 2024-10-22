@@ -14,4 +14,5 @@ CreditsMons:
 	db OMASTAR
 	db VILEPLUME
 	db NIDOKING
+	db PORYGON ; new entry for Solus credits
 	db PARASECT
