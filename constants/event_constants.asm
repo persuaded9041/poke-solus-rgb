@@ -147,7 +147,8 @@
 	const_next $238
 	const EVENT_GOT_HM04
 	const EVENT_GAVE_GOLD_TEETH
-	const_skip 20
+	const EVENT_BOUGHT_TM51 ; dereknote - new event for TM51 purchase from Bill's father
+	const_skip 19 ; dereknote - decremented by 1 to make room for EVENT_BOUGHT_TM51
 	const EVENT_SAFARI_GAME_OVER
 	const EVENT_IN_SAFARI_ZONE
 	const_skip 8
