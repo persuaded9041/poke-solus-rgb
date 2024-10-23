@@ -27,7 +27,7 @@ CeladonMart2FClerk2Text::
 
 ; dereknote - new Clerk below for Field Move TMs and some Gen 2 tradeback TMs
 CeladonMart2FClerk3Text::
-	script_mart TM_DIG, TM_TELEPORT, TM_SOFTBOILED
+	script_mart TM_FIRE_PUNCH, TM_ICE_PUNCH, TM_THUNDERPUNCH, TM_DIG, TM_TELEPORT, TM_SOFTBOILED
 
 CeladonMart4FClerkText::
 	script_mart POKE_DOLL, FIRE_STONE, THUNDER_STONE, WATER_STONE, LEAF_STONE

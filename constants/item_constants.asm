@@ -111,12 +111,12 @@ DEF NUM_ITEMS EQU const_value - 1
 	const FLOOR_B4F     ; $61
 DEF NUM_FLOORS EQU const_value - 1 - NUM_ITEMS
 
-	const_next $C4
+	const_next $C4 ; dereknote - apparently not necessary, and should comment out if adding more than 62 (?) total machines
 
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
 ; match the actual number below.
-DEF NUM_TMS EQU 51 ; dereknote - increasing to 51 for TM51 FLAMETHROWER
+DEF NUM_TMS EQU 54 ; dereknote - increased to 54
 
 DEF __tmhm_value__ = NUM_TMS + 1
 
@@ -127,8 +127,8 @@ ENDM
 
 MACRO add_hm
 ; Defines three constants:
-; - HM_\1: the item id, starting at $C4 ; dereknote - note sure, maybe this is different now that there are 51 TMs?
-; - \1_TMNUM: the learnable TM/HM flag, starting at 52 ; dereknote - edited, was 51
+; - HM_\1: the item id, starting at $C4 ; dereknote - note sure, maybe this is different now that there are 54 TMs?
+; - \1_TMNUM: the learnable TM/HM flag, starting at 55 ; dereknote - edited, was 51
 ; - HM##_MOVE: alias for the move id, equal to the value of \1
 	const HM_\1
 	DEF HM_VALUE = __tmhm_value__ - NUM_TMS
@@ -207,15 +207,19 @@ DEF TM01 EQU const_value
 	add_tm ROCK_SLIDE   ; $F8
 	add_tm TRI_ATTACK   ; $F9
 	add_tm SUBSTITUTE   ; $FA
-	; dereknote - new TMs below
+	; dereknote - new Solus TMs below
 	add_tm FLAMETHROWER ; $FB (TM51)
+	add_tm FIRE_PUNCH ; $FC (TM52)
+	add_tm ICE_PUNCH ; $FD (TM53)
+	add_tm THUNDERPUNCH ; $FE (TM54)
+
 ASSERT NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the number of add_tm definitions"
 
 DEF NUM_TM_HM EQU NUM_TMS + NUM_HMS
 
-; 51 (dereknote - was 50) TMs + 5 HMs = 56 (dereknote - was 55) learnable TM/HM flags per Pokémon.
-; These fit in 7 bytes, with zero (dereknote - was one) unused bits left over.
-; dereknote - now the final unused bit is used, from the additional TM51
+; 54 (dereknote - was 50) TMs + 5 HMs = 59 (dereknote - was 55) learnable TM/HM flags per Pokémon.
+; These now fit in 8 bytes, with five unused bits left over.
+; dereknote - now the final unused bit is used, from the additional TM51, and 3 more bits in the next byte are used
 DEF __tmhm_value__ = NUM_TM_HM + 1
 DEF UNUSED_TMNUM EQU __tmhm_value__
 

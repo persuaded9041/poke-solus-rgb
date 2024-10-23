@@ -1500,14 +1500,14 @@ wMonHFrontSprite:: dw
 wMonHBackSprite:: dw
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
-wMonHLearnset:: flag_array NUM_TMS + NUM_HMS ; dereknote - increased the number of TMs to 51, so this now uses the final unused bit
+wMonHLearnset:: flag_array NUM_TMS + NUM_HMS ; dereknote - increased the number of TMs to 54, so this now uses the final unused bit, plus 3 more
 wMonHPicBank:: db
 wMonHeaderEnd::
 
 ; saved at the start of a battle and then written back at the end of the battle
 wSavedTileAnimations:: db
 
-	ds 2
+	ds 1 ; dereknote - was 2, decreased to make room for 4 more TMs in the wMonHLearnset bytes
 
 wDamage:: dw
 
