@@ -15,10 +15,10 @@
 
 	; tm/hm learnset
 	tmhm TOXIC,        HORN_DRILL,   BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
-	     BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      EARTHQUAKE,   \
-		 FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-		 FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   SUBSTITUTE,   \
-		 STRENGTH
+	     ICE_BEAM,     BLIZZARD,     RAGE,         THUNDERBOLT,  THUNDER,      \
+		 EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  \
+		 BIDE,         FIRE_BLAST,   SKULL_BASH,   REST,         ROCK_SLIDE,   \
+		 SUBSTITUTE,   FLAMETHROWER, STRENGTH
 	; end
 
 	db BANK(RhyhornPicFront)
