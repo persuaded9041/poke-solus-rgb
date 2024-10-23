@@ -16,8 +16,8 @@
 	; tm/hm learnset
 	tmhm WHIRLWIND,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     RAGE,         MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   SUBSTITUTE,   \
-	     FLY
+	     SWIFT,        SKULL_BASH,   SKY_ATTACK,   REST,         TRI_ATTACK,   \
+		 SUBSTITUTE,   FLY
 	; end
 
 	db BANK(DoduoPicFront)
