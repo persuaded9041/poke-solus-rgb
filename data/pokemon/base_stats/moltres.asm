@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front_y/moltres.pic", 0, 1 ; sprite dimensions
 	dw MoltresPicFront, MoltresPicBack
 
-	db PECK, FIRE_SPIN, NO_MOVE, NO_MOVE ; level 1 learnset
+	db PECK, FIRE_SPIN, WING_ATTACK, EMBER ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

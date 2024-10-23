@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front_y/zapdos.pic", 0, 1 ; sprite dimensions
 	dw ZapdosPicFront, ZapdosPicBack
 
-	db THUNDERSHOCK, DRILL_PECK, NO_MOVE, NO_MOVE ; level 1 learnset
+	db THUNDERSHOCK, DRILL_PECK, PECK, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset

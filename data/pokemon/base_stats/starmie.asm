@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front_rg/starmie.pic", 0, 1 ; sprite dimensions
 	dw StarmiePicFront, StarmiePicBack
 
-	db TACKLE, WATER_GUN, HARDEN, NO_MOVE ; level 1 learnset
+	db TACKLE, BUBBLEBEAM, HARDEN, RECOVER ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
