@@ -7,6 +7,7 @@ CeladonMart2F_TextPointers:
 	dw_const CeladonMart2FClerk2Text,           TEXT_CELADONMART2F_CLERK2
 	dw_const CeladonMart2FMiddleAgedManText,    TEXT_CELADONMART2F_MIDDLE_AGED_MAN
 	dw_const CeladonMart2FGirlText,             TEXT_CELADONMART2F_GIRL
+	dw_const CeladonMart2FClerk3Text,           TEXT_CELADONMART2F_CLERK3 ;dereknote - new Clerk for Gen 2 tradeback TMs and 3 Field Move TMs
 	dw_const CeladonMart2FCurrentFloorSignText, TEXT_CELADONMART2F_CURRENT_FLOOR_SIGN
 
 CeladonMart2FMiddleAgedManText:
