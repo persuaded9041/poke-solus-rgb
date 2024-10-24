@@ -361,89 +361,89 @@ DECHRISSEN
 ## New content
 
 ### New features that were not in the vanilla games
-1. **Field move slots**
+#### Field move slots
 
-    - HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot.
-    - When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move.
-    - Only one Field Move can be known at a time per Pokémon.
-    - Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
-    - When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased.
-    - Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold by a new TM clerk on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
-        - TM28 (Dig): 2000p
-        - TM30 (Teleport): 1000p
-        - TM41 (Softboiled): 2000p
-    - A new sign on Route 14, east of Fuchsia City, advertises these three TMs for sale at Celadon Dept. Store. Notably, there was already a trainer on this route who mentions TMs being on sale in Celadon.
+- HMs, as well as TM28 (Dig), TM30 (Teleport), and TM41 (Softboiled), can be taught to a party Pokémon in a separate "Field Move" slot.
+- When teaching one of these moves to a Pokémon, you will be prompted to choose whether it should be taught as its temporary Field Move.
+- Only one Field Move can be known at a time per Pokémon.
+- Field Moves can be used like other HMs as normal, from a Pokémon's party sub-menu.
+- When a Pokémon with a temporary Field Move is deposited into the PC, its Field Move will be erased.
+- Those three TMs which act as Field Moves (Dig, Teleport, and Softboiled) are now sold by a new TM clerk on the 2nd floor of Celadon Dept. Store, because they might be lost more easily if taught as a Field Move and then erased via PC deposit.
+    - TM28 (Dig): 2000p
+    - TM30 (Teleport): 1000p
+    - TM41 (Softboiled): 2000p
+- A new sign on Route 14, east of Fuchsia City, advertises these three TMs for sale at Celadon Dept. Store. Notably, there was already a trainer on this route who mentions TMs being on sale in Celadon.
     
-2. **The Trader**
+#### The Trader
 
-    - A new NPC who lives in a new house behind Celadon Dept. Store.
-    - He will trade you back any of your Pokémon, for the purpose of evolving any of the four trade evolutions.
-    - Only a single trade animation will play (not two back-to-back).
-    - Another new NPC, a boy in Pewter City, will hint at the Trader's location.
-    - A new sign on Route 8, just outside of Lavender Town, further advertises the Trader's services and location.
+- A new NPC who lives in a new house behind Celadon Dept. Store.
+- He will trade you back any of your Pokémon, for the purpose of evolving any of the four trade evolutions.
+- Only a single trade animation will play (not two back-to-back).
+- Another new NPC, a boy in Pewter City, will hint at the Trader's location.
+- A new sign on Route 8, just outside of Lavender Town, further advertises the Trader's services and location.
 
-3. **Porygon salesman**
+#### Porygon salesman
 
-    - A scientist in the lobby of Pokémon Lab on Cinnabar Island will offer to sell you a Porygon for 10000p. He shouldn't be selling it to you, so he does it in secrecy (even though he's being quite conspicuous in the lobby). 
+- A scientist in the lobby of Pokémon Lab on Cinnabar Island will offer to sell you a Porygon for 10000p. He shouldn't be selling it to you, so he does it in secrecy (even though he's being quite conspicuous in the lobby). 
 
-4. **Victory Road fossil room**
+#### Victory Road fossil room
 
-    - A new basement room of Victory Road (B1F) holds two more fossils: a Helix Fossil and a Dome Fossil.
-    - This allows you to get both fossils in the late game, so you can complete the Pokédex but you're still restricted to using only one of the two fossil Pokémon in your main party.
+- A new basement room of Victory Road (B1F) holds two more fossils: a Helix Fossil and a Dome Fossil.
+- This allows you to get both fossils in the late game, so you can complete the Pokédex but you're still restricted to using only one of the two fossil Pokémon in your main party.
 
-5. **Mew battle**
+#### Mew battle
 
-    - Mew is battleable as a static sprite in a new basement room of Cinnabar Mansion (B2F).
-    - It's level 30.
-    - The entrance to its room is surrounded by rocks, as if Mew broke a hole in the floor.
+- Mew is battleable as a static sprite in a new basement room of Cinnabar Mansion (B2F).
+- It's level 30.
+- The entrance to its room is surrounded by rocks, as if Mew broke a hole in the floor.
 
-6. **Forward-patched learnsets**
-    - Learnsets were first updated to match Yellow Version's learnsets
-    - Learnsets were then partially 'forward-patched' via Gen 2 tradeback learnsets to enhance them further
-    - This approach keeps learnsets arguably canonical
-    - Check [Learnsets](#learnsets) for more details
+#### Forward-patched learnsets
+- Learnsets were first updated to match Yellow Version's learnsets
+- Learnsets were then partially 'forward-patched' via Gen 2 tradeback learnsets to enhance them further
+- This approach keeps learnsets arguably canonical
+- Check [Learnsets](#learnsets) for more details
     
 
-7. **New TMs**
+#### New TMs
 
-    - New TMs:
-        - TM51 (Flamethrower)
-        - TM52 (Fire Punch)
-        - TM53 (Ice Punch)
-        - TM54 (Thunderpunch)
-    - The text in the TM pamphlet on the top floor of Celadon Mansion reflects the increased number of total TMs.
+- New TMs:
+    - TM51 (Flamethrower); Location: Bill's father in Fuchsia City
+    - TM52 (Fire Punch); Location: Celadon Dept. Store 2F (new Clerk)
+    - TM53 (Ice Punch); Location: Celadon Dept. Store 2F (new Clerk)
+    - TM54 (Thunderpunch); Location: Celadon Dept. Store 2F (new Clerk)
+- The text in the TM pamphlet on the top floor of Celadon Mansion reflects the increased number of total TMs.
 
-8. **New TM clerk**
+#### New TM clerk
 
-    - A new TM clerk has been added to Celadon Dept. Store 2F.
-    - He provides access to repeatable Field Move TM purchases (in case they are overwritten via PC deposit).
-    - He sells 6 TMs in total: Fire Punch, Ice Punch, Thunderpunch, Dig, Teleport, and Softboiled.
+- A new TM clerk has been added to Celadon Dept. Store 2F.
+- He provides access to repeatable Field Move TM purchases (in case they are overwritten via PC deposit).
+- He sells 6 TMs in total: Fire Punch, Ice Punch, Thunderpunch, Dig, Teleport, and Softboiled.
 
-9. **Bill's father**
+#### Bill's father
 
-    - A new NPC, Bill's father, is in Bill's grandfather's house in Fuchsia City.
-    - He will sell you TM51 Flamethrower (only once). This aligns with Gen 1's original philosphy of TMs being one-time-use. This way, you need to be intentional about which Pokémon you use it on.
-    - In Crystal Version, he is the Move Tutor outside Goldenrod Game Corner who teaches Flamethrower, Thunderbolt, and Ice Beam for 4000c each.
-    - He will sell the player TM51 for 8000p; the price was determined by taking 10% of his coin-converted price when tutoring the move (in Crystal). If he sold it to you at full price, that would be 80000p, which is far too much. I thought 8000p was appropriate, because it should still be a substantial amount without being unattainable.
-    - Flamethrower is the only of those three tutor moves without a dedicated TM in Gen 1. As Bill's father is the tutor for these moves, it's fitting that he would be the one to sell one.
+- A new NPC, Bill's father, is in Bill's grandfather's house in Fuchsia City.
+- He will sell you TM51 Flamethrower (only once). This aligns with Gen 1's original philosphy of TMs being one-time-use. This way, you need to be intentional about which Pokémon you use it on.
+- In Crystal Version, he is the Move Tutor outside Goldenrod Game Corner who teaches Flamethrower, Thunderbolt, and Ice Beam for 4000c each.
+- He will sell the player TM51 for 8000p; the price was determined by taking 10% of his coin-converted price when tutoring the move (in Crystal). If he sold it to you at full price, that would be 80000p, which is far too much. I thought 8000p was appropriate, because it should still be a substantial amount without being unattainable.
+- Flamethrower is the only of those three tutor moves without a dedicated TM in Gen 1. As Bill's father is the tutor for these moves, it's fitting that he would be the one to sell one.
 
-10. **Battle HUD updates**
+#### Battle HUD updates
 
-    - An animated EXP bar (similar to Gen 2's implementation) has been added.
-    - An 'already caught' indicator (using the same small Pokéball icon as the one in Gen 2) has been added.
+- An animated EXP bar (similar to Gen 2's implementation) has been added.
+- An 'already caught' indicator (using the same small Pokéball icon as the one in Gen 2) has been added.
 
 
 ### Cut content that has been restored
-1. **Prof. Oak battle**
+#### Prof. Oak battle
 
-    - Prof. Oak acts as a very strong end game opponent (akin to Red in Mt. Silver at the end of GSC).
-    - His trainer data exists in the game's code, but goes unused in the vanilla games. Based on the player's starter Pokémon pick, Oak's party will vary (his party features the final, unpicked starter).
-    - Battle dialogue for Oak is not present in the code; it was written by me.
-    - After beating the Pokémon League, talk to Oak in his lab and decline his Pokédex evaluation offer. He will then offer to battle you.
-    - You can battle him as many times as you'd like.
-    <p align="center">
+- Prof. Oak acts as a very strong end game opponent (akin to Red in Mt. Silver at the end of GSC).
+- His trainer data exists in the game's code, but goes unused in the vanilla games. Based on the player's starter Pokémon pick, Oak's party will vary (his party features the final, unpicked starter).
+- Battle dialogue for Oak is not present in the code; it was written by me.
+- After beating the Pokémon League, talk to Oak in his lab and decline his Pokédex evaluation offer. He will then offer to battle you.
+- You can battle him as many times as you'd like.
+<p align="center">
     <img src="../screenshots/oak_battle.png">
-    </p>
+</p>
 
 ## FAQ
 Q: Can this romhack trade/battle with vanilla ROMs/cartridges?
