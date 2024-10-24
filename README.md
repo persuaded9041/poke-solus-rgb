@@ -16,6 +16,7 @@ Just want the patch? Go [here][releases].
 - [Elevator pitch](#elevator-pitch)
 - [Versions](#versions)
 - [Installation](#installation)
+- [Screenshots](#screenshots)
 - [Links](#links)
 - [Credits](#credits)
 
@@ -65,8 +66,41 @@ Otherwise, if your environment for building the vanilla ROMs is already set up, 
 #### Modifying this romhack
 If you want to make some tweaks to this romhack before building the ROMs, or if you want to use this romhack as a starting point for your own, read [this document][howtomod] that I've written.
 
+## Screenshots
+
+![battlehud](./screenshots/battle_hud.png)
+![traderhouse](./screenshots/trader_house.png)
+![trader](./screenshots/trader.png)
+![trader2](./screenshots/trader_2.png)
+![trader3](./screenshots/trader_3.png)
+![fossilroomladder](./screenshots/fossil_room_ladder.png)
+![fossilroom](./screenshots/fossil_room.png)
+![tmclerk](./screenshots/tm_clerk.png)
+![tmclerk2](./screenshots/tm_clerk_2.png)
+![tmclerk3](./screenshots/tm_clerk_3.png)
+![tm51](./screenshots/tm_flamethrower.png)
+![tm52](./screenshots/tm_fire_punch.png)
+![tm53](./screenshots/tm_ice_punch.png)
+![tm54](./screenshots/tm_thunderpunch.png)
+![tm51](./screenshots/tm_flamethrower.png)
+![mewroom](./screenshots/mew_room.png)
+![mew](./screenshots/mew.png)
+![mew2](./screenshots/mew_2.png)
+![mew3](./screenshots/mew_3.png)
+![fieldmove](./screenshots/field_move.png)
+![fieldmove2](./screenshots/field_move_2.png)
+![porygonsalesman](./screenshots/porygon_salesman.png)
+![porygonsalesman2](./screenshots/porygon_salesman_2.png)
+![porygonsalesman3](./screenshots/porygon_salesman_3.png)
+![porygonsalesman6](./screenshots/porygon_salesman_6.png)
+![billsfather](./screenshots/bills_father.png)
+![billsfather2](./screenshots/bills_father_2.png)
+![billsfather3](./screenshots/bills_father_3.png)
+![oakbattle](./screenshots/oak_battle.png)
+
 ## Links
 
+- [Solus RGB wiki][soluswiki]
 - Comprehensive [feature log][featurelog] detailing all the changes in this romhack
 - [Changelog][changelog] (an overview of the changes introduced in each Solus RGB release)
 - [Planned features][planned]
@@ -119,6 +153,7 @@ Any form of support is greatly appreciated!
 [romhackplaza]: https://romhackplaza.org/romhacks/pokemon-solus-rgb-game-boy/
 [videoessay]: https://www.youtube.com/watch?v=ANRiLuondLE
 [testimonials]: docs/TESTIMONIALS.md
+[soluswiki]: https://github.com/Dechrissen/poke-solus-rgb/wiki
 
 [jojobear13]: https://github.com/jojobear13
 [Vortyne]: https://github.com/Vortyne
