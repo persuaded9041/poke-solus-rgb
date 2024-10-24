@@ -21,7 +21,7 @@
 	     FISSURE,      PSYCHIC_M,    MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   SKULL_BASH,   \
 	     REST,         PSYWAVE,      ROCK_SLIDE,   SUBSTITUTE,   FLAMETHROWER, \
-		 SURF,         STRENGTH
+		 FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, SURF,         STRENGTH
 	; end
 
 	db BANK(SnorlaxPicFront)

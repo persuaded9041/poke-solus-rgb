@@ -19,7 +19,7 @@
 	     HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         \
 	     PSYCHIC_M,    TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      \
 	     BIDE,         METRONOME,    SKULL_BASH,   DREAM_EATER,  REST,         \
-		 PSYWAVE,      SUBSTITUTE
+		 PSYWAVE,      SUBSTITUTE,   ICE_PUNCH
 	; end
 
 	db BANK(JynxPicFront)

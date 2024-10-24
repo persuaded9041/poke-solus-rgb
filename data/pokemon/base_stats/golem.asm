@@ -19,7 +19,7 @@
 	     RAGE,         EARTHQUAKE,   FISSURE,      DIG,          MIMIC,        \
 	     DOUBLE_TEAM,  BIDE,         METRONOME,    SELFDESTRUCT, FIRE_BLAST,   \
 	     REST,         EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   FLAMETHROWER, \
-		 STRENGTH
+		 FIRE_PUNCH,   STRENGTH
 	; end
 
 	db BANK(GolemPicFront)

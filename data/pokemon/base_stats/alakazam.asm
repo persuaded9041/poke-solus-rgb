@@ -19,7 +19,7 @@
 	     RAGE,         DIG,          PSYCHIC_M,    TELEPORT,     MIMIC,        \
 	     DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    SKULL_BASH,   \
 	     DREAM_EATER,  REST,         THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   \
-		 SUBSTITUTE,   FLASH
+		 SUBSTITUTE,   FIRE_PUNCH,   ICE_PUNCH,    THUNDERPUNCH, FLASH
 	; end
 
 	db BANK(AlakazamPicFront)
