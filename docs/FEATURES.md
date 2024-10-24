@@ -16,6 +16,7 @@ This file details all the changes the Pokémon Solus RGB romhack makes to the va
     - [Type matchups](#type-matchups)
     - [Move typings](#move-typings)
     - [Wild encounters](#wild-encounters)
+    - [Previously unobtainable Pokémon](#previously-unobtainable-pokémon)
     - [Learnsets](#learnsets)
     - [Catch rates](#catch-rates)
     - [Game Corner](#game-corner)
@@ -93,21 +94,7 @@ Q: Why is it called Solus?
 > protagonist of Red/Blue is a young boy.
 
 Q: How did you decide where to put previously unobtainable Pokémon?
-> If a Pokémon was version-exclusive, then its appearance was simply merged with the opposite game's counterpart Pokémon (Oddish vs. Bellsprout, for example — now both appear in the same locations where you'd previously only find one). For the cases where it wasn't this simple, you can find the justification for each decision in the table below. Some Pokémon were added to the wild if their previous acquisition method was only in the Game Corner, or only via trade, or if only one existed and multiple are needed for Dex completion (like Eevee).
-
-Pokémon | Justification for location decision
---- | ---
-Farfetch'd | Added to Routes 12 and 13 @ 5% (like in Yellow).
-Lickitung | Added to Safari Zone (West) @ 1% (like in JPN Blue).
-Mr. Mime | Added to Route 21 @ 5% (like in Gen 2).
-Hitmonchan/Hitmonlee | Added Hitmonchan to Victory Road 2F and Hitmonlee to Victory Road 3F (similar to LGPE).
-Bulbasaur | Added to Viridian Forest @ 1% (similar to LGPE).
-Squirtle | Added to Seafoam Islands B3F and B4F @ 1% (similar to LGPE) because those 2 maps are the ones with water.
-Charmander | Added to both floors of Rock Tunnel @ 1% (similar to LGPE).
-Omanyte/Kabuto | Added 2 additional fossils (1 Helix and 1 Dome) in Victory Road because it's late enough in the game that it would prevent you from using them in your main party.
-Eevee | Added to Route 17 @ 5% (similar to LGPE).
-Porygon | Added a scientist who works for Pokémon Lab on Cinnabar Island (this is where Porygon was originally created) who sells you one for 10000p "illegally". The price used is _around_ 10% (a bit less) of the Game Corner cost after doing coin conversion if you use the 6500c price from Blue Version (6500c @ 1000p per 50c = 130000p x 10% = 13000p). The idea here is that he's selling it to you at a discount, undercutting the "crooks" at the Game Corner.
-Mew | Added a static encounter in a new room of Cinnabar Lab basement (technically B2F); The thematic reasoning is a bit ambiguous... it could be interpreted as Mew "coming back" to the building where its DNA was used to create Mewtwo, in order to find Mewtwo... or it could be seen as the "original" Mew that was used for experimentation (whether Mew was ever present in this building or if DNA was taken from the jungle is not clear in the lore) now hiding somewhere in this building. The new room's entrance is surrounded by rocks as if a hole was broken in the floor by Mew. It's level 30 (like in Emerald) which is also an appropriate level for this point in the game.
+> If a Pokémon was version-exclusive, then its appearance was simply merged with the opposite game's counterpart Pokémon (Oddish vs. Bellsprout, for example — now both appear in the same locations where you'd previously only find one). For the cases where it wasn't this simple, you can find the justification for each decision in [this table](#previously-unobtainable-pokémon). Some Pokémon were added to the wild if their previous acquisition method was only in the Game Corner, or only via trade, or if only one existed and multiple are needed for Dex completion (like Eevee).
 
 Q: Why did you change Pokémon learnsets, and how is it justifiable?
 > There are a lot of Pokémon in Gen 1 which can arguably be considered "unusable" for one reason or another. One example is Rapidash, which can't learn Flamethrower in Gen 1. In any scenario, it's hard to make a case to use Rapidash over another Fire-type which gets Flamethrower.
@@ -267,6 +254,21 @@ Move typings have been modified to match the Gen 2 updates to Gen 1 moves (exclu
 - Maps which had version-exclusive Pokémon have been "merged", i.e., adjusted so that both (or all, if a map had multiple) version-exclusive Pokémon are available in that map. In these cases, occassionally, liberties needed to be taken to ensure a Pokémon could fit into the maps maximum encounter slots. I chose to prioritize keeping all of the Pokémon in that map rather than maintaining the encounter rates for certain Pokémon, so sometimes a Pokémon's encounter rate has been adjusted slightly.
 - The number of wild encounters slots per route has been increased from 10 to 12, in order to make room for those maps which needed an extra slot to accommodate the opposite version's exclusive Pokémon. For the maps which didn't need any adjusting for version exclusives, I simply took the 3rd slot (previously 15%, but dropped by 5% to 10%) and copied that Pokémon into the new 2nd-to-last and 3rd-to-last slots
 (4% and 1% respectively). This means the distributions are almost identical to the originals, +/- a fraction of a %.
+
+### Previously unobtainable Pokémon
+Pokémon | Solus location
+--- | ---
+Farfetch'd | Added to Routes 12 and 13 @ 5% (like in Yellow).
+Lickitung | Added to Safari Zone (West) @ 1% (like in JPN Blue).
+Mr. Mime | Added to Route 21 @ 5% (like in Gen 2).
+Hitmonchan/Hitmonlee | Added Hitmonchan to Victory Road 2F and Hitmonlee to Victory Road 3F (similar to LGPE).
+Bulbasaur | Added to Viridian Forest @ 1% (similar to LGPE).
+Squirtle | Added to Seafoam Islands B3F and B4F @ 1% (similar to LGPE) because those 2 maps are the ones with water.
+Charmander | Added to both floors of Rock Tunnel @ 1% (similar to LGPE).
+Omanyte/Kabuto | Added 2 additional fossils (1 Helix and 1 Dome) in Victory Road because it's late enough in the game that it would prevent you from using them in your main party.
+Eevee | Added to Route 17 @ 5% (similar to LGPE).
+Porygon | Added a scientist who works for Pokémon Lab on Cinnabar Island (this is where Porygon was originally created) who sells you one for 10000p "illegally". The price used is _around_ 10% (a bit less) of the Game Corner cost after doing coin conversion if you use the 6500c price from Blue Version (6500c @ 1000p per 50c = 130000p x 10% = 13000p). The idea here is that he's selling it to you at a discount, undercutting the "crooks" at the Game Corner.
+Mew | Added a static encounter in a new room of Cinnabar Lab basement (technically B2F); The thematic reasoning is a bit ambiguous... it could be interpreted as Mew "coming back" to the building where its DNA was used to create Mewtwo, in order to find Mewtwo... or it could be seen as the "original" Mew that was used for experimentation (whether Mew was ever present in this building or if DNA was taken from the jungle is not clear in the lore) now hiding somewhere in this building. The new room's entrance is surrounded by rocks as if a hole was broken in the floor by Mew. It's level 30 (like in Emerald) which is also an appropriate level for this point in the game.
 
 ### Learnsets
 Learnsets (level-up moves and teachable TMs/HMs) for all Pokémon have been updated. They've undergone a few separate changes that come together for a unique and interesting (but arguably still very "canonical") end result.
