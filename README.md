@@ -1,6 +1,5 @@
 # Pokémon Solus RGB
 
-
 <p align="center">
 <img src="screenshots/solus-red-gbc-title.png">
 <img src="screenshots/solus-green-gbc-title.png">
@@ -29,16 +28,16 @@ Quick overview of changes:
 2. Some new gameplay features have been added
     - HMs can be taught to party Pokémon without using up one of their move slots
     - Trades can be performed in-game via the Trader NPC
-    - In-battle EXP bar has been added to the battle HUD
-    - "Already caught" indicator has been added to the battle HUD
-3. Some visual content is changed (sprites)
-4. Some bugs/oversights from vanilla are fixed
+    - Battle HUD additions: EXP bar and "already caught" indicator
+3. Pokémon learnsets have been partially forward-patched via Yellow Version and Gen 2 tradeback movesets
+4. Some visual content is changed (sprites)
+5. Some bugs/oversights from vanilla are fixed
 
 For a detailed look at all the changes, check out the [feature log][featurelog].
 
 ## Versions
 
-There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus Blue_. The differences between versions are solely cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability. For a complete list of version differences, check the ['Version differences' section of the feature log][versiondifferences].
+There are three versions of this romhack: _Solus Red_, _Solus Green_, and _Solus Blue_. The differences between versions are solely cosmetic (palettes, title screen text, etc.), as this project consolidates any of the meaningful version-specific differences that existed across versions, such as Pokémon availability. For a complete list of version differences, check [here][versiondifferences].
 
 [Building from source](#building-all-three-roms-from-source) will yield three ROMs:
 
@@ -69,6 +68,7 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 
 - Comprehensive [feature log][featurelog] detailing all the changes in this romhack
 - [Changelog][changelog] (an overview of the changes introduced in each Solus RGB release)
+- [Planned features][planned]
 - The [pokered disassembly][pokered] which this romhack is based on
 - The [pokered wiki][wiki] which has many helpful tutorials
 - The [pret Discord server][pretdiscord]
@@ -86,6 +86,7 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 Thank you to [pret][pret], the entire [pret Discord server][pretdiscord], and these individuals who were very helpful throughout my work on this project:
 - [jojobear13][jojobear13], for the Field Move slot implementation
 - [Vortiene][Vortyne], for assistance with assembly and `pokered`
+- [unlink2][unlink2], for assistance with Makefile functionality
 - [Quadrixis][quadrixis], for collaboration on theorycrafting and general support
 
 ## Support the Solus RGB Developer
@@ -108,6 +109,7 @@ Any form of support is greatly appreciated!
 [installation]: docs/INSTALL.md
 [howtomod]: docs/HOW-TO-MOD.md
 [changelog]: docs/CHANGELOG.md
+[planned]: docs/PLANNED.md
 [releases]: https://github.com/Dechrissen/poke-solus-rgb/releases
 [pokeworld]: https://www.extratricky.com/pokeworld/rb/1
 [polishedmap]: https://github.com/Rangi42/polished-map
@@ -119,4 +121,5 @@ Any form of support is greatly appreciated!
 
 [jojobear13]: https://github.com/jojobear13
 [Vortyne]: https://github.com/Vortyne
+[unlink2]: https://krickl.dev/
 [quadrixis]: https://github.com/Quadrixis
