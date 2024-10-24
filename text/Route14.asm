@@ -173,11 +173,15 @@ _Route14SignText::
 	done
 
 _Route14TmSignText::
-	text "TM28, TM30, and"
-	line "TM41 are now"
-	cont "available at"
-	cont "CELADON DEPT."
-	cont "STORE!"
+	text "New TMs in stock!"
+
+	para "DIG, TELEPORT,"
+	line "SOFTBOILED, and"
+	cont "three elemental"
+	cont "punch attacks!"
 
 	para "Get yours today!"
+
+	para "- CELADON DEPT."
+	line "STORE"
 	done

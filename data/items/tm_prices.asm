@@ -28,9 +28,9 @@ TechnicalMachinePrices:
 	nybble 5 ; TM25
 	nybble 4 ; TM26
 	nybble 5 ; TM27
-	nybble 2 ; TM28 dereknote - DIG
+	nybble 2 ; TM28 DIG
 	nybble 4 ; TM29
-	nybble 1 ; TM30 dereknote - TELEPORT
+	nybble 1 ; TM30 TELEPORT
 	nybble 2 ; TM31
 	nybble 1 ; TM32
 	nybble 1 ; TM33
@@ -41,7 +41,7 @@ TechnicalMachinePrices:
 	nybble 5 ; TM38
 	nybble 2 ; TM39
 	nybble 4 ; TM40
-	nybble 2 ; TM41 dereknote - SOFTBOILED
+	nybble 2 ; TM41 SOFTBOILED
 	nybble 2 ; TM42
 	nybble 5 ; TM43
 	nybble 2 ; TM44
