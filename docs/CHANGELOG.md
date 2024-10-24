@@ -8,7 +8,7 @@ An overview of the changes made in each release.
 - Changed type matchup for `GHOST -> PSYCHIC` to 2x effectiveness (Super Effective) instead of 0x effectiveness
 - Changed move typing for Karate Chop, Gust, and Sand-Attack to match the Gen 2 updates (now `FIGHTING`, `FLYING`, and `GROUND` respectively)
 - Added an animated in-battle EXP bar to the HUD
-- Added an in-battle 'caught Pokémon indicator' to the HUD (the icon is the one used in Gen 2)
+- Added an in-battle 'already caught' indicator to the HUD (the icon is the one used in Gen 2)
 - Implemented partially forward-patched learnsets via Gen 2 tradeback learnsets (check [here](./FEATURES.md#learnsets) for details)
 - Added TM51 (Flamethrower), TM52 (Fire Punch), TM53 (Ice Punch), and TM54 (Thunderpunch) to support the newly forward-ported Pokémon learnsets
     - The TM pamphlet on the top floor of Celadon Mansion has been updated accordingly (the text now mentions 54 TMs instead of 50)
@@ -18,7 +18,6 @@ An overview of the changes made in each release.
 - Updated credits; they now make references to:
     - Solus developer (me)
     - Game disassembly (pret)
-
 
 ## v1.2
 - Bugfix: The post-game Professor Oak battle wouldn't trigger even after becoming the Champion

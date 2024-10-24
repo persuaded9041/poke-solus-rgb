@@ -6,7 +6,7 @@
 <img src="screenshots/solus-blue-gbc-title.png">
 </p>
 
-Pokémon Solus RGB is a near-vanilla "purist" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the [disassembly of Pokémon Red and Blue][pokered].
+Pokémon Solus RGB is a near-vanilla "faithful" romhack of Pokémon Red/Blue for Game Boy, with a focus on an enhanced **solo gameplay experience**. It is based on the [disassembly of Pokémon Red and Blue][pokered].
 
 For a detailed look at all the changes in this romhack, check out the [feature log][featurelog].
 
@@ -27,9 +27,10 @@ Quick overview of changes:
 1. All 151 Pokémon are obtainable through normal means
 2. Some new gameplay features have been added
     - HMs can be taught to party Pokémon without using up one of their move slots
+    - Four new TMs have been added to support forward-patched learnsets
     - Trades can be performed in-game via the Trader NPC
-    - Battle HUD additions: EXP bar and "already caught" indicator
-3. Pokémon learnsets have been partially forward-patched via Yellow Version and Gen 2 tradeback movesets
+    - Battle HUD additions: EXP bar and 'already caught' indicator
+3. Pokémon learnsets have been partially forward-patched via Yellow Version and Gen 2 tradeback learnsets
 4. Some visual content is changed (sprites)
 5. Some bugs/oversights from vanilla are fixed
 

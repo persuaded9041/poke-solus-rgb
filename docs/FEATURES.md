@@ -112,7 +112,7 @@ Mew | Added a static encounter in a new room of Cinnabar Lab basement (technical
 Q: Why did you change Pokémon learnsets, and how is it justifiable?
 > There are a lot of Pokémon in Gen 1 which can arguably be considered "unusable" for one reason or another. One example is Rapidash, which can't learn Flamethrower in Gen 1. In any scenario, it's hard to make a case to use Rapidash over another Fire-type which gets Flamethrower.
 >
-> Originally, I wanted to keep Solus completely vanilla, aside from things which could be justified as necessary to make it more of a "solo" experience. But eventually, I decided that further changes are acceptable if they can at least be justified as "canonical". In this case, there are two things I did: updated the learnsts to Yellow Version's, and then updated them further via the mechanism of [Gen 2 tradeback learnsets][tradebacks].
+> Originally, I wanted to keep Solus completely vanilla, aside from things which could be justified as necessary to make it more of a "solo" experience. But eventually, I decided that further changes are acceptable if they can at least be justified as "canonical". In this case, there are two things I did: updated the learnsets to Yellow Version's, and then updated them further via the mechanism of [Gen 2 tradeback learnsets][tradebacks].
 >
 > These changes give more Pokémon viability in Gen 1, and that's without me having taken any creative liberties when updating learnsets, like some other romhacks do (i.e., I didn't add a move to a Pokémon's learnset just because I thought it should learn it, or because it learns it in Gen 7, or something). Importantly, you can actually make these changes yourself technically, using a Yellow cartridge or a Gen 2 cartridge. In this way, it follows the Solus philosphy: if it can be done by normal means, it should be able to be done in-game without the need for another cartridge.
 
@@ -320,7 +320,8 @@ Porygon | 20 | 9999
 The Elite Four now all use the Gym Leader battle theme instead of using the default battle theme for the first three members (Lorelei, Bruno, Agatha).
 
 ### Text
-There is a game-related poster on 3F of Celadon Dept. Store which now reads "Red, Green, and Blue! All are Pokémon!" instead of "Red and Blue! Both are Pokémon!" to be consistent with the triad of versions.
+- There is a game-related poster on 3F of Celadon Dept. Store which now reads "Red, Green, and Blue! All are Pokémon!" instead of "Red and Blue! Both are Pokémon!" to be consistent with the triad of versions.
+- The TM pamphlet on the top floor of Celadon Mansion (the Eevee room) now mentions that there are 54 total TMs, not 50, to reflect the 4 new TMs.
 
 ### Names
 The default set of names for the player and the rival have been changed. These are based on some of the original names used in the Japanese Red & Green versions, mixed with the English names Ash and Gary. (If you're curious to read more about the default names, check [this Bulbapedia article](https://bulbapedia.bulbagarden.net/wiki/Red_(game)#Optional_names).)
@@ -423,13 +424,13 @@ DECHRISSEN
     - A new NPC, Bill's father, is in Bill's grandfather's house in Fuchsia City.
     - He will sell you TM51 Flamethrower (only once). This aligns with Gen 1's original philosphy of TMs being one-time-use. This way, you need to be intentional about which Pokémon you use it on.
     - In Crystal Version, he is the Move Tutor outside Goldenrod Game Corner who teaches Flamethrower, Thunderbolt, and Ice Beam for 4000c each.
-    - He sells TM51 for 8000p; the price was determined by taking 10% of his coin-converted price when tutoring the move (in Crystal). If he sold it to you at full price, that would be 80000p, which is far too much. I thought 8000p was appropriate, because it should still be a substantial amount without being unattainable.
-    - As Flamethrower is the only of those three without a dedicated TM in Gen 1, it's fitting that Bill's father would be the one to sell one.
+    - He will sell the player TM51 for 8000p; the price was determined by taking 10% of his coin-converted price when tutoring the move (in Crystal). If he sold it to you at full price, that would be 80000p, which is far too much. I thought 8000p was appropriate, because it should still be a substantial amount without being unattainable.
+    - Flamethrower is the only of those three tutor moves without a dedicated TM in Gen 1. As Bill's father is the tutor for these moves, it's fitting that he would be the one to sell one.
 
 10. **Battle HUD updates**
 
-    - Animated EXP bar, similar to Gen 2's implementation.
-    - 'Already caught' Pokémon indicator (the same small Pokéball icon as the one used in Gen 2).
+    - An animated EXP bar (similar to Gen 2's implementation) has been added.
+    - An 'already caught' indicator (using the same small Pokéball icon as the one in Gen 2) has been added.
 
 
 ### Cut content that has been restored
