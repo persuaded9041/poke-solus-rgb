@@ -31,6 +31,7 @@ Quick overview of changes:
     - Four new TMs have been added to support forward-patched learnsets
     - Trades can be performed in-game via the Trader NPC
     - Battle HUD additions: EXP bar and 'already caught' indicator
+    - Professor Oak can be battled after beating the Pokémon League
 3. Pokémon learnsets have been partially forward-patched via Yellow Version and Gen 2 tradeback learnsets
 4. Some visual content is changed (sprites)
 5. Some bugs/oversights from vanilla are fixed
@@ -82,7 +83,6 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 ![tm52](./screenshots/tm_fire_punch.png)
 ![tm53](./screenshots/tm_ice_punch.png)
 ![tm54](./screenshots/tm_thunderpunch.png)
-![tm51](./screenshots/tm_flamethrower.png)
 ![mewroom](./screenshots/mew_room.png)
 ![mew](./screenshots/mew.png)
 ![mew2](./screenshots/mew_2.png)
