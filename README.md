@@ -77,7 +77,7 @@ If you want to make some tweaks to this romhack before building the ROMs, or if 
 ![fossilroomladder](./screenshots/fossil_room_ladder.png)
 ![fossilroom](./screenshots/fossil_room.png)
 ![tmclerk](./screenshots/tm_clerk.png)
-![tmclerk2](./screenshots/tm_clerk_2.png)
+![tmclerkpunches](./screenshots/tm_clerk_punches.png)
 ![tmclerk3](./screenshots/tm_clerk_3.png)
 ![tm51](./screenshots/tm_flamethrower.png)
 ![tm52](./screenshots/tm_fire_punch.png)
