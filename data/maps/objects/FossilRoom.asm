@@ -6,7 +6,7 @@ FossilRoom_Object:
 	db $7d ; border block, same as Victory Road's
 
 	def_warp_events
-	warp_event  1, 9, LAST_MAP, 4 ; fourth warp on previous map
+	warp_event  1, 9, VICTORY_ROAD_1F, 4 ; fourth warp on VICTORY_ROAD_1F
 
 	def_bg_events
 
