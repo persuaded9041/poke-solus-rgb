@@ -2,6 +2,9 @@
 
 An overview of the changes made in each release.
 
+## v1.4
+- Fixed a bug for the Victory Road Fossil Room warp which warped you outside Victory Road instead of back to 1F
+
 ## v1.3
 - Changed wording in Field Move teaching prompt: "Learn this as a temporary FIELD MOVE?" -> "Teach this as a temporary FIELD MOVE?" 
 - Changed Blaine's sprite to the Silph President sprite, like in Yellow Version
