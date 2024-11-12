@@ -8,7 +8,6 @@ INCLUDE "engine/movie/title.asm"
 INCLUDE "engine/pokemon/load_mon_data.asm"
 INCLUDE "data/items/prices.asm"
 INCLUDE "data/items/names.asm"
-INCLUDE "data/text/unused_names.asm"
 INCLUDE "engine/gfx/sprite_oam.asm"
 INCLUDE "engine/gfx/oam_dma.asm"
 INCLUDE "engine/link/print_waiting_text.asm"
@@ -363,5 +362,7 @@ SECTION "bank2D",ROMX,BANK[$2D]	;dereknote - This is a known empty bank. Going t
 ;this is for custom functions, so leave it all together in the same bank
 
 INCLUDE "custom_functions/func_overworld.asm"
+;moved here because bank1 was full
+INCLUDE "data/text/unused_names.asm"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

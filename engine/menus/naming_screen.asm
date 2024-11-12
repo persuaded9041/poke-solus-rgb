@@ -453,10 +453,10 @@ PrintNamingText:
 	ld a, [wNamingScreenType]
 	ld de, YourTextString
 	and a
-	jr z, .notNickname
+	jr z, .placeString
 	ld de, RivalsTextString
 	dec a
-	jr z, .notNickname
+	jr z, .placeString
 	ld a, [wcf91]
 	ld [wMonPartySpriteSpecies], a
 	push af
@@ -466,28 +466,21 @@ PrintNamingText:
 	call GetMonName
 	hlcoord 4, 1
 	call PlaceString
-	ld hl, $1
-	add hl, bc
-	ld [hl], "の" ; leftover from Japanese version; blank tile $c9 in English
 	hlcoord 1, 3
 	ld de, NicknameTextString
 	jr .placeString
-.notNickname
-	call PlaceString
-	ld l, c
-	ld h, b
-	ld de, NameTextString
+
 .placeString
 	jp PlaceString
 
 YourTextString:
-	db "YOUR @"
+	db "VOTRE NOM?@"
 
 RivalsTextString:
-	db "RIVAL's @"
+	db "NOM DU RIVAL?@"
 
 NameTextString:
-	db "NAME?@"
+	db "NOM?@"
 
 NicknameTextString:
-	db "NICKNAME?@"
+	db "SURNOM?@"

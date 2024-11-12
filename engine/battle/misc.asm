@@ -26,7 +26,7 @@ FormatMovesString:
 	ld a, b
 	ld [wNumMovesMinusOne], a
 	inc b
-	ld a, $4e ; line break
+	ld a, "<NEXT>"
 	ld [de], a
 	inc de
 	pop hl
@@ -42,7 +42,7 @@ FormatMovesString:
 	ld a, b
 	cp NUM_MOVES
 	jr z, .done
-	ld a, $4e ; line break
+	ld a, "<NEXT>"
 	ld [de], a
 	inc de
 	jr .printDashLoop

@@ -4,7 +4,9 @@ FontGraphicsEnd::
 
 ABTiles: INCBIN "gfx/font/AB.2bpp"
 
-HpBarAndStatusGraphics:: INCBIN "gfx/font/font_battle_extra_with_pokeball.2bpp" ;dereknote - for in-battle caught pokemon indicator (uses icon from Gen 2)
+;TODO add the pokeball
+;HpBarAndStatusGraphics:: INCBIN "gfx/font/font_battle_extra_with_pokeball.2bpp" ;dereknote - for in-battle caught pokemon indicator (uses icon from Gen 2)
+HpBarAndStatusGraphics:: INCBIN "gfx/font/font_battle_extra.2bpp"
 HpBarAndStatusGraphicsEnd::
 
 BattleHudTiles1: INCBIN "gfx/battle/battle_hud_1.1bpp"
@@ -18,10 +20,13 @@ NintendoCopyrightLogoGraphics: INCBIN "gfx/splash/copyright.2bpp"
 GameFreakLogoGraphics: INCBIN "gfx/title/gamefreak_inc.2bpp"
 GameFreakLogoGraphicsEnd:
 
+Unk9Graphic: INCBIN "gfx/unk_9.2bpp"
+Unk9GraphicEnd:
+
 TextBoxGraphics:: INCBIN "gfx/font/font_extra.2bpp"
 TextBoxGraphicsEnd::
 
-PokedexTileGraphics: INCBIN "gfx/pokedex/pokedex.2bpp"
+PokedexTileGraphics: INCBIN "gfx/pokedex/pokedex.2bpp",$10,$120
 PokedexTileGraphicsEnd:
 
 WorldMapTileGraphics: INCBIN "gfx/town_map/town_map.2bpp"

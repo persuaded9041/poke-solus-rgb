@@ -1,14 +1,15 @@
 _SeafoamIslandsB4FArticunoBattleText::
-	text "Gyaoo!@"
+	text "Yahoo!@"
 	text_end
 
 _SeafoamIslandsB4FBouldersSignText::
-	text "Boulders might"
-	line "change the flow"
-	cont "of water!"
+	text "Les rochers"
+	line "peuvent changer"
+	cont "le niveau de"
+	cont "l'eau!"
 	done
 
 _SeafoamIslandsB4FDangerSignText::
-	text "DANGER"
-	line "Fast current!"
+	text "DANGER!"
+	line "Rapides!"
 	done

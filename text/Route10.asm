@@ -1,18 +1,19 @@
 _Route10SuperNerd1BattleText::
-	text "Wow, are you a"
-	line "#MANIAC too?"
-	cont "Want to see my"
-	cont "collection?"
+	text "T'es un dingue"
+	line "des #MON?"
+	cont "Tu veux voir ma"
+	cont "collec'?"
 	done
 
 _Route10SuperNerd1EndBattleText::
-	text "Humph."
-	line "I'm not angry!"
+	text "Nyan!"
+	line "Ma belle collec'!"
 	prompt
 
 _Route10SuperNerd1AfterBattleText::
-	text "I have more rare"
-	line "#MON at home!"
+	text "A ma maison, j'ai"
+	line "plein de #MON"
+	cont "super rares!"
 	done
 
 _Route10Hiker1BattleText::
@@ -20,89 +21,92 @@ _Route10Hiker1BattleText::
 	done
 
 _Route10Hiker1EndBattleText::
-	text "Ha-haha!"
-	line "Not laughing!"
-	cont "Ha-hay fever!"
-	cont "Haha-ha-choo!"
+	text "Ha!"
+	line "Je ris pas!"
+	cont "C'est les nerfs!"
 	prompt
 
 _Route10Hiker1AfterBattleText::
-	text "Haha-ha-choo!"
-	line "Ha-choo!"
-	cont "Snort! Snivel!"
+	text "Haha-ha-ha!"
+	line "Nyahahahaha!"
+	cont "Hohohoho!"
 	done
 
 _Route10SuperNerd2BattleText::
-	text "Hi kid, want to"
-	line "see my #MON?"
+	text "Hé, gamin! Tu"
+	line "veux voir mes"
+	cont "#MON?"
 	done
 
 _Route10SuperNerd2EndBattleText::
-	text "Oh no!"
-	line "My #MON!"
+	text "Yah!"
+	line "Mes #MON!"
 	prompt
 
 _Route10SuperNerd2AfterBattleText::
-	text "I don't like you"
-	line "for beating me!"
+	text "J'aime pas"
+	line "quand tu gagnes!"
 	done
 
 _Route10CooltrainerF1BattleText::
-	text "I've been to a"
-	line "#MON GYM a few"
-	cont "times. But, I"
-	cont "lost each time."
+	text "Je reviens de"
+	line "l'ARENE #MON!"
+	cont "Mais je perds"
+	cont "tout le temps!"
 	done
 
 _Route10CooltrainerF1EndBattleText::
-	text "Ohh!"
-	line "Blew it again!"
+	text "Ben,"
+	line "voilà! J'ai"
+	cont "encore perdu!"
 	prompt
 
 _Route10CooltrainerF1AfterBattleText::
-	text "I noticed some"
-	line "#MANIACs"
-	cont "prowling around."
+	text "J'ai rencontré"
+	line "des #MANIACs"
+	cont "dans le coin."
 	done
 
 _Route10Hiker2BattleText::
-	text "Ah! This mountain"
-	line "air is delicious!"
+	text "Ah! L'air de la"
+	line "montagne, c'est"
+	cont "vivifiant!"
 	done
 
 _Route10Hiker2EndBattleText::
-	text "That"
-	line "cleared my head!"
+	text "Ben..."
+	line "Me voilà tout"
+	cont "vivifié!"
 	prompt
 
 _Route10Hiker2AfterBattleText::
-	text "I feel bloated on"
-	line "mountain air!"
+	text "J'en ai marre de"
+	line "la montagne!"
 	done
 
 _Route10CooltrainerF2BattleText::
-	text "I'm feeling a bit"
-	line "faint from this"
-	cont "tough hike."
+	text "Cette randonnée"
+	line "m'a épuisée!"
 	done
 
 _Route10CooltrainerF2EndBattleText::
-	text "I'm"
-	line "not up to it!"
+	text "..."
+	line "J'laisse tomber!"
 	prompt
 
 _Route10CooltrainerF2AfterBattleText::
-	text "The #MON here"
-	line "are so chunky!"
-	cont "There should be a"
-	cont "pink one with a"
-	cont "floral pattern!"
+	text "Ces #MON sont"
+	line "trop trapus! Il"
+	cont "en faudrait des"
+	cont "roses en forme de"
+	cont "jolies fleurs!"
 	done
 
 _Route10RockTunnelSignText::
-	text "ROCK TUNNEL"
+_Route10Text7::
+	text "GROTTE"
 	done
 
 _Route10PowerPlantSignText::
-	text "POWER PLANT"
+	text "CENTRALE"
 	done

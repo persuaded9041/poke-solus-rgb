@@ -1,14 +1,14 @@
 _PewterPokecenterGentlemanText::
-	text "What!?"
+	text "Quoi!?"
 
-	para "TEAM ROCKET is"
-	line "at MT.MOON? Huh?"
-	cont "I'm on the phone!"
+	para "La TEAM ROCKET"
+	line "a investi le"
+	cont "MONT SELENITE!"
 
-	para "Scram!"
+	para "Damnation!"
 	done
 
 _PewterPokecenterJigglypuffText::
-	text "JIGGLYPUFF: Puu"
-	line "pupuu!"
+	text "RONDOUDOU: Dou!"
+	line "Doudouuuu!"
 	done
