@@ -1,3 +1,7 @@
+## Pokémon Solus FR
+
+**Pokémon Solus FR** est une traduction française du romhack [poke-solus-rgb](https://github.com/Dechrissen/poke-solus-rgb).
+
 ## Pokémon Solus RSE
 
 This is **Pokémon Solus - Running Shoes Edition**, a fork of [poke-solus-rgb](https://github.com/Dechrissen/poke-solus-rgb).
