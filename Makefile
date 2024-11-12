@@ -102,6 +102,9 @@ $(pokesolusblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 $(pokesolusred_vc_obj):     RGBASMFLAGS += -D _RED -D _RED_VC
 $(pokesolusblue_vc_obj):    RGBASMFLAGS += -D _BLUE -D _BLUE_VC
 
+# Comment next line to disable running shoes
+RGBASMFLAGS += -D _RUNSHOES
+
 %.patch: vc/%.constants.sym %_vc.gbc %.gbc vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
 
