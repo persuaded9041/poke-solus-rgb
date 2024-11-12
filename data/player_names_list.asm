@@ -6,6 +6,6 @@ DefaultNamesPlayerList:
 
 DefaultNamesRivalList:
 	db "NOM:@"
-	db "BLUE@"
+	db "GREEN@"
 	db "SHIGERU@"
 	db "REGIS@"
