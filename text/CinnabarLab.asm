@@ -8,46 +8,45 @@ _CinnabarLabFishingGuruText::
 	cont "pour les étudier."
 	done
 
-;TODO translation
+;solus dialogs
 _CinnabarLabPorygonSalesmanIGotADealText::
-	text "SCIENTIST: Psst!"
-	line "I have a #MON"
-	cont "that you might be"
-	cont "interested in."
+	text "CHERCHEUR: Psst!"
+	line "J'ai un #MON"
+	cont "qui pourrait"
+	cont "t'intéresser."
 
-	para "It's PORYGON, a"
-	line "virtual #MON"
-	cont "we created here"
-	cont "in the LAB."
+	para "C'est PORYGON, un"
+	line "#MON virtuel"
+	cont "créé ici dans"
+	cont "notre LABO."
 	
-	para "I'll sell it to"
-	line "you for ¥10000."
-	cont "That's a fraction"
-	cont "of what those"
-	cont "crooks at the"
-	cont "GAME CORNER are"
-	cont "asking for one."
+	para "Je te le vends"
+	line "pour 10000¥."
+	cont "C'est une affaire"
+	cont "comparé aux prix"
+	cont "des escrocs au"
+	cont "COIN JEUX."
 
-	para "So? Want it?"
+	para "Alors? Tu le veux?"
 	done
 
 _CinnabarLabPorygonSalesmanNoText::
-	text "Then scram!"
-	line "I'm not supposed"
-	cont "to be doing this!"
+	text "Alors déguerpis!"
+	line "Je suis pas censé"
+	cont "faire ça moi!"
 	done
 
 _CinnabarLabPorygonSalesmanNoMoneyText::
-	text "You don't have"
-	line "enough money!"
+	text "Tu n'as pas"
+	line "assez d'argent!"
 
-	para "Don't waste my"
-	line "time!"
+	para "Ne me fais pas"
+	line "perdre mon temps!"
 	done
 
 _CinnabarLabPorygonSalesmanNoRefundsText::
-	text "SCIENTIST: Sorry,"
-	line "no refunds, kid!"
+	text "CHERCHEUR: Désolé,"
+	line "pas de remboursement !"
 	done
 
 _CinnabarLabPhotoText::

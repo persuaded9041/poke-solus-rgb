@@ -201,44 +201,44 @@ _UsedCutText::
 	line "coupé! Trop fort!"
 	prompt
 
-;TODO translation
+;solus dialogs
 _WannaTrade4Text::
-	text "I'm the TRADER!"
-	para "If you trade me a"
-	line "#MON, I can"
-	cont "trade it right"
-	para "back to you!"
-	para "Certain #MON"
-	line "evolve this way."
-	para "So, do you want to"
-	line "trade a #MON?"
+	text "Je suis le TRADER!"
+	para "Si tu m'échanges un"
+	line "#MON, je peux"
+	cont "le renvoyer tout"
+	para "de suite!"
+	para "Certains #MON"
+	line "évoluent ainsi."
+	para "Alors, veux-tu"
+	line "échanger un #MON?"
 	done
 	
 _NoTrade4Text::
-	text "OK! Just let me"
-	line "know if you need"
-	cont "my help."
+	text "OK! Fais-moi"
+	line "signe si tu as"
+	cont "besoin d'aide."
 	done
 	
 _Thanks4Text::
-	text "All done!"
-	para "Let me know if"
-	line "you ever need my"
-	cont "help again."
+	text "C'est fini!"
+	para "Fais-moi savoir si"
+	line "tu as besoin"
+	cont "d'aide à nouveau."
 	done
 
 ;dereknote - for field move slot
 _LearnTempFieldMoveText::
-	text "Teach this as a"
-	line "temporary FIELD"
-	cont "MOVE?"
+	text "Enseigner ceci"
+	line "comme FIELD MOVE"
+	cont "temporaire?"
 	done
 _LearnTempFieldMoveTextDenied::
-	text "A temporary FIELD"
-	line "MOVE is already"
-	cont "learned!"
+	text "Un FIELD MOVE"
+	line "temporaire est"
+	cont "déjà appris!"
 	
-	para "Put this #MON"
-	line "in a PC BOX to"
-	cont "erase it."
+	para "Mets ce #MON"
+	line "dans une BOITE PC"
+	cont "pour l'oublier."
 	prompt

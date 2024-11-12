@@ -30,54 +30,53 @@ _FuchsiaBillsGrandpasHouseYoungsterText::
 	line "montré tout ça?"
 	done
 
-;TODO translation
+;solus dialogs
 ; dereknote - new text for Bill's Father
 _FuchsiaBillsGrandpasHouseBillsFatherIGotADealText::
-	text "Hiya, bud!"
-	line "You know BILL?"
+	text "Salut, l'ami!"
+	line "Tu connais BILL?"
 
-	para "I'm his father!"
-	line "I was once a"
-	cont "true blue"
-	cont "#MANIAC just"
-	cont "like him!"
+	para "C'est mon fils!"
+	line "J'étais un vrai"
+	cont "#MANIAC"
+	cont "comme lui!"
 
-	para "I know how to"
-	line "teach #MON"
-	cont "three strong"
-	cont "moves."
+	para "Je sais comment"
+	line "apprendre aux"
+	cont "#MON trois"
+	cont "supers attaques."
 
-	para "It's your lucky"
-	line "day, bud! I got a"
-	cont "spare TM for one"
-	cont "of those moves."
+	para "C'est ton jour"
+	line "de chance, l'ami!"
+	cont "J'ai une CT dispo"
+	cont "pour toi."
 
-	para "I ain't never"
-	line "seen another one"
-	cont "like it around"
-	cont "these parts!"
+	para "J'en ai jamais"
+	line "vu d'autres par"
+	cont "ici, c'est chance"
+	cont "unique!"
 
-	para "Do you want it?"
-	line "It's yours for"
+	para "Tu le veux?"
+	line "C'est à toi pour"
 	cont "¥8000!"
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherNoText::
-	text "OK! Let me know"
-	line "if you change"
-	cont "your mind, chief!"
+	text "D'accord! Dis-moi"
+	line "si tu changes"
+	cont "d'avis, chef!"
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherNoMoneyText::
-	text "Well, you don't"
-	line "have enough cash!"
+	text "Eh bien, tu n'as"
+	line "pas assez d'argent!"
 
-	para "Come back when"
-	line "you've got enough."
+	para "Reviens quand"
+	line "tu en auras assez."
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherReceivedFlamethrowerText::
-	text "<PLAYER> received"
+	text "<PLAYER> a reçu"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
@@ -86,22 +85,22 @@ _FuchsiaBillsGrandpasHouseBillsFatherReceivedFlamethrowerText::
 _FuchsiaBillsGrandpasHouseBillsFatherFlamethrowerExplanationText::
 	text_start
 
-	para "Yeehah! Thanks,"
-	line "bud!" 
+	para "Yeehah! Merci,"
+	line "l'ami!"
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherFlamethrowerNoRoomText::
-	text "You've got too"
-	line "much stuff, bud!"
+	text "Tu as trop"
+	line "d'objets, l'ami!"
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherFollowupText::
-	text "TM51 teaches"
-	line "FLAMETHROWER!" 
+	text "CT51 enseigne"
+	line "LANCE-FLAMME!" 
 
-	para "That's a really"
-	line "strong move. It"
-	cont "might even leave"
-	cont "a burn!"
+	para "C'est une attaque"
+	line "puissante. Elle"
+	cont "peut même laisser"
+	cont "des brûlures!"
 	done
 	

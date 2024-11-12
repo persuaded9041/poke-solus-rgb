@@ -73,17 +73,18 @@ _PewterCityYoungsterYoureATrainerFollowMeText::
 	cont "Suis-moi!"
 	done
 
-;TODO translation
+;solus dialogs
 _PewterCityTraderTipperText::
-	text "I hear there's a"
-	line "guy who lives in"
-	cont "CELADON CITY who"
-	cont "will trade your"
-	cont "own #MON back"
-	cont "to you."
+	text "J'ai entendu dire"
+	line "qu'un type qui vit"
+	cont "à CELADOPOLE"
+	cont "t'échange puis"
+	cont "te rends ton"
+	cont "#MON aussitôt."
 
-	para "I wonder why he"
-	line "would do that?"
+	para "Je me demande"
+	line "pourquoi il"
+	cont "fait ça?"
 	done
 
 _PewterCityYoungsterGoTakeOnBrockText::

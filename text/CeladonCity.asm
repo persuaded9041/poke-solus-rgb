@@ -162,7 +162,7 @@ _CeladonCityGameCornerSignText::
 	cont "pour adultes!"
 	done
 
-;TODO translation
+;solus dialogs
 _CeladonCityTraderHouseSignText::
-	text "TRADER's HOUSE"
+	text "Maison du TRADER"
 	done

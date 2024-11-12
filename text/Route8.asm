@@ -163,14 +163,16 @@ _Route8UndergroundSignText::
 	cont "LAVANVILLE"
 	done
 
-;TODO translation
+;solus dialogs
 _Route8TraderSignText::
-	text "Visit the TRADER!"
+	text "Visitez le TRADER!"
 
-	para "All your trading"
-	line "needs fulfilled!"
+	para "Tous vos besoins"
+	line "d'échanges seront"
+	cont "comblés!"
 
-	para "Located behind"
-	line "CELADON DEPT."
-	cont "STORE."
+	para "Situé derrière"
+	line "le CENTRE"
+	line "COMMERCIAL de"
+	cont "CELADOPOLE."
 	done

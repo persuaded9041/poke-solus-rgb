@@ -387,60 +387,61 @@ _OaksLabScientistText::
 	cont "ASSISTANT!"
 	done
 	
-;TODO translation
+;solus dialogs
 ;;;;;;;;
 ; dereknote - text for oak battle
 _OaksLabChallengeText::
 	text "Oh! <PLAYER>!"
-	line "You've become the"
-	cont "#MON LEAGUE"
-	cont "champion?"
+	line "Tu es devenu"
+	cont "champion de la"
+	cont "LIGUE #MON?"
 
-	para "I am quite"
-	line "impressed!"
-	cont "I knew you were"
-	cont "a talented"
-	cont "#MON trainer!"
+	para "Je suis très"
+	line "impressionné!"
+	cont "Je savais que tu"
+	cont "étais un dresseur"
+	cont "de talent!"
 
-	para "You know..."
-	line "In my youth, I"
-	cont "was quite the"
-	cont "#MON trainer"
-	cont "as well!"
+	para "Tu sais..."
+	line "Dans ma jeunesse,"
+	cont "j'étais aussi un"
+	cont "dresseur de #MON"
+	cont "hors pair!"
 
-	para "How about facing"
-	line "me in a battle?"
+	para "Que dirais-tu"
+	line "de m'affronter?"
 	done
 
 _OaksLabPrebattleText::
-	text "It's been a long"
-	line "time since I've"
-	cont "had a proper"
-	cont "battle."
+	text "Ça fait longtemps"
+	line "que je n'ai pas"
+	cont "eu un vrai"
+	cont "combat."
 
-	para "This old man"
-	line "could use a"
-	cont "break from his"
-	cont "studies!"
+	para "Ce vieux monsieur"
+	line "aurait bien besoin"
+	cont "d'une pause dans"
+	cont "ses études!"
 	
-	para "Now..."
-	line "Show me what"
-	cont "you've learned"
-	cont "since the day you"
-	cont "set out on your"
-	cont "journey!"
+	para "Maintenant..."
+	line "Montre-moi ce que"
+	cont "tu as appris"
+	cont "depuis le jour où"
+	cont "tu as commencé"
+	cont "ton aventure!"
 	done
 	
 _OaksLabVictoryText::
 	text "Haha!"
-	line "Wonderful!"
+	line "Magnifique!"
 
-	para "Splendid battle,"
+	para "Superbe combat,"
 	line "<PLAYER>!"
 	
-	para "I'd forgotten how"
-	line "exciting battling"
-	cont "can be!"
+	para "J'avais oublié à"
+	line "quel point"
+	cont "combattre était"
+	cont "passionnant!"
 
 	; dereknote - empty paragraph here prevents the previous line from being auto-advanced right before the prize money text shows up
 	; not sure why that happens but this seems to be a good workaround

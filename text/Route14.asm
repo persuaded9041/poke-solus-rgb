@@ -184,17 +184,21 @@ _Route14SignText::
 	cont "à l'Ouest"
 	done
 
-;TODO translation
+;solus dialogs
 _Route14TmSignText::
-	text "New TMs in stock!"
+	text "Nouvelles CT"
+	line "en stock!"
 
-	para "DIG, TELEPORT,"
-	line "SOFTBOILED, and"
-	cont "three elemental"
-	cont "punch attacks!"
+	para "TUNNEL, TELEPORT,"
+	line "E-COQUE et"
+	cont "trois attaques"
+	cont "de poing"
+	cont "élémentaire!"
 
-	para "Get yours today!"
+	para "Achetez-les"
+	line "dès aujourd'hui!"
 
-	para "- CELADON DEPT."
-	line "STORE"
+	para "- CENTRE"
+	line "COMMERCIAL de"
+	cont "CELADOPOLE"
 	done
