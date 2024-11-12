@@ -277,13 +277,45 @@ OverworldLoopLessDelay::
 	ld hl, wMiscFlags
 	res BIT_TURNING, [hl]
 	ld a, [wWalkBikeSurfState]
+IF DEF(_RUNSHOES)
+	dec a ; riding a bike?
+	jr nz, .isPlayerRunning
+ELSE
 	dec a ; riding a bike?
 	jr nz, .normalPlayerSpriteAdvancement
+ENDC
 	ld a, [wMovementFlags]
+IF DEF(_RUNSHOES)
+	bit BIT_LEDGE_OR_FISHING, a
+	jr nz, .isPlayerRunning
+ELSE
 	bit BIT_LEDGE_OR_FISHING, a
 	jr nz, .normalPlayerSpriteAdvancement
+ENDC
+IF DEF(_RUNSHOES)
+	; Bike is normally 2x walking speed
+	; Holding B makes the bike even faster 
+	ld a, [hJoyHeld]
+	and B_BUTTON
+	jr z, .notMachBike
 	call DoBikeSpeedup
-.normalPlayerSpriteAdvancement
+ENDC
+.notMachBike
+	call DoBikeSpeedup
+	jr .normalPlayerSpriteAdvancement
+.isPlayerRunning
+	; surf at 2x walking speed 
+	ld a, [wWalkBikeSurfState]
+	cp $02 
+	jr z, .surfFaster
+	; holding B makes you surf at 2x walking speed 
+	ld a, [hJoyHeld]
+	and B_BUTTON
+	jr z, .normalPlayerSpriteAdvancement
+.surfFaster 
+	call DoBikeSpeedup
+.normalPlayerSpriteAdvancement 
+	; original code continues here
 	call AdvancePlayerSprite
 	ld a, [wWalkCounter]
 	and a
