@@ -277,19 +277,17 @@ OverworldLoopLessDelay::
 	ld hl, wMiscFlags
 	res BIT_TURNING, [hl]
 	ld a, [wWalkBikeSurfState]
-IF DEF(_RUNSHOES)
 	dec a ; riding a bike?
+IF DEF(_RUNSHOES)
 	jr nz, .isPlayerRunning
 ELSE
-	dec a ; riding a bike?
 	jr nz, .normalPlayerSpriteAdvancement
 ENDC
 	ld a, [wMovementFlags]
-IF DEF(_RUNSHOES)
 	bit BIT_LEDGE_OR_FISHING, a
+IF DEF(_RUNSHOES)
 	jr nz, .isPlayerRunning
 ELSE
-	bit BIT_LEDGE_OR_FISHING, a
 	jr nz, .normalPlayerSpriteAdvancement
 ENDC
 IF DEF(_RUNSHOES)
@@ -299,6 +297,9 @@ IF DEF(_RUNSHOES)
 	and B_BUTTON
 	jr z, .notMachBike
 	call DoBikeSpeedup
+	call DoBikeSpeedup
+ELSE
+	jr .notMachBike
 ENDC
 .notMachBike
 	call DoBikeSpeedup
