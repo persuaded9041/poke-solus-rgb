@@ -1,70 +1,73 @@
 _CinnabarLabFishingGuruText::
-	text "We study #MON"
-	line "extensively here."
+	text "Ici on étudie"
+	line "les #MON."
 
-	para "People often bring"
-	line "us rare #MON"
-	cont "for examination."
+	para "On nous amène"
+	line "souvent des"
+	cont "#MON rares"
+	cont "pour les étudier."
 	done
 
+;solus dialogs
 _CinnabarLabPorygonSalesmanIGotADealText::
-	text "SCIENTIST: Psst!"
-	line "I have a #MON"
-	cont "that you might be"
-	cont "interested in."
+	text "CHERCHEUR: Psst!"
+	line "J'ai un #MON"
+	cont "qui pourrait"
+	cont "t'intéresser."
 
-	para "It's PORYGON, a"
-	line "virtual #MON"
-	cont "we created here"
-	cont "in the LAB."
+	para "C'est PORYGON, un"
+	line "#MON virtuel"
+	cont "créé ici dans"
+	cont "notre LABO."
 	
-	para "I'll sell it to"
-	line "you for ¥10000."
-	cont "That's a fraction"
-	cont "of what those"
-	cont "crooks at the"
-	cont "GAME CORNER are"
-	cont "asking for one."
+	para "Je te le vends"
+	line "pour 10000¥."
+	cont "C'est une affaire"
+	cont "comparé aux prix"
+	cont "des escrocs au"
+	cont "COIN JEUX."
 
-	para "So? Want it?"
+	para "Alors? Tu le veux?"
 	done
 
 _CinnabarLabPorygonSalesmanNoText::
-	text "Then scram!"
-	line "I'm not supposed"
-	cont "to be doing this!"
+	text "Alors déguerpis!"
+	line "Je suis pas censé"
+	cont "faire ça moi!"
 	done
 
 _CinnabarLabPorygonSalesmanNoMoneyText::
-	text "You don't have"
-	line "enough money!"
+	text "Tu n'as pas"
+	line "assez d'argent!"
 
-	para "Don't waste my"
-	line "time!"
+	para "Ne me fais pas"
+	line "perdre mon temps!"
 	done
 
 _CinnabarLabPorygonSalesmanNoRefundsText::
-	text "SCIENTIST: Sorry,"
-	line "no refunds, kid!"
+	text "CHERCHEUR: Désolé,"
+	line "pas de remboursement !"
 	done
 
 _CinnabarLabPhotoText::
-	text "A photo of the"
-	line "LAB's founder,"
-	cont "DR.FUJI!"
+	text "Voici une photo"
+	line "du créateur de ce"
+	cont "LABO: Le DR.FUJI!"
 	done
 
 _CinnabarLabMeetingRoomSignText::
-	text "#MON LAB"
-	line "Meeting Room"
+	text "Salle de réunion"
+	line "du LABO #MON"
 	done
 
 _CinnabarLabRAndDSignText::
-	text "#MON LAB"
-	line "R-and-D Room"
+	text "Département"
+	line "Recherche et"
+	cont "Développement du"
+	cont "LABO #MON"
 	done
 
 _CinnabarLabTestingRoomSignText::
-	text "#MON LAB"
-	line "Testing Room"
+	text "Salle de test du"
+	line "LABO #MON"
 	done

@@ -1,120 +1,129 @@
 _Route16Biker1BattleText::
-	text "What do you want?"
+	text "Kess t'as ta?"
 	done
 
 _Route16Biker1EndBattleText::
-	text "Don't you"
-	line "dare laugh!"
+	text "..."
+	line "Galère!"
 	prompt
 
 _Route16Biker1AfterBattleText::
-	text "We like just"
-	line "hanging here,"
-	cont "what's it to you?"
+	text "Nous? On est"
+	line "plantés ici..."
+	cont "Et toi?"
 	done
 
 _Route16Biker2BattleText::
-	text "Nice BIKE!"
-	line "Hand it over!"
+	text "Joli vélo!"
+	line "Donne-le moi!"
 	done
 
 _Route16Biker2EndBattleText::
-	text "Knock"
-	line "out!"
+	text "Tu peux"
+	line "garder le vélo!"
 	prompt
 
 _Route16Biker2AfterBattleText::
-	text "Forget it, who"
-	line "needs your BIKE!"
+	text "Je le veux pas"
+	line "ton vélo!"
 	done
 
 _Route16Biker3BattleText::
-	text "Come out and play,"
-	line "little mouse!"
+	text "Viens t'battre!"
+	line "P'tit rat!"
 	done
 
 _Route16Biker3EndBattleText::
-	text "You"
-	line "little rat!"
+	text "Toi!!"
+	line "Espèce de fennec!"
 	prompt
 
 _Route16Biker3AfterBattleText::
-	text "I hate losing!"
-	line "Get away from me!"
+	text "Je déteste perdre"
+	line "face à un fennec!"
 	done
 
 _Route16biker4BattleText::
-	text "Hey, you just"
-	line "bumped me!"
+	text "Hé! Tu m'as"
+	line "marché sur le"
+	cont "pied, là?"
 	done
 
 _Route16Biker4EndBattleText::
-	text "Kaboom!"
+	text "Schplaff!"
 	prompt
 
 _Route16Biker4AfterBattleText::
-	text "You can also get"
-	line "to FUCHSIA from"
-	cont "VERMILION using a"
-	cont "coastal road."
+	text "Tu peux aussi"
+	line "aller de CARMIN"
+	cont "à PARMANIE par la"
+	cont "côte."
 	done
 
 _Route16Biker5BattleText::
-	text "I'm feeling"
-	line "hungry and mean!"
+	text "J'ai faim, j'suis"
+	line "furax et j'vais"
+	cont "t'exploser!"
 	done
 
 _Route16Biker5EndBattleText::
-	text "Bad,"
-	line "bad, bad!"
+	text "Grrr!"
+	line "J'suis encore"
+	cont "plus furax!"
 	prompt
 
 _Route16Biker5AfterBattleText::
-	text "I like my #MON"
-	line "ferocious! They"
-	cont "tear up enemies!"
+	text "Mes #MON sont"
+	line "féroces! Ils"
+	cont "déchirent mes"
+	cont "ennemis!"
 	done
 
 _Route16Biker6BattleText::
-	text "Sure, I'll go!"
+	text "BASTOONNNN!"
 	done
 
 _Route16Biker6EndBattleText::
-	text "Don't make"
-	line "me mad!"
+	text "Bah!"
+	line "J'suis débile!"
 	prompt
 
 _Route16Biker6AfterBattleText::
-	text "I like harassing"
-	line "people with my"
-	cont "vicious #MON!"
+	text "Je terrorise mes"
+	line "adversaires avec"
+	cont "mes #MON"
+	cont "super vicieux!"
 	done
 
 _Route16Text7::
-	text "A sleeping #MON"
-	line "blocks the way!"
+	text "Un gros #MON"
+	line "endormi bloque"
+	cont "le chemin!"
 	done
 
 _Route16SnorlaxWokeUpText::
-	text "SNORLAX woke up!"
+	text "RONFLEX"
+	line "se réveille!"
 
-	para "It attacked in a"
-	line "grumpy rage!"
+	para "Il est tout"
+	line "grognon, il vous"
+	cont "attaque!"
 	done
 
 _Route16SnorlaxReturnedToMountainsText::
-	text "With a big yawn,"
-	line "SNORLAX returned"
-	cont "to the mountains!"
+	text "Après avoir"
+	line "bâillé, le gros"
+	cont "RONFLEX retourne"
+	cont "dans la montagne!"
 	done
 
 _Route16CyclingRoadSignText::
-	text "Enjoy the slope!"
-	line "CYCLING ROAD"
+	text "Bonne descente!"
+	line "PISTE CYCLABLE"
 	done
 
 _Route16SignText::
 	text "ROUTE 16"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	line "CELADOPOLE -"
+	cont "PARMANIE"
 	done

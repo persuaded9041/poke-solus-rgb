@@ -1,125 +1,133 @@
 _MtMoonB2FDomeFossilYouWantText::
-	text "You want the"
-	line "DOME FOSSIL?"
+	text "Tu veux le"
+	line "fossile DOME?"
 	done
 
 _MtMoonB2FHelixFossilYouWantText::
-	text "You want the"
-	line "HELIX FOSSIL?"
+	text "Tu veux le"
+	line "fossile NAUTILE?"
 	done
 
 _MtMoonB2FReceivedFossilText::
-	text "<PLAYER> got the"
+	text "<PLAYER> obtient"
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
 	text_end
 
 _MtMoonB2FYouHaveNoRoomText::
-	text "Look, you've got"
-	line "no room for this.@"
+	text "Attends, ton"
+	line "inventaire est"
+	cont "plein!@"
 	text_end
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
-	text "Hey, stop!"
+	text "Hep! Toi là!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "Ces fossiles sont"
+	line "à moi!"
+	cont "Pas touche!"
 	done
 
 _MtMoonB2FSuperNerdOkIllShareText::
-	text "OK!"
-	line "I'll share!"
+	text "Bon, OK!"
+	line "On partage!"
 	prompt
 
 _MtMoonB2fSuperNerdEachTakeOneText::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "Chacun le sien!"
+	line "Comme ça,"
+	cont "pas de jaloux!"
 	done
 
 _MtMoonB2FSuperNerdTheresAPokemonLabText::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	text "Loin d'ici, sur"
+	line "la CRAMOIS'ILE,"
+	cont "se trouve un"
+	cont "LABO #MON."
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "On essaye d'y"
+	line "régénérer des"
+	cont "fossiles de"
+	cont "#MON."
 	done
 
 _MtMoonB2FSuperNerdThenThisIsMineText::
-	text "All right. Then"
-	line "this is mine!@"
+	text "OK, je prends"
+	line "celui-ci!@"
 	text_end
 
 _MtMoonB2FRocket1BattleText::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "La TEAM ROCKET"
+	line "trouvera les "
+	cont "fossiles et fera"
+	cont "fortune en les "
+	cont "vendant!"
 	done
 
 _MtMoonB2FRocket1EndBattleText::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "Grrr!"
+	line "J'suis vert!"
 	prompt
 
 _MtMoonB2FRocket1AfterBattleText::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "A cause de toi"
+	line "j'suis vert!"
+	cont "La TEAM ROCKET me"
+	cont "vengera!"
 	done
 
 _MtMoonB2FRocket2BattleText::
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "La TEAM ROCKET?"
+	line "C'est nous!"
+	cont "Les voleurs de"
+	cont "#MON!"
 	done
 
 _MtMoonB2FRocket2EndBattleText::
-	text "I blew"
-	line "it!"
+	text "NOOOONNN!"
+	line "J'ai perdu!"
 	prompt
 
 _MtMoonB2FRocket2AfterBattleText::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "Hein? Mes"
+	line "compagnons vont"
+	cont "me venger!"
 	done
 
 _MtMoonB2FRocket3BattleText::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "Ca bosse dur"
+	line "ici!"
+	cont "Alors du balai,"
+	cont "le mouflet!"
 	done
 
 _MtMoonB2FRocket3EndBattleText::
-	text "So, you"
-	line "are good."
+	text "OK,"
+	line "t'es pas mauvais!"
 	prompt
 
 _MtMoonB2FRocket3AfterBattleText::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "Si tu trouves un"
+	line "fossile, tu me le"
+	cont "donnes et tu"
+	cont "décampes, pigé?"
 	done
 
 _MtMoonB2FRocket4BattleText::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "Les p'tits gamins"
+	line "ne s'occupent pas"
+	cont "des affaires"
+	cont "des grands!"
 	done
 
 _MtMoonB2FRocket4EndBattleText::
-	text "I'm"
-	line "steamed!"
+	text "..."
+	line "J'suis épuisé!"
 	prompt
 
 _MtMoonB2FRocket4AfterBattleText::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "Les #MON"
+	line "existaient bien"
+	cont "avant l'homme..."
 	done

@@ -50,7 +50,7 @@ PlayerPCMenu:
 	ld hl, WhatDoYouWantText
 	call PrintText
 	call HandleMenuInput
-	bit 1, a
+	bit BIT_B_BUTTON, a
 	jp nz, ExitPlayerPC
 	call PlaceUnfilledArrowMenuCursor
 	ld a, [wCurrentMenuItem]
@@ -241,10 +241,10 @@ PlayerPCToss:
 	jp .loop
 
 PlayersPCMenuEntries:
-	db   "WITHDRAW ITEM"
-	next "DEPOSIT ITEM"
-	next "TOSS ITEM"
-	next "LOG OFF@"
+	db   "RETIRER OBJET"
+	next "STOCKER OBJET"
+	next "JETER OBJET"
+	next "DECONNEXION@"
 
 TurnedOnPC2Text:
 	text_far _TurnedOnPC2Text

@@ -102,6 +102,11 @@ $(pokesolusblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 $(pokesolusred_vc_obj):     RGBASMFLAGS += -D _RED -D _RED_VC
 $(pokesolusblue_vc_obj):    RGBASMFLAGS += -D _BLUE -D _BLUE_VC
 
+# Disable the _RUNSHOES option if RUNSHOES=0 is specified when calling make
+ifneq ($(RUNSHOES), 0)
+RGBASMFLAGS += -D _RUNSHOES
+endif
+
 %.patch: vc/%.constants.sym %_vc.gbc %.gbc vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
 

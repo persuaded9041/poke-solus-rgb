@@ -213,15 +213,15 @@ Type2Text:
 	next ""
 	; fallthrough
 IDNoText:
-	db   "<ID>№/"
+	db   "№<ID>/"
 	next ""
 	; fallthrough
 OTText:
-	db   "OT/"
+	db   "DO/"
 	next "@"
 
 StatusText:
-	db "STATUS/@"
+	db "STATUT/@"
 
 OKText:
 	db "OK@"
@@ -290,10 +290,10 @@ PrintStat:
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "FOR"
+	next "DEF"
+	next "VIT"
+	next "SPE@"
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
@@ -332,7 +332,7 @@ StatusScreen2:
 	ld b, a ; Number of moves ?
 	hlcoord 11, 10
 	ld de, SCREEN_WIDTH * 2
-	ld a, "<BOLD_P>"
+	ld a, "P"
 	call StatusScreen_PrintPP ; Print "PP"
 	ld a, b
 	and a
@@ -467,8 +467,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "PTS EXP."
+	next "PROCH.NIV.@"
 
 StatusScreen_ClearName:
 	ld bc, 10

@@ -1,112 +1,125 @@
 _Route17Biker1BattleText::
-	text "There's no money"
-	line "in fighting kids!"
+	text "Pff... Un gosse,"
+	line "ça n'a jamais"
+	cont "d'flouze!"
 	done
 
 _Route17Biker1EndBattleText::
-	text "Burned"
-	line "out!"
+	text "Nan!!!"
+	line "Mon carbure!"
 	prompt
 
 _Route17Biker1AfterBattleText::
-	text "Good stuff is"
-	line "lying around on"
-	cont "CYCLING ROAD!"
+	text "Y a plein de"
+	line "trucs qui"
+	cont "traînent sur la"
+	cont "PISTE CYCLABLE!"
 	done
 
 _Route17Biker2BattleText::
-	text "What do you want,"
-	line "kiddo?"
+	text "Kesstu veux, toi"
+	line "l'mioche?"
 	done
 
 _Route17Biker2EndBattleText::
-	text "Whoo!"
+	text "Whoua!"
 	prompt
 
 _Route17Biker2AfterBattleText::
-	text "I could belly-"
-	line "bump you outta"
-	cont "here!"
+	text "Je vais t'éjecter"
+	line "d'ici à coup de"
+	cont "claques!"
 	done
 
 _Route17Biker3BattleText::
-	text "You heading to"
-	line "FUCHSIA?"
+	text "Tu vas à"
+	line "PARMANIE?"
 	done
 
 _Route17Biker3EndBattleText::
-	text "Crash and"
-	line "burn!"
+	text "Argh!"
+	line "Fumée!"
 	prompt
 
 _Route17Biker3AfterBattleText::
-	text "I love racing"
-	line "downhill!"
+	text "J'aime pédaler"
+	line "comme un dingue! "
+	cont "Un giga-dingue!"
 	done
 
 _Route17Biker4BattleText::
-	text "We're BIKERs!"
-	line "Highway stars!"
+	text "On est MOTARDS!"
+	line "Des vrais,"
+	cont "des purs,"
+	cont "des durs, "
+	cont "des méchants..."
+	cont "Et tout et tout!"
 	done
 
 _Route17Biker4EndBattleText::
-	text "Smoked!"
+	text "Nyargh!"
+	line "J'ai crevé une"
+	cont "roue!"
 	prompt
 
 _Route17Biker4AfterBattleText::
-	text "Are you looking"
-	line "for adventure?"
+	text "Tu cherches"
+	line "l'aventure?"
 	done
 
 _Route17Biker5BattleText::
-	text "Let VOLTORB"
-	line "electrify you!"
+	text "Mes VOLTORBE vont"
+	line "t'électrocuter!"
 	done
 
 _Route17Biker5EndBattleText::
-	text "Grounded"
-	line "out!"
+	text "Arglagh!"
+	line "J'm'a suis fait"
+	cont "électrocuter!"
 	prompt
 
 _Route17Biker5AfterBattleText::
-	text "I got my VOLTORB"
-	line "at the abandoned"
-	cont "POWER PLANT."
+	text "J'ai attrapé"
+	line "un VOLTORBE dans"
+	cont "la CENTRALE."
 	done
 
 _Route17Biker6BattleText::
-	text "My #MON won't"
-	line "evolve! Why?"
+	text "Hein? Faire"
+	line "évoluer mes"
+	cont "#MON?"
+	cont "Ben pourquoi?"
 	done
 
 _Route17Biker6EndBattleText::
-	text "Why,"
-	line "you!"
+	text "Ha..."
+	line "OK, OK!"
 	prompt
 
 _Route17Biker6AfterBattleText::
-	text "Maybe some #MON"
-	line "need element"
-	cont "STONEs to evolve."
+	text "Certains #MON"
+	line "ont besoin d'une"
+	cont "PIERRE pour"
+	cont "évoluer."
 	done
 
 _Route17Biker7BattleText::
-	text "I need a little"
-	line "exercise!"
+	text "J'ai besoin d'un"
+	line "peu d'exercice!"
 	done
 
 _Route17Biker7EndBattleText::
-	text "Whew!"
-	line "Good workout!"
+	text "Pfou!"
+	line "J'suis épuisé!"
 	prompt
 
 _Route17Biker7AfterBattleText::
-	text "I'm sure I lost"
-	line "weight there!"
+	text "Cool! J'ai perdu"
+	line "du poids!"
 	done
 
 _Route17Biker8BattleText::
-	text "Be a rebel!"
+	text "No future!"
 	done
 
 _Route17Biker8EndBattleText::
@@ -114,82 +127,92 @@ _Route17Biker8EndBattleText::
 	prompt
 
 _Route17Biker8AfterBattleText::
-	text "Be ready to fight"
-	line "for your beliefs!"
+	text "Prépare-toi à la"
+	line "baston, microbe!"
 	done
 
 _Route17Biker9BattleText::
-	text "Nice BIKE!"
-	line "How's it handle?"
+	text "Mignon le VELO!"
+	line "Comment ça se"
+	cont "conduit?"
 	done
 
 _Route17Biker9EndBattleText::
-	text "Shoot!"
+	text "Pan!"
+	line "Dans les dents!"
 	prompt
 
 _Route17Biker9AfterBattleText::
-	text "The slope makes"
-	line "it hard to steer!"
+	text "La pente rend"
+	line "la conduite"
+	cont "difficile!"
 	done
 
 _Route17Biker10BattleText::
-	text "Get lost kid!"
-	line "I'm bushed!"
+	text "Du vent gamin!"
+	line "J'suis épuisé!"
 	done
 
 _Route17Biker10EndBattleText::
-	text "Are you"
-	line "satisfied?"
+	text "Voilà,"
+	line "t'es content?"
 	prompt
 
 _Route17Biker10AfterBattleText::
-	text "I need to catch"
-	line "a few Zs!"
+	text "Je vais aller"
+	line "piquer un somme!"
 	done
 
 _Route17NoticeSign1Text::
-	text "It's a notice!"
+	text "Un conseil!"
 
-	para "Watch out for"
-	line "discarded items!"
+	para "Attention à ne"
+	line "pas jeter un"
+	cont "objet important!"
 	done
 
 _Route17TrainerTips1Text::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "All #MON are"
-	line "unique."
+	para "Chaque #MON"
+	line "est unique."
 
-	para "Even #MON of"
-	line "the same type and"
-	cont "level grow at"
-	cont "different rates."
+	para "Des #MON de"
+	line "même type et de"
+	cont "même niveau sont"
+	cont "plus ou moins"
+	cont "forts."
 	done
 
 _Route17TrainerTips2Text::
-	text "TRAINER TIPS"
+	text "ASTUCE"
 
-	para "Press the A or B"
-	line "Button to stay in"
-	cont "place while on a"
-	cont "slope."
+	para "Appuyez sur A ou"
+	line "B pour vous"
+	cont "arrêter dans une"
+	cont "descente."
 	done
 
 _Route17SignText::
 	text "ROUTE 17"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	line "CELADOPOLE -"
+	cont "PARMANIE"
 	done
 
 _Route17NoticeSign2Text::
-	text "It's a notice!"
+	text "Un conseil!"
 
-	para "Don't throw the"
-	line "game, throw #"
-	cont "BALLs instead!"
+	para "Ne jetez pas ce"
+	line "jeu contre un mur"
+	cont "avec violence et"
+	cont "dégoût! Continuez"
+	cont "à attraper des"
+	cont "p'tits #MON"
+	cont "tout mimi!"
 	done
 
 _Route17CyclingRoadEndsSignText::
-	text "CYCLING ROAD"
-	line "Slope ends here!"
+	text "PISTE CYCLABLE"
+	line "Fin de la"
+	cont "descente!"
 	done

@@ -151,7 +151,7 @@ PrintPrizePrice:
 	ld c, 7
 	call TextBoxBorder
 	call UpdateSprites
-	hlcoord 12, 0
+	hlcoord 13, 0
 	ld de, .CoinString
 	call PlaceString
 	hlcoord 13, 1
@@ -159,12 +159,12 @@ PrintPrizePrice:
 	call PlaceString
 	hlcoord 13, 1
 	ld de, wPlayerCoins
-	ld c, %10000010
+	ld c, LEADING_ZEROES | 2
 	call PrintBCDNumber
 	ret
 
 .CoinString:
-	db "COIN@"
+	db "JETONS@"
 
 .SixSpacesString:
 	db "      @"
