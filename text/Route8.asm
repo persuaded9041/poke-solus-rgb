@@ -165,14 +165,14 @@ _Route8UndergroundSignText::
 
 ;solus dialogs
 _Route8TraderSignText::
-	text "Visitez le TRADER!"
+	text "Venez rencontrer"
+	line "le TROQUEUR!"
 
 	para "Tous vos besoins"
 	line "d'échanges seront"
 	cont "comblés!"
 
-	para "Situé derrière"
-	line "le CENTRE"
-	line "COMMERCIAL de"
-	cont "CELADOPOLE."
+	para "Situé derrière le"
+	line "CENTRE COMMERCIAL"
+	cont "de CELADOPOLE."
 	done

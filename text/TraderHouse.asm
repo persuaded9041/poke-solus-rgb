@@ -1,9 +1,10 @@
+;solus dialogs
 _TraderJournalText::
-	text "MACHOKE."
+    text "MACHOPEUR."
     para "KADABRA."
-    para "HAUNTER."
-    para "GRAVELER."
-    para "So far, these are"
-    line "the only ones I've"
-    para "come across."
-	done
+    para "SPECTRUM."
+    para "GRAVALANCH."
+    para "Pour l'instant,"
+    line "je n'ai trouvé"
+    cont "que ceux-là."
+    done

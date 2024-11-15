@@ -400,13 +400,13 @@ _OaksLabChallengeText::
 	line "impressionné!"
 	cont "Je savais que tu"
 	cont "étais un dresseur"
-	cont "de talent!"
+	cont "hors pair!"
 
 	para "Tu sais..."
 	line "Dans ma jeunesse,"
-	cont "j'étais aussi un"
-	cont "dresseur de #MON"
-	cont "hors pair!"
+	cont "j'étais moi-même"
+	cont "un dresseur"
+	cont "de talent!"
 
 	para "Que dirais-tu"
 	line "de m'affronter?"
@@ -414,34 +414,33 @@ _OaksLabChallengeText::
 
 _OaksLabPrebattleText::
 	text "Ça fait longtemps"
-	line "que je n'ai pas"
-	cont "eu un vrai"
-	cont "combat."
+	line "que je n'ai pas eu"
+	cont "un vrai duel."
 
 	para "Ce vieux monsieur"
 	line "aurait bien besoin"
 	cont "d'une pause dans"
-	cont "ses études!"
+	cont "ses recherches!"
 	
 	para "Maintenant..."
-	line "Montre-moi ce que"
-	cont "tu as appris"
-	cont "depuis le jour où"
-	cont "tu as commencé"
-	cont "ton aventure!"
+	line "Montre-moi donc"
+	cont "tout ce que tu as"
+	cont "appris depuis le"
+	cont "début de tes"
+	cont "aventures!"
 	done
 	
 _OaksLabVictoryText::
 	text "Haha!"
 	line "Magnifique!"
 
-	para "Superbe combat,"
+	para "Quel beau duel,"
 	line "<PLAYER>!"
 	
-	para "J'avais oublié à"
-	line "quel point"
-	cont "combattre était"
-	cont "passionnant!"
+	para "J'avais oublié"
+	line "à quel point"
+	cont "c'était excitant"
+	cont "de combattre!"
 
 	; dereknote - empty paragraph here prevents the previous line from being auto-advanced right before the prize money text shows up
 	; not sure why that happens but this seems to be a good workaround

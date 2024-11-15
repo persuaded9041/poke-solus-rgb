@@ -76,11 +76,10 @@ _PewterCityYoungsterYoureATrainerFollowMeText::
 ;solus dialogs
 _PewterCityTraderTipperText::
 	text "J'ai entendu dire"
-	line "qu'un type qui vit"
-	cont "à CELADOPOLE"
-	cont "t'échange puis"
-	cont "te rends ton"
-	cont "#MON aussitôt."
+	line "qu'à CELADOPOLE,"
+	cont "un type échange"
+	cont "ton #MON et te"
+	cont "le rend aussitôt."
 
 	para "Je me demande"
 	line "pourquoi il"

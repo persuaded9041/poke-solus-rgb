@@ -15,25 +15,24 @@ _CinnabarLabPorygonSalesmanIGotADealText::
 	cont "qui pourrait"
 	cont "t'intéresser."
 
-	para "C'est PORYGON, un"
+	para "Voici PORYGON, un"
 	line "#MON virtuel"
-	cont "créé ici dans"
-	cont "notre LABO."
+	cont "qu'on a créé ici"
+	cont "dans notre LABO."
 	
 	para "Je te le vends"
 	line "pour 10000¥."
-	cont "C'est une affaire"
-	cont "comparé aux prix"
-	cont "des escrocs au"
-	cont "COIN JEUX."
+	cont "Bien moins cher"
+	cont "que ces escrocs"
+	cont "du CASINO."
 
 	para "Alors? Tu le veux?"
 	done
 
 _CinnabarLabPorygonSalesmanNoText::
-	text "Alors déguerpis!"
-	line "Je suis pas censé"
-	cont "faire ça moi!"
+	text "Allez, houste!"
+	line "Je risque gros à"
+	cont "faire ça, moi!"
 	done
 
 _CinnabarLabPorygonSalesmanNoMoneyText::
@@ -46,7 +45,7 @@ _CinnabarLabPorygonSalesmanNoMoneyText::
 
 _CinnabarLabPorygonSalesmanNoRefundsText::
 	text "CHERCHEUR: Désolé,"
-	line "pas de remboursement !"
+	line "je rembourse pas!"
 	done
 
 _CinnabarLabPhotoText::

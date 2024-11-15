@@ -187,16 +187,15 @@ _Route14SignText::
 ;solus dialogs
 _Route14TmSignText::
 	text "Nouvelles CT"
-	line "en stock!"
+	line "en vente!"
 
 	para "TUNNEL, TELEPORT,"
 	line "E-COQUE et"
-	cont "trois attaques"
-	cont "de poing"
-	cont "élémentaire!"
+	cont "trois poings"
+	cont "élémentaires!"
 
-	para "Achetez-les"
-	line "dès aujourd'hui!"
+	para "Disponibles dès"
+	line "aujourd'hui!"
 
 	para "- CENTRE"
 	line "COMMERCIAL de"

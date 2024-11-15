@@ -164,5 +164,5 @@ _CeladonCityGameCornerSignText::
 
 ;solus dialogs
 _CeladonCityTraderHouseSignText::
-	text "Maison du TRADER"
+	text "Maison du TROQUEUR"
 	done
