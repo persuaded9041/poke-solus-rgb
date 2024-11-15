@@ -203,15 +203,14 @@ _UsedCutText::
 
 ;solus dialogs
 _WannaTrade4Text::
-	text "Je suis le TRADER!"
-	para "Si tu m'échanges un"
-	line "#MON, je peux"
-	cont "le renvoyer tout"
-	para "de suite!"
+	text "Je suis le"
+	line "TROQUEUR!"
+	para "Si tu m'échanges"
+	line "un #MON, je te"
+	cont "le rends direct!"
 	para "Certains #MON"
 	line "évoluent ainsi."
-	para "Alors, veux-tu"
-	line "échanger un #MON?"
+	para "Alors, on échange?"
 	done
 	
 _NoTrade4Text::
@@ -230,15 +229,15 @@ _Thanks4Text::
 ;dereknote - for field move slot
 _LearnTempFieldMoveText::
 	text "Enseigner ceci"
-	line "comme FIELD MOVE"
-	cont "temporaire?"
+	line "comme CAPACITE"
+	cont "TERRAIN?"
 	done
 _LearnTempFieldMoveTextDenied::
-	text "Un FIELD MOVE"
-	line "temporaire est"
-	cont "déjà appris!"
+	text "Une CAPACITE"
+	line "TERRAIN est déjà"
+	cont "apprise!"
 	
 	para "Mets ce #MON"
 	line "dans une BOITE PC"
-	cont "pour l'oublier."
+	cont "pour la retirer."
 	prompt

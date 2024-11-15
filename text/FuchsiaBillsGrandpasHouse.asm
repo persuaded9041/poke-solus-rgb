@@ -37,28 +37,27 @@ _FuchsiaBillsGrandpasHouseBillsFatherIGotADealText::
 	line "Tu connais BILL?"
 
 	para "C'est mon fils!"
-	line "J'étais un vrai"
-	cont "#MANIAC"
-	cont "comme lui!"
+	line "Moi aussi j'étais"
+	cont "un #MANIAC,"
+	cont "dans le temps!"
 
-	para "Je sais comment"
-	line "apprendre aux"
-	cont "#MON trois"
-	cont "supers attaques."
+	para "Je connais trois"
+	line "supers attaques"
+	cont "à apprendre aux"
+	cont "#MON."
 
 	para "C'est ton jour"
 	line "de chance, l'ami!"
-	cont "J'ai une CT dispo"
-	cont "pour toi."
+	cont "J'ai des CT"
+	cont "en trop."
 
-	para "J'en ai jamais"
-	line "vu d'autres par"
-	cont "ici, c'est chance"
-	cont "unique!"
+	para "J'en ai jamais vu"
+	line "d'autres par ici!"
+	cont "C'est unique!"
 
-	para "Tu le veux?"
-	line "C'est à toi pour"
-	cont "¥8000!"
+	para "Tu en veux une?"
+	line "Elle est à toi"
+	cont "pour 8000¥!"
 	done
 
 _FuchsiaBillsGrandpasHouseBillsFatherNoText::
